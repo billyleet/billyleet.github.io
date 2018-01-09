@@ -257,6 +257,10 @@ BLOG
 	margin: 3em auto;
 }
 
+#slp-comparison {
+	max-width: 100%;
+}
+
 .blog li{
 	list-style: initial;
 }
