@@ -183,6 +183,7 @@ SHOWCASE
 
 .showcase img {
 	border: solid 5px;
+	border-radius: 10px;
 }
 
 .showcase p {
