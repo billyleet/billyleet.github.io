@@ -9,7 +9,7 @@
   }
 
   nav li {
-  	font-size: 1.5em;
+  	font-size: 1.1em;
   }
 
   .social-media-bar li a {
@@ -22,6 +22,10 @@
 
   .bio p {
   	font-size: 1em;
+  }
+
+  .showcase li{
+    min-width: 400px;
   }
 
 
@@ -162,9 +166,13 @@
  		margin-top: 15%;
  	}
 
-    .rowimages-wrapper img {
-        margin: auto 2em;
-    }
+  .rowimages-wrapper img {
+      margin: auto 2em;
+  }
+
+  nav li {
+    font-size: 1.5em;
+  }
 
 }
 
@@ -181,7 +189,7 @@
 
 }
 
-@media screen and (min-height: 1000px) {
+@media screen and (min-height: 1100px) {
 
  	.social-media-bar {
         padding-bottom: 8vh;
