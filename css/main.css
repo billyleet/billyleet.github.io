@@ -163,12 +163,6 @@ SHOWCASE
 	text-align: center;
 }
 
-
-
-/******************************************
-SHOWCASE
-******************************************/
-
 .showcase ul {
 	text-align: center;
 	padding: 0;
@@ -186,9 +180,16 @@ SHOWCASE
 	border-radius: 10px;
 }
 
+.showcase h2 {
+	font-family: inherit;
+	font-size: 2em;
+	margin: .2em;
+}
+
 .showcase p {
-	padding: 0 20px;
-	font-size: 1.4em;
+	padding: 0 10px;
+	margin-top: .2em;
+	font-size: 1.1em;
 	max-width: 500px;
 	font-weight: bold;
 }
