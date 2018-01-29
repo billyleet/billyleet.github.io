@@ -263,8 +263,17 @@ BLOG
 	max-width: 100%;
 }
 
-.blog li{
+#kidfund-screen {
+	max-height: 600px;
+	min-width: 250px;
+}
+
+.blog li {
 	list-style: initial;
+}
+
+.blog ul ul li p {
+	font-size: 100%;
 }
 
 .iphone-size {
