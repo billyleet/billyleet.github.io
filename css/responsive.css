@@ -26,6 +26,7 @@
 
   .showcase li{
     min-width: 400px;
+    padding: 0 2em;
   }
 
 
@@ -196,7 +197,7 @@
     }
 
     .showcase ul {
-        padding-top: 10vh;
+        padding-top: 1vh;
     }
 
 }
