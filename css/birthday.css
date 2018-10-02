@@ -1,0 +1,26 @@
+
+h3 {
+	font-size: 1.8em;
+}
+
+#birthday {
+	size: 40%;
+}
+
+.wrapper nav a {
+	color: rgba(76, 175, 80, 0.0);
+}
+
+.rotated {
+  transform: rotate(90deg); /* Equal to rotateZ(45deg) */
+}
+
+footer {
+	background-color: #393E41;
+	border-color: #44BBA4;
+}
+
+body {
+	background-color: #E7E5DF;
+	/* yellow accent color: #E7BB41;*/
+}
