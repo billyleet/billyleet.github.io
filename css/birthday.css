@@ -24,3 +24,11 @@ body {
 	background-color: #E7E5DF;
 	/* yellow accent color: #E7BB41;*/
 }
+
+@media screen and (min-width: 750px) {
+
+  header {
+  	background-color: #393E41;
+    border-bottom: solid 10px #44BBA4;
+  }
+}
