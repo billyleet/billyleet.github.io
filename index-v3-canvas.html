@@ -75,7 +75,7 @@
         @media (prefers-reduced-motion: reduce) {
             .animate-in { opacity: 1; transform: none; transition: none; }
             .side-rail-track { animation-play-state: paused; }
-            .hero-badge, .hero-name, .hero-statement, .hero-cta { animation: none; }
+            .hero-label, .hero-name, .hero-rule, .hero-statement, .hero-cta { animation: none; }
         }
 
         /* ================================
@@ -113,13 +113,28 @@
             border-bottom: 1px solid var(--rule);
         }
 
-        /* FigJam "frame" border */
+        /* FigJam "frame" border with tab at top-left */
         .hero-frame {
             border: 2px solid var(--text);
             position: relative;
             padding: 3.5rem 3rem 4rem;
             width: 100%;
-            text-align: center;
+        }
+
+        .frame-tab {
+            position: absolute;
+            top: -2px;
+            left: 2rem;
+            transform: translateY(-100%);
+            background: var(--text);
+            color: var(--bg);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.58rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            padding: 0.28rem 0.75rem;
+            line-height: 1.8;
+            user-select: none;
         }
 
         /* Pill badge for eyebrow label */
@@ -152,14 +167,29 @@
         .hero-name .first { display: block; }
         .hero-name .last  { display: block; font-style: italic; }
 
+        .hero-rule {
+            height: 1px;
+            width: 100%;
+            max-width: 420px;
+            background: linear-gradient(to right, var(--accent) 0%, rgba(12,107,107,0.12) 65%, transparent 100%);
+            margin-bottom: 2.5rem;
+            transform-origin: left center;
+            animation: expandRule 1s ease 0.55s both;
+        }
+
+        @keyframes expandRule {
+            from { transform: scaleX(0); opacity: 0; }
+            to   { transform: scaleX(1); opacity: 1; }
+        }
+
         .hero-statement {
             max-width: 640px;
-            margin: 0 auto 3rem;
             font-size: clamp(1rem, 1.8vw, 1.3rem);
             font-weight: 400;
             line-height: 1.6;
             color: var(--text-secondary);
-            animation: fadeUp 0.6s ease 0.55s both;
+            margin-bottom: 3rem;
+            animation: fadeUp 0.6s ease 0.7s both;
         }
 
         /* Sticky note style CTA */
@@ -174,7 +204,7 @@
             box-shadow: 3px 4px 10px rgba(0,0,0,0.18), 1px 1px 3px rgba(0,0,0,0.1);
             transform: rotate(-1.5deg);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
-            animation: fadeUp 0.6s ease 0.7s both;
+            animation: fadeUp 0.6s ease 0.9s both;
         }
 
         .hero-cta:hover {
@@ -213,25 +243,35 @@
             position: sticky;
             top: 4rem;
             font-family: 'DM Serif Display', serif;
-            font-size: clamp(1.35rem, 2vw, 1.8rem);
+            font-size: clamp(1.5rem, 2.2vw, 2rem);
             line-height: 1.3;
             color: #1a1a1a;
+            /* pushpin via ::before */
         }
 
-        /* Subtle lifted corner — bottom-right only */
+        .about-sticky-quote::before {
+            content: '';
+            position: absolute;
+            top: -9px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 18px;
+            height: 18px;
+            background: radial-gradient(circle at 38% 38%, #e06060, #b01515);
+            border-radius: 50%;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+            z-index: 1;
+        }
+
+        /* Fold corner */
         .about-sticky-quote::after {
             content: '';
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 18px;
-            height: 18px;
-            background: linear-gradient(135deg,
-                rgba(255,255,255,0.88) 40%,
-                rgba(0,0,0,0.11) 46%,
-                transparent 52%
-            );
-            pointer-events: none;
+            width: 26px;
+            height: 26px;
+            background: linear-gradient(225deg, rgba(0,0,0,0.1) 45%, transparent 50%);
         }
 
         .about-sticky-quote em {
@@ -253,12 +293,59 @@
            WHAT I DO — FIGJAM CANVAS
         ================================ */
 
+        /* On light bg, no special section background needed —
+           body dot grid provides the canvas texture */
         #capabilities { overflow: visible; }
 
         .figjam-canvas {
             position: relative;
             min-height: 580px;
             margin-top: 0.5rem;
+        }
+
+        .connector-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: visible;
+        }
+
+        /* Annotation elements */
+        .annotation {
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .annotation-arrow {
+            width: 48px;
+            height: 80px;
+            opacity: 0.45;
+        }
+
+        .annotation-callout {
+            width: 34px;
+            height: 34px;
+            background: #f5a623;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Caveat', cursive;
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: white;
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .annotation-text {
+            font-family: 'Caveat', cursive;
+            font-size: 0.88rem;
+            color: #7a7570;
+            transform: rotate(-4deg);
+            white-space: nowrap;
         }
 
         /* Sticky notes */
@@ -280,20 +367,30 @@
             transform: rotate(var(--r, 0deg)) scale(1.04) translateY(-3px);
         }
 
-        /* Subtle lifted corner — bottom-right only */
+        /* Pushpin */
+        .sticky::before {
+            content: '';
+            position: absolute;
+            top: -9px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 15px;
+            height: 15px;
+            background: radial-gradient(circle at 38% 38%, #e06060, #b01515);
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            z-index: 1;
+        }
+
+        /* Fold corner */
         .sticky::after {
             content: '';
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 18px;
-            height: 18px;
-            background: linear-gradient(135deg,
-                rgba(255,255,255,0.88) 40%,
-                rgba(0,0,0,0.11) 46%,
-                transparent 52%
-            );
-            pointer-events: none;
+            width: 22px;
+            height: 22px;
+            background: linear-gradient(225deg, rgba(0,0,0,0.09) 45%, transparent 50%);
         }
 
         .sticky-number {
@@ -327,18 +424,6 @@
         .sticky-04 { --r:  2.3deg; background: #b8d8f5; transform: rotate(2.3deg);  left: 100px; top: 285px; }
         .sticky-05 { --r: -1.8deg; background: #d8b8f5; transform: rotate(-1.8deg); left: 380px; top: 305px; }
         .sticky-06 { --r:  1.5deg; background: #f5e878; transform: rotate(1.5deg);  left: 720px; top: 185px; }
-
-        /* Hidden easter eggs underneath stickies */
-        .easter-egg {
-            position: absolute;
-            font-family: 'Caveat', cursive;
-            font-size: 0.95rem;
-            line-height: 1.45;
-            color: #6b6560;
-            z-index: 0;
-            pointer-events: none;
-            max-width: 210px;
-        }
 
         /* ================================
            CAREER — HORIZONTAL TIMELINE
@@ -437,6 +522,23 @@
             font-size: 0.82rem;
             line-height: 1.7;
             color: var(--text-secondary);
+        }
+
+        /* "Current" badge on most recent card */
+        .tc-current-badge {
+            display: inline-block;
+            background: var(--accent-bg);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            border-radius: 100px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.55rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 0.15rem 0.55rem;
+            margin-bottom: 0.4rem;
+            display: block;
+            width: fit-content;
         }
 
         /* ================================
@@ -546,10 +648,10 @@
             .sticky {
                 position: static;
                 width: 100%;
-                transform: rotate(var(--r, 0deg)) !important;
             }
 
-            .easter-egg { display: none; }
+            .connector-lines,
+            .annotation { display: none; }
 
             .timeline-cards {
                 grid-template-columns: 1fr 1fr;
@@ -595,21 +697,9 @@
             .timeline-card::before,
             .timeline-card::after { display: none; }
 
-            /* Single-column stickies, capped rotation */
             .figjam-canvas {
                 grid-template-columns: 1fr;
             }
-
-            .sticky {
-                transform: rotate(var(--r-mobile, 0deg)) !important;
-            }
-
-            .sticky-01 { --r-mobile: -1deg; }
-            .sticky-02 { --r-mobile:  1deg; }
-            .sticky-03 { --r-mobile: -0.8deg; }
-            .sticky-04 { --r-mobile:  1deg; }
-            .sticky-05 { --r-mobile: -1deg; }
-            .sticky-06 { --r-mobile:  0.8deg; }
         }
 
         @media (max-width: 480px) {
@@ -627,12 +717,14 @@
     <section id="hero">
         <div class="container">
             <div class="hero-frame">
+                <div class="frame-tab">About This Researcher</div>
                 <span class="hero-badge">UX Researcher &nbsp;&middot;&nbsp; Available for Work</span>
                 <h1 class="hero-name">
                     <span class="first">Billy</span>
                     <span class="last">Leet</span>
                 </h1>
-                <p class="hero-statement">I study how people communicate &#8211; with products, with each other, and with themselves.</p>
+                <div class="hero-rule"></div>
+                <p class="hero-statement">I study how people communicate.<br>With products, with each other, and with themselves.</p>
                 <a href="https://www.linkedin.com/in/wleet/" class="hero-cta" target="_blank" rel="noopener noreferrer">LinkedIn Profile &nbsp;&rarr;</a>
             </div>
         </div>
@@ -646,13 +738,13 @@
             <p class="section-label">01 &nbsp; About</p>
             <div class="about-grid">
                 <div class="about-sticky-quote">
-                    Good research answers the question. Great research changes which question gets asked next.
+                    Language was always the obsession. The <em>medium</em> just changed.
                 </div>
                 <div class="about-body">
-                    <p>The best research I've done didn't answer the question on the brief. It changed the question entirely. Teams came in asking whether users understood a feature and left reconsidering whether the feature was solving the right problem. That reframe is what I think good research is actually for: not confirming what a team already believes, but changing what they think is possible.</p>
-                    <p>Before UX, I was a Speech-Language Pathologist, which meant sitting with people who knew exactly what they meant but couldn't find the words to match. In 7th grade I taught myself the Elvish writing system from Tolkien's appendices to pass coded notes in class. Both habits carry over: noticing the gap between what people intend and what actually comes out.</p>
-                    <p>Seven years at Instagram, Meta, and Duolingo taught me that the research question is almost never the real question. I've led generative studies that shifted roadmap priorities, usability research that caught critical failures before they shipped, and longitudinal work that traced how people's relationships with a product evolve over time.</p>
-                    <p>I'm available for senior contract and full-time UX Research roles. I'm most interested in teams where the research can change what they think is possible.</p>
+                    <p>Before UX, I was a Speech-Language Pathologist. I spent years sitting across from people who knew exactly what they wanted to say but couldn't get the words to cooperate, and I became fascinated by that gap between intent and expression. That's still the problem I'm working on. The medium just changed from mouths to screens.</p>
+                    <p>The obsession started even earlier than that. In 7th grade, I taught myself the Elvish writing system from Tolkien's appendices so I could pass coded notes to friends in class. When something is interesting enough, you figure out how to use it. Language has always been interesting enough.</p>
+                    <p>I've spent over seven years doing UX Research at Instagram, Meta, and Duolingo. At all three, understanding how people communicate was central to the work. I've led generative studies that shifted roadmap priorities, usability research that caught critical failures before they shipped, and longitudinal work that traced how people's relationships with a product evolve over months.</p>
+                    <p>I'm currently available for senior contract and full-time UX Research roles. If you're building something where understanding how people communicate is the job, I'd like to talk.</p>
                 </div>
             </div>
         </div>
@@ -666,22 +758,27 @@
             <p class="section-label">02 &nbsp; What I Do</p>
             <div class="figjam-canvas">
 
-                <!-- Easter eggs hidden beneath stickies — discovered by dragging -->
+                <!-- Dashed connector lines between related notes -->
+                <svg class="connector-lines" viewBox="0 0 1020 580" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <!-- Qualitative Research → Mixed Methods -->
+                    <line x1="360" y1="95" x2="605" y2="130" stroke="rgba(0,0,0,0.2)" stroke-width="1.5" stroke-dasharray="6 5" stroke-linecap="round"/>
+                    <!-- Research Strategy → Synthesis & Storytelling -->
+                    <line x1="115" y1="120" x2="215" y2="355" stroke="rgba(0,0,0,0.2)" stroke-width="1.5" stroke-dasharray="6 5" stroke-linecap="round"/>
+                </svg>
 
-                <!-- Under sticky-01: Research Strategy -->
-                <div class="easter-egg" style="left: 8px; top: 48px; transform: rotate(-3deg);" aria-hidden="true">
-                    still the most interesting<br>problem I've worked on
+                <!-- Annotation: arrow between the two rows -->
+                <div class="annotation annotation-arrow" style="left: 178px; top: 200px;" aria-hidden="true">
+                    <svg viewBox="0 0 48 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24,6 C28,24 20,44 24,74" stroke="#6b6560" stroke-width="2.2" stroke-linecap="round"/>
+                        <path d="M16,67 L24,76 L32,67" stroke="#6b6560" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
                 </div>
 
-                <!-- Under sticky-04: Synthesis & Storytelling -->
-                <div class="easter-egg" style="left: 108px; top: 292px; transform: rotate(2deg);" aria-hidden="true">
-                    n=1, but feels true &#10003;
-                </div>
+                <!-- Annotation: callout bubble near Qualitative Research -->
+                <div class="annotation annotation-callout" style="left: 435px; top: 18px;" aria-hidden="true">!</div>
 
-                <!-- Under sticky-06: Stakeholder Influence -->
-                <div class="easter-egg" style="left: 728px; top: 192px; transform: rotate(-2.5deg);" aria-hidden="true">
-                    the deck matters<br>as much as the data
-                </div>
+                <!-- Annotation: handwritten label near Stakeholder Influence -->
+                <div class="annotation annotation-text" style="left: 650px; top: 348px;" aria-hidden="true">see also &rarr;</div>
 
                 <div class="sticky sticky-01">
                     <p class="sticky-number">01</p>
@@ -755,10 +852,11 @@
                     </div>
 
                     <div class="timeline-card tc-4">
-                        <p class="tc-dates">2025</p>
+                        <span class="tc-current-badge">Current</span>
+                        <p class="tc-dates">2025 &ndash; Present</p>
                         <p class="tc-company">Change.org</p>
                         <p class="tc-role">UX Researcher &mdash; Contract</p>
-                        <p class="tc-desc">Most recently contracted to lead foundational qualitative research at Change.org, studying the small segment of users whose petition-sharing activity drives the majority of platform impact.</p>
+                        <p class="tc-desc">Embedded as an independent research contractor to lead foundational qualitative research on high-engagement user behavior. The focus is a small segment of users whose petition-sharing activity drives the majority of platform impact.</p>
                     </div>
 
                 </div>
