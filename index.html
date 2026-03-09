@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <style>
 
         /* ================================
@@ -74,8 +73,10 @@
 
         @media (prefers-reduced-motion: reduce) {
             .animate-in { opacity: 1; transform: none; transition: none; }
-            .side-rail-track { animation-play-state: paused; }
+
             .hero-badge, .hero-name, .hero-statement, .hero-cta { animation: none; }
+
+            .timeline-card:hover { animation: none; }
         }
 
         /* ================================
@@ -90,14 +91,14 @@
         /* FigJam-style frame header: bold caps + accent left border */
         .section-label {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.72rem;
+            font-size: 0.85rem;
             font-weight: 700;
             letter-spacing: 0.22em;
             text-transform: uppercase;
             color: var(--text);
             margin-bottom: 4.5rem;
-            padding-left: 0.85rem;
-            border-left: 3px solid var(--accent);
+            padding-left: 1rem;
+            border-left: 4px solid var(--accent);
             display: inline-block;
         }
 
@@ -111,6 +112,7 @@
             align-items: center;
             padding: 4rem 0 5rem;
             border-bottom: 1px solid var(--rule);
+            position: relative;
         }
 
         /* FigJam "frame" border */
@@ -188,6 +190,28 @@
             to   { opacity: 1; transform: translateY(0); }
         }
 
+        /* Scroll hint chevron */
+        .scroll-hint {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--muted);
+            opacity: 1;
+            transition: opacity 0.4s ease;
+        }
+
+        .scroll-hint svg {
+            width: 28px;
+            height: 28px;
+            animation: bob 2s ease-in-out infinite;
+        }
+
+        @keyframes bob {
+            0%, 100% { transform: translateY(0); }
+            50%      { transform: translateY(6px); }
+        }
+
         /* ================================
            ABOUT
         ================================ */
@@ -206,9 +230,9 @@
 
         /* Large sticky note for pull quote */
         .about-sticky-quote {
-            background: #f5e642;
+            background: linear-gradient(315deg, transparent 17px, #f5e642 0);
             padding: 2.25rem 2rem 2.5rem;
-            box-shadow: 4px 6px 18px rgba(0,0,0,0.14), 1px 2px 4px rgba(0,0,0,0.08);
+            filter: drop-shadow(4px 6px 14px rgba(0,0,0,0.14)) drop-shadow(1px 2px 3px rgba(0,0,0,0.08));
             transform: rotate(-2deg);
             position: sticky;
             top: 4rem;
@@ -218,19 +242,16 @@
             color: #1a1a1a;
         }
 
-        /* Subtle lifted corner — bottom-right only */
+        /* Fold triangle — bottom-right corner */
         .about-sticky-quote::after {
             content: '';
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 18px;
-            height: 18px;
-            background: linear-gradient(135deg,
-                rgba(255,255,255,0.88) 40%,
-                rgba(0,0,0,0.11) 46%,
-                transparent 52%
-            );
+            width: 24px;
+            height: 24px;
+            background: #d4c636;
+            clip-path: polygon(0 0, 100% 0, 0 100%);
             pointer-events: none;
         }
 
@@ -253,12 +274,28 @@
            WHAT I DO — FIGJAM CANVAS
         ================================ */
 
-        #capabilities { overflow: visible; }
+        #capabilities { overflow: visible; position: relative; }
+        #career { position: relative; }
+        #career .container { max-width: 1240px; }
 
         .figjam-canvas {
             position: relative;
-            min-height: 580px;
+            min-height: 680px;
             margin-top: 0.5rem;
+            border: 1.5px dashed var(--rule);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .figjam-canvas::before {
+            content: 'drag to explore';
+            position: absolute;
+            top: 0.6rem;
+            right: 0.85rem;
+            font-family: 'Caveat', cursive;
+            font-size: 0.85rem;
+            color: var(--muted);
+            pointer-events: none;
         }
 
         /* Sticky notes */
@@ -266,8 +303,9 @@
             position: absolute;
             width: 230px;
             padding: 1.2rem 1.4rem 1.6rem;
-            box-shadow: 3px 5px 14px rgba(0,0,0,0.16), 1px 2px 4px rgba(0,0,0,0.08);
-            transition: box-shadow 0.25s ease, transform 0.25s ease;
+            background: linear-gradient(315deg, transparent 17px, var(--sticky-bg) 0);
+            filter: drop-shadow(3px 5px 10px rgba(0,0,0,0.16)) drop-shadow(1px 2px 3px rgba(0,0,0,0.08));
+            transition: filter 0.25s ease, transform 0.25s ease;
             z-index: 1;
             cursor: grab;
         }
@@ -275,24 +313,21 @@
         .sticky:active { cursor: grabbing; }
 
         .sticky:hover {
-            box-shadow: 5px 10px 24px rgba(0,0,0,0.2), 2px 4px 8px rgba(0,0,0,0.1);
+            filter: drop-shadow(5px 10px 18px rgba(0,0,0,0.2)) drop-shadow(2px 4px 6px rgba(0,0,0,0.1));
             z-index: 10;
             transform: rotate(var(--r, 0deg)) scale(1.04) translateY(-3px);
         }
 
-        /* Subtle lifted corner — bottom-right only */
+        /* Fold triangle — bottom-right corner */
         .sticky::after {
             content: '';
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 18px;
-            height: 18px;
-            background: linear-gradient(135deg,
-                rgba(255,255,255,0.88) 40%,
-                rgba(0,0,0,0.11) 46%,
-                transparent 52%
-            );
+            width: 24px;
+            height: 24px;
+            background: var(--fold, rgba(0,0,0,0.13));
+            clip-path: polygon(0 0, 100% 0, 0 100%);
             pointer-events: none;
         }
 
@@ -321,12 +356,12 @@
         }
 
         /* Individual positions, rotations, colors */
-        .sticky-01 { --r: -2.5deg; background: #f5e642; transform: rotate(-2.5deg); left: 0;    top: 40px;  }
-        .sticky-02 { --r:  1.8deg; background: #f5a623; transform: rotate(1.8deg);  left: 245px; top: 15px;  }
-        .sticky-03 { --r: -1.2deg; background: #b8f0c8; transform: rotate(-1.2deg); left: 490px; top: 50px;  }
-        .sticky-04 { --r:  2.3deg; background: #b8d8f5; transform: rotate(2.3deg);  left: 100px; top: 285px; }
-        .sticky-05 { --r: -1.8deg; background: #d8b8f5; transform: rotate(-1.8deg); left: 380px; top: 305px; }
-        .sticky-06 { --r:  1.5deg; background: #f5e878; transform: rotate(1.5deg);  left: 720px; top: 185px; }
+        .sticky-01 { --r: -2.5deg; --fold: #d4c636; --sticky-bg: #f5e642; transform: rotate(-2.5deg); left: 1.5rem;    top: 55px;  }
+        .sticky-02 { --r:  1.8deg; --fold: #d08d1e; --sticky-bg: #f5a623; transform: rotate(1.8deg);  left: 260px; top: 30px;  }
+        .sticky-03 { --r: -1.2deg; --fold: #9ccbaa; --sticky-bg: #b8f0c8; transform: rotate(-1.2deg); left: 500px; top: 65px;  }
+        .sticky-04 { --r:  2.3deg; --fold: #9cb8d0; --sticky-bg: #b8d8f5; transform: rotate(2.3deg);  left: 115px; top: 300px; }
+        .sticky-05 { --r: -1.8deg; --fold: #b89cd0; --sticky-bg: #d8b8f5; transform: rotate(-1.8deg); left: 395px; top: 320px; }
+        .sticky-06 { --r:  1.5deg; --fold: #d4c866; --sticky-bg: #f5e878; transform: rotate(1.5deg);  left: 720px; top: 200px; }
 
         /* Hidden easter eggs underneath stickies */
         .easter-egg {
@@ -356,11 +391,25 @@
             margin-bottom: 0;
         }
 
-        /* Four cards in a grid below the track */
+        /* Five cards in a grid below the track */
         .timeline-cards {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 1.25rem;
+        }
+
+        .tc-company-row {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .tc-logo {
+            width: 22px;
+            height: 22px;
+            opacity: 0.7;
+            flex-shrink: 0;
         }
 
         .timeline-card {
@@ -369,12 +418,21 @@
             box-shadow: 2px 3px 10px var(--shadow);
             position: relative;
             margin-top: 2rem;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            transform-origin: top center;
+            transition: box-shadow 0.2s ease;
         }
 
         .timeline-card:hover {
             box-shadow: 4px 7px 18px rgba(0,0,0,0.14);
-            transform: translateY(-3px);
+            animation: swing 0.8s ease-in-out;
+        }
+
+        @keyframes swing {
+            0%   { transform: rotate(var(--tc-r, 0deg)); }
+            25%  { transform: rotate(calc(var(--tc-r, 0deg) + 2deg)); }
+            50%  { transform: rotate(calc(var(--tc-r, 0deg) - 1.5deg)); }
+            75%  { transform: rotate(calc(var(--tc-r, 0deg) + 0.8deg)); }
+            100% { transform: rotate(var(--tc-r, 0deg)); }
         }
 
         /* Connector line up to timeline track */
@@ -404,10 +462,9 @@
         }
 
         /* Subtle rotations on some cards */
-        .timeline-card.tc-2 { transform: rotate(-0.7deg); }
-        .timeline-card.tc-2:hover { transform: rotate(-0.7deg) translateY(-3px); }
-        .timeline-card.tc-3 { transform: rotate(0.6deg); }
-        .timeline-card.tc-3:hover { transform: rotate(0.6deg) translateY(-3px); }
+        .timeline-card.tc-2 { --tc-r: 0.5deg; transform: rotate(0.5deg); }
+        .timeline-card.tc-3 { --tc-r: -0.7deg; transform: rotate(-0.7deg); }
+        .timeline-card.tc-4 { --tc-r: 0.6deg; transform: rotate(0.6deg); }
 
         .tc-dates {
             font-family: 'JetBrains Mono', monospace;
@@ -421,7 +478,6 @@
             font-family: 'DM Serif Display', serif;
             font-size: 1.2rem;
             line-height: 1.2;
-            margin-bottom: 0.3rem;
         }
 
         .tc-role {
@@ -444,7 +500,7 @@
         ================================ */
 
         footer {
-            padding: 2.5rem 0;
+            padding: 2.5rem 0 3.5rem;
             border-top: 3px solid var(--text);
         }
 
@@ -496,38 +552,17 @@
         }
 
         /* ================================
-           SIDE RAIL MARQUEE
+           STICKER DECORATIONS
         ================================ */
 
-        .side-rail {
-            position: fixed;
-            right: 0;
-            top: 0;
-            width: 1.75rem;
-            height: 100vh;
-            overflow: hidden;
+        .sticker {
+            position: absolute;
+            width: 44px;
+            height: 44px;
+            opacity: 0.65;
             pointer-events: none;
-            z-index: 2;
-            display: flex;
-            justify-content: center;
-        }
-
-        .side-rail-track {
-            writing-mode: vertical-rl;
-            white-space: nowrap;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.5rem;
-            letter-spacing: 0.32em;
-            color: var(--text);
-            opacity: 0.1;
-            animation: railScroll 60s linear infinite;
-            will-change: transform;
-            flex-shrink: 0;
-        }
-
-        @keyframes railScroll {
-            from { transform: translateY(0); }
-            to   { transform: translateY(-50%); }
+            z-index: 0;
+            transform: rotate(var(--r, 0deg));
         }
 
         /* ================================
@@ -543,6 +578,8 @@
                 padding-bottom: 1.5rem;
             }
 
+            .figjam-canvas::before { display: none; }
+
             .sticky {
                 position: static;
                 width: 100%;
@@ -552,10 +589,8 @@
             .easter-egg { display: none; }
 
             .timeline-cards {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(3, 1fr);
             }
-
-            .side-rail { display: none; }
         }
 
         @media (max-width: 800px) {
@@ -575,6 +610,10 @@
 
             .hero-frame { padding: 2.5rem 1.5rem 3rem; }
 
+            .timeline-cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .footer-inner { flex-direction: column; align-items: flex-start; }
             .footer-meta { flex-direction: column; gap: 0.4rem; }
         }
@@ -592,15 +631,25 @@
                 transform: none !important;
             }
 
+            .timeline-card:hover { animation: none; }
+
             .timeline-card::before,
             .timeline-card::after { display: none; }
 
-            /* Single-column stickies, capped rotation */
+            /* Single-column stickies, no drag */
             .figjam-canvas {
-                grid-template-columns: 1fr;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                min-height: auto;
             }
 
             .sticky {
+                position: static !important;
+                width: 100% !important;
+                left: auto !important;
+                top: auto !important;
+                cursor: default;
                 transform: rotate(var(--r-mobile, 0deg)) !important;
             }
 
@@ -610,6 +659,12 @@
             .sticky-04 { --r-mobile:  1deg; }
             .sticky-05 { --r-mobile: -1deg; }
             .sticky-06 { --r-mobile:  0.8deg; }
+
+            .easter-egg { display: none; }
+
+            .scroll-hint { display: none; }
+
+            .sticker { display: none; }
         }
 
         @media (max-width: 480px) {
@@ -625,7 +680,8 @@
          HERO
     ================================ -->
     <section id="hero">
-        <div class="container">
+        <div class="container" style="position:relative">
+            <img class="sticker" src="stickers/icons8-star-100.png" alt="" aria-hidden="true" style="--r: 12deg; top: -8px; right: -18px;">
             <div class="hero-frame">
                 <span class="hero-badge">UX Researcher &nbsp;&middot;&nbsp; Available for Work</span>
                 <h1 class="hero-name">
@@ -636,13 +692,17 @@
                 <a href="https://www.linkedin.com/in/wleet/" class="hero-cta" target="_blank" rel="noopener noreferrer">LinkedIn Profile &nbsp;&rarr;</a>
             </div>
         </div>
+        <div class="scroll-hint" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </div>
     </section>
 
     <!-- ================================
          ABOUT
     ================================ -->
     <section id="about">
-        <div class="container">
+        <div class="container" style="position:relative">
+            <img class="sticker" src="stickers/icons8-quote-left-100.png" alt="" aria-hidden="true" style="--r: -8deg; top: -0.5rem; left: 10rem;">
             <p class="section-label">01 &nbsp; About</p>
             <div class="about-grid">
                 <div class="about-sticky-quote">
@@ -662,7 +722,8 @@
          WHAT I DO
     ================================ -->
     <section id="capabilities">
-        <div class="container">
+        <div class="container" style="position:relative">
+            <img class="sticker" src="stickers/icons8-binoculars-100.png" alt="" aria-hidden="true" style="--r: 6deg; top: -0.5rem; left: 12rem;">
             <p class="section-label">02 &nbsp; What I Do</p>
             <div class="figjam-canvas">
 
@@ -727,36 +788,44 @@
          CAREER — HORIZONTAL TIMELINE
     ================================ -->
     <section id="career">
-        <div class="container">
+        <div class="container" style="position:relative">
+            <img class="sticker" src="stickers/icons8-resume-100.png" alt="" aria-hidden="true" style="--r: -10deg; top: -0.5rem; left: 10rem;">
             <p class="section-label">03 &nbsp; Career</p>
             <div class="career-timeline">
                 <div class="timeline-track"></div>
                 <div class="timeline-cards">
 
                     <div class="timeline-card tc-1">
-                        <p class="tc-dates">Prior to 2018</p>
-                        <p class="tc-company">Clinical Practice</p>
+                        <p class="tc-dates">Prior to 2016</p>
+                        <div class="tc-company-row"><p class="tc-company">Clinical Practice</p></div>
                         <p class="tc-role">Speech-Language Pathologist</p>
                         <p class="tc-desc">Worked clinically with individuals across the lifespan with communication, language, and cognitive disorders. Observing where communication breaks down and why turned out to be the through-line for me.</p>
                     </div>
 
                     <div class="timeline-card tc-2">
+                        <p class="tc-dates">2016 &ndash; 2018</p>
+                        <div class="tc-company-row"><p class="tc-company">Google</p><img class="tc-logo" src="stickers/icons8-google-100.png" alt="" aria-hidden="true"></div>
+                        <p class="tc-role">UX Research Coordinator</p>
+                        <p class="tc-desc">Coordinated UX research operations for Google Cloud, managing study logistics, participant recruitment, and cross-product research consultation to keep research running smoothly across multiple teams.</p>
+                    </div>
+
+                    <div class="timeline-card tc-3">
                         <p class="tc-dates">2018 &ndash; 2022</p>
-                        <p class="tc-company">Meta</p>
+                        <div class="tc-company-row"><p class="tc-company">Meta</p><img class="tc-logo" src="stickers/icons8-instagram-100.png" alt="" aria-hidden="true"></div>
                         <p class="tc-role">UX Researcher &mdash; Instagram</p>
                         <p class="tc-desc">Conducted research across Instagram's core social and messaging surfaces. Helped teams understand how people use visual communication to maintain relationships, express identity, and navigate the social dynamics of a platform at global scale.</p>
                     </div>
 
-                    <div class="timeline-card tc-3">
+                    <div class="timeline-card tc-4">
                         <p class="tc-dates">2022 &ndash; 2025</p>
-                        <p class="tc-company">Duolingo</p>
+                        <div class="tc-company-row"><p class="tc-company">Duolingo</p><img class="tc-logo" src="stickers/icons8-duolingo-logo-100.png" alt="" aria-hidden="true"></div>
                         <p class="tc-role">Senior UX Researcher</p>
                         <p class="tc-desc">Led research for core learning and engagement features on one of the world's most-used language learning apps. Partnered closely with product, design, and learning science teams to understand how people build and break long-term learning habits.</p>
                     </div>
 
-                    <div class="timeline-card tc-4">
+                    <div class="timeline-card tc-5">
                         <p class="tc-dates">2025</p>
-                        <p class="tc-company">Contractor</p>
+                        <div class="tc-company-row"><p class="tc-company">Contractor</p></div>
                         <p class="tc-role">UX Researcher &mdash; Change.org</p>
                         <p class="tc-desc">Most recently contracted to lead foundational qualitative research at Change.org, studying a small segment of users who drive outsized platform impact.</p>
                     </div>
@@ -780,15 +849,10 @@
             </div>
             <div class="footer-meta">
                 <span>&copy; 2026 Billy Leet</span>
-                <span>Built with Claude Code</span>
+                <span>Stickers by <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">Icons8</a> &middot; Built with Claude Code</span>
             </div>
         </div>
     </footer>
-
-    <!-- Side rail marquee — aria-hidden, purely decorative -->
-    <div class="side-rail" aria-hidden="true">
-        <div class="side-rail-track">COMMUNICATION · LANGUAGE · RESEARCH · EXPRESSION · COMMUNICATION · LANGUAGE · RESEARCH · EXPRESSION · COMMUNICATION · LANGUAGE · RESEARCH · EXPRESSION · COMMUNICATION · LANGUAGE · RESEARCH · EXPRESSION · COMMUNICATION · LANGUAGE · RESEARCH · EXPRESSION · COMMUNICATION · LANGUAGE · RESEARCH · EXPRESSION · COMMUNICATION · LANGUAGE · RESEARCH · EXPRESSION · COMMUNICATION · LANGUAGE · RESEARCH · EXPRESSION ·</div>
-    </div>
 
     <script>
         /* ---- Scroll animations ---- */
@@ -824,6 +888,14 @@
             observer.observe(el);
         });
 
+        /* ---- Scroll hint fade ---- */
+        const scrollHint = document.querySelector('.scroll-hint');
+        if (scrollHint) {
+            window.addEventListener('scroll', () => {
+                scrollHint.style.opacity = window.scrollY > 50 ? '0' : '1';
+            }, { passive: true });
+        }
+
         /* ---- Draggable sticky notes ---- */
         function makeDraggable(el) {
             let active = false;
@@ -831,6 +903,7 @@
 
             el.addEventListener('mousedown', e => {
                 if (e.button !== 0) return;
+                if (window.innerWidth <= 640) return;
                 active = true;
                 const canvas   = el.closest('.figjam-canvas');
                 const cRect    = canvas.getBoundingClientRect();
