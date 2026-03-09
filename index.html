@@ -76,7 +76,6 @@
 
             .hero-badge, .hero-name, .hero-statement, .hero-cta { animation: none; }
 
-            .timeline-card:hover { animation: none; }
         }
 
         /* ================================
@@ -118,6 +117,7 @@
         /* FigJam "frame" border */
         .hero-frame {
             border: 2px solid var(--text);
+            border-radius: 8px;
             position: relative;
             padding: 3.5rem 3rem 4rem;
             width: 100%;
@@ -288,7 +288,7 @@
         }
 
         .figjam-canvas::before {
-            content: 'drag to explore';
+            content: 'drag stickies to explore';
             position: absolute;
             top: 0.6rem;
             right: 0.85rem;
@@ -406,10 +406,27 @@
         }
 
         .tc-logo {
-            width: 22px;
-            height: 22px;
-            opacity: 0.7;
-            flex-shrink: 0;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            width: 52px;
+            height: 52px;
+            opacity: 1;
+        }
+
+        .tc-badge {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: var(--accent-bg);
+            color: var(--accent);
+            border: 1.5px solid var(--accent);
+            border-radius: 100px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.62rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            padding: 0.25rem 0.7rem;
         }
 
         .timeline-card {
@@ -424,15 +441,6 @@
 
         .timeline-card:hover {
             box-shadow: 4px 7px 18px rgba(0,0,0,0.14);
-            animation: swing 0.8s ease-in-out;
-        }
-
-        @keyframes swing {
-            0%   { transform: rotate(var(--tc-r, 0deg)); }
-            25%  { transform: rotate(calc(var(--tc-r, 0deg) + 2deg)); }
-            50%  { transform: rotate(calc(var(--tc-r, 0deg) - 1.5deg)); }
-            75%  { transform: rotate(calc(var(--tc-r, 0deg) + 0.8deg)); }
-            100% { transform: rotate(var(--tc-r, 0deg)); }
         }
 
         /* Connector line up to timeline track */
@@ -557,9 +565,9 @@
 
         .sticker {
             position: absolute;
-            width: 44px;
-            height: 44px;
-            opacity: 0.65;
+            width: 100px;
+            height: 100px;
+            opacity: 0.9;
             pointer-events: none;
             z-index: 0;
             transform: rotate(var(--r, 0deg));
@@ -631,8 +639,6 @@
                 transform: none !important;
             }
 
-            .timeline-card:hover { animation: none; }
-
             .timeline-card::before,
             .timeline-card::after { display: none; }
 
@@ -681,14 +687,14 @@
     ================================ -->
     <section id="hero">
         <div class="container" style="position:relative">
-            <img class="sticker" src="stickers/icons8-star-100.png" alt="" aria-hidden="true" style="--r: 12deg; top: -8px; right: -18px;">
+            <img class="sticker" src="stickers/icons8-copybook-100.png" alt="" aria-hidden="true" style="--r: 12deg; top: 35px; right: 72px;">
             <div class="hero-frame">
-                <span class="hero-badge">UX Researcher &nbsp;&middot;&nbsp; Available for Work</span>
+                <span class="hero-badge">UX Researcher</span>
                 <h1 class="hero-name">
                     <span class="first">Billy</span>
                     <span class="last">Leet</span>
                 </h1>
-                <p class="hero-statement">I study how people communicate &#8211; with products, with each other, and with themselves.</p>
+                <p class="hero-statement">I study how people communicate &#8211; <br>with products, with each other, and with themselves.</p>
                 <a href="https://www.linkedin.com/in/wleet/" class="hero-cta" target="_blank" rel="noopener noreferrer">LinkedIn Profile &nbsp;&rarr;</a>
             </div>
         </div>
@@ -702,11 +708,11 @@
     ================================ -->
     <section id="about">
         <div class="container" style="position:relative">
-            <img class="sticker" src="stickers/icons8-quote-left-100.png" alt="" aria-hidden="true" style="--r: -8deg; top: -0.5rem; left: 10rem;">
+            <img class="sticker" src="stickers/icons8-quote-left-100.png" alt="" aria-hidden="true" style="--r: -8deg; top: -2.3rem; left: 13rem;">
             <p class="section-label">01 &nbsp; About</p>
             <div class="about-grid">
                 <div class="about-sticky-quote">
-                    Good research answers the question. Great research changes which question gets asked next.
+                    Good research answers the question. <br><br> Great research changes which question gets asked next.
                 </div>
                 <div class="about-body">
                     <p>The best research I've done didn't answer the question on the brief. It changed the question entirely. Teams came in asking whether users understood a feature and left reconsidering whether the feature was solving the right problem. That reframe is what I think good research is actually for: not confirming what a team already believes, but changing what they think is possible.</p>
@@ -723,24 +729,30 @@
     ================================ -->
     <section id="capabilities">
         <div class="container" style="position:relative">
-            <img class="sticker" src="stickers/icons8-binoculars-100.png" alt="" aria-hidden="true" style="--r: 6deg; top: -0.5rem; left: 12rem;">
+            <img class="sticker" src="stickers/icons8-binoculars-100.png" alt="" aria-hidden="true" style="--r: 6deg; top: -2.3rem; left: 15rem;">
             <p class="section-label">02 &nbsp; What I Do</p>
             <div class="figjam-canvas">
 
                 <!-- Easter eggs hidden beneath stickies — discovered by dragging -->
 
                 <!-- Under sticky-01: Research Strategy -->
-                <div class="easter-egg" style="left: 8px; top: 48px; transform: rotate(-3deg);" aria-hidden="true">
+                <div class="easter-egg" style="left: 50px; top: 120px; transform: rotate(-3deg);" aria-hidden="true">
                     this participant is so funny<br>I want to be friends
                 </div>
 
-                <!-- Under sticky-04: Synthesis & Storytelling -->
-                <div class="easter-egg" style="left: 108px; top: 292px; transform: rotate(2deg);" aria-hidden="true">
+                <!-- Under sticky-03: Mixed Methods — Walter the chiweenie! -->
+                <div class="easter-egg" style="left: 530px; top: 100px; transform: rotate(1.5deg);" aria-hidden="true">
+                    <img src="stickers/WalterSticker.png" alt="" style="width: 80px; height: auto; display: block; margin-bottom: 0.3rem;">
+                    &#8592; my chiweenie, Walter
+                </div>
+
+                <!-- Under sticky-05: Communication & Language -->
+                <div class="easter-egg" style="left: 420px; top: 380px; transform: rotate(2deg);" aria-hidden="true">
                     n=1, but feels true &#10003;
                 </div>
 
                 <!-- Under sticky-06: Stakeholder Influence -->
-                <div class="easter-egg" style="left: 728px; top: 192px; transform: rotate(-2.5deg);" aria-hidden="true">
+                <div class="easter-egg" style="left: 750px; top: 250px; transform: rotate(-2.5deg);" aria-hidden="true">
                     the deck matters<br>as much as the data
                 </div>
 
@@ -789,7 +801,7 @@
     ================================ -->
     <section id="career">
         <div class="container" style="position:relative">
-            <img class="sticker" src="stickers/icons8-resume-100.png" alt="" aria-hidden="true" style="--r: -10deg; top: -0.5rem; left: 10rem;">
+            <img class="sticker" src="stickers/icons8-resume-100.png" alt="" aria-hidden="true" style="--r: -10deg; top: -2.3rem; left: 13rem;">
             <p class="section-label">03 &nbsp; Career</p>
             <div class="career-timeline">
                 <div class="timeline-track"></div>
@@ -798,36 +810,40 @@
                     <div class="timeline-card tc-1">
                         <p class="tc-dates">Prior to 2016</p>
                         <div class="tc-company-row"><p class="tc-company">Clinical Practice</p></div>
-                        <p class="tc-role">Speech-Language Pathologist</p>
-                        <p class="tc-desc">Worked clinically with individuals across the lifespan with communication, language, and cognitive disorders. Observing where communication breaks down and why turned out to be the through-line for me.</p>
+                        <p class="tc-role">Speech Therapist</p>
+                        <p class="tc-desc">Worked clinically with individuals across the lifespan with communication, language, and cognitive disorders. Observed where and why communication breaks down, and facilitated getting it back on track.</p>
                     </div>
 
                     <div class="timeline-card tc-2">
+                        <img class="tc-logo" src="stickers/icons8-google-100.png" alt="" aria-hidden="true">
                         <p class="tc-dates">2016 &ndash; 2018</p>
-                        <div class="tc-company-row"><p class="tc-company">Google</p><img class="tc-logo" src="stickers/icons8-google-100.png" alt="" aria-hidden="true"></div>
+                        <div class="tc-company-row"><p class="tc-company">Google</p></div>
                         <p class="tc-role">UX Research Coordinator</p>
-                        <p class="tc-desc">Coordinated UX research operations for Google Cloud, managing study logistics, participant recruitment, and cross-product research consultation to keep research running smoothly across multiple teams.</p>
+                        <p class="tc-desc">Coordinated UX research operations for Google Cloud, managing study logistics, participant recruitment, and cross-team communication to keep research running smoothly.</p>
                     </div>
 
                     <div class="timeline-card tc-3">
+                        <img class="tc-logo" src="stickers/icons8-instagram-100.png" alt="" aria-hidden="true">
                         <p class="tc-dates">2018 &ndash; 2022</p>
-                        <div class="tc-company-row"><p class="tc-company">Meta</p><img class="tc-logo" src="stickers/icons8-instagram-100.png" alt="" aria-hidden="true"></div>
+                        <div class="tc-company-row"><p class="tc-company">Meta</p></div>
                         <p class="tc-role">UX Researcher &mdash; Instagram</p>
-                        <p class="tc-desc">Conducted research across Instagram's core social and messaging surfaces. Helped teams understand how people use visual communication to maintain relationships, express identity, and navigate the social dynamics of a platform at global scale.</p>
+                        <p class="tc-desc">Conducted "Creator" research across Instagram's Feed, Messenger, Profile, and Live surfaces. Helped teams understand how creators and influencers interact with their fans and navigate the social dynamics of a platform at global scale.</p>
                     </div>
 
                     <div class="timeline-card tc-4">
+                        <img class="tc-logo" src="stickers/icons8-duolingo-logo-100.png" alt="" aria-hidden="true">
                         <p class="tc-dates">2022 &ndash; 2025</p>
-                        <div class="tc-company-row"><p class="tc-company">Duolingo</p><img class="tc-logo" src="stickers/icons8-duolingo-logo-100.png" alt="" aria-hidden="true"></div>
-                        <p class="tc-role">Senior UX Researcher</p>
-                        <p class="tc-desc">Led research for core learning and engagement features on one of the world's most-used language learning apps. Partnered closely with product, design, and learning science teams to understand how people build and break long-term learning habits.</p>
+                        <div class="tc-company-row"><p class="tc-company">Duolingo</p></div>
+                        <p class="tc-role">Sr UX Research Manager</p>
+                        <p class="tc-desc">Led research for core learning and engagement features on the world's most popular language learning app. Partnered closely with product, design, and learning science teams to understand how people build and break long-term learning habits.</p>
                     </div>
 
                     <div class="timeline-card tc-5">
+                        <span class="tc-badge">Current</span>
                         <p class="tc-dates">2025</p>
                         <div class="tc-company-row"><p class="tc-company">Contractor</p></div>
-                        <p class="tc-role">UX Researcher &mdash; Change.org</p>
-                        <p class="tc-desc">Most recently contracted to lead foundational qualitative research at Change.org, studying a small segment of users who drive outsized platform impact.</p>
+                        <p class="tc-role">Independent Researcher</p>
+                        <p class="tc-desc">Most recently: contracted to lead foundational qualitative research at Change.org, studying a small segment of users who drive outsized platform impact.</p>
                     </div>
 
                 </div>
@@ -941,6 +957,58 @@
         }
 
         document.querySelectorAll('.sticky').forEach(makeDraggable);
+
+        /* ---- Velocity-reactive card swing ---- */
+        (function() {
+            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+            const samples = [];
+            const MAX_SAMPLES = 5;
+
+            document.addEventListener('mousemove', function(e) {
+                const now = performance.now();
+                samples.push({ x: e.clientX, y: e.clientY, t: now });
+                if (samples.length > MAX_SAMPLES) samples.shift();
+            }, { passive: true });
+
+            function getSpeed() {
+                if (samples.length < 2) return 0;
+                const first = samples[0];
+                const last = samples[samples.length - 1];
+                const dt = last.t - first.t;
+                if (dt === 0) return 0;
+                const dx = last.x - first.x;
+                const dy = last.y - first.y;
+                return Math.sqrt(dx * dx + dy * dy) / dt;
+            }
+
+            document.querySelectorAll('.timeline-card').forEach(function(card) {
+                card.addEventListener('mouseenter', function() {
+                    if (reducedMotion.matches) return;
+                    if (window.innerWidth <= 640) return;
+                    if (card._swinging) return;
+
+                    const speed = getSpeed();
+                    const amp = Math.min(5, Math.max(0.8, speed * 2.5));
+                    const baseR = parseFloat(getComputedStyle(card).getPropertyValue('--tc-r')) || 0;
+
+                    card._swinging = true;
+                    var anim = card.animate([
+                        { transform: 'rotate(' + baseR + 'deg)' },
+                        { transform: 'rotate(' + (baseR + amp) + 'deg)' },
+                        { transform: 'rotate(' + (baseR - amp * 0.6) + 'deg)' },
+                        { transform: 'rotate(' + (baseR + amp * 0.3) + 'deg)' },
+                        { transform: 'rotate(' + (baseR - amp * 0.1) + 'deg)' },
+                        { transform: 'rotate(' + baseR + 'deg)' }
+                    ], {
+                        duration: 800,
+                        easing: 'ease-in-out'
+                    });
+
+                    anim.onfinish = function() { card._swinging = false; };
+                    anim.oncancel = function() { card._swinging = false; };
+                });
+            });
+        })();
     </script>
 
 </body>

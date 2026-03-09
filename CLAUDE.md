@@ -14,6 +14,7 @@ Personal brand site for Billy Leet, Senior UX Researcher. Deployed via GitHub Pa
 
 - `snapshots/` — previous design iterations preserved for reference (not served)
 - `archive/` — legacy portfolio case study pages and their associated assets/CSS (not linked from current design)
+- `stickers/` — Icons8 PNG sticker decorations used as section header accents
 
 ## Design system (in `index.html`)
 
@@ -35,12 +36,14 @@ Personal brand site for Billy Leet, Senior UX Researcher. Deployed via GitHub Pa
 
 **Aesthetic:** FigJam/Miro research board. Dot-grid background on `body` via `radial-gradient`. Sticky notes are absolutely positioned with per-note `--r` CSS custom property for rotation, composited in hover state as `rotate(var(--r)) scale(1.04) translateY(-3px)`.
 
+**Sticky note fold effect:** Each sticky has a cut corner via `background: linear-gradient(315deg, transparent 17px, var(--sticky-bg) 0)` and a darker fold triangle via `::after` with `clip-path: polygon(0 0, 100% 0, 0 100%)` (24×24px). Shadows use `filter: drop-shadow()` (not `box-shadow`) so the cut corner is truly transparent and shows the page background through it.
+
 ## Key interactive behaviors
 
 - **Draggable stickies:** `makeDraggable()` in the inline `<script>` handles mousedown/mousemove/mouseup. Position is set via inline `style.left`/`style.top`, which overrides the class-based position without affecting the rotation transform.
 - **Easter eggs:** `.easter-egg` divs are positioned at `z-index: 0` underneath their corresponding `.sticky` (which is `z-index: 1`). Discovered by dragging a sticky aside.
 - **Scroll animations:** `IntersectionObserver` adds `.visible` to `.animate-in` elements. Respects `prefers-reduced-motion`.
-- **Side rail:** Fixed, `pointer-events: none`, `aria-hidden`. CSS `writing-mode: vertical-rl` + `@keyframes railScroll`.
+- **Scroll hint:** Chevron below hero fades out after 50px of scroll.
 
 ## Deployment
 
