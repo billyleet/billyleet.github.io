@@ -630,33 +630,6 @@
         }
 
         /* ================================
-           SECTION CONNECTORS
-        ================================ */
-
-        .section-connector {
-            display: flex;
-            justify-content: center;
-            height: 0;
-            position: relative;
-            z-index: 2;
-            pointer-events: none;
-        }
-
-        .section-connector svg {
-            position: absolute;
-            top: -28px;
-            color: var(--muted);
-            opacity: 0.55;
-        }
-
-        .section-connector.sc-right svg { left: 58%; transform: rotate(8deg); }
-        .section-connector.sc-left  svg { left: 38%; transform: rotate(-6deg); }
-
-        @media (max-width: 640px) {
-            .section-connector { display: none; }
-        }
-
-        /* ================================
            STICKER DECORATIONS
         ================================ */
 
@@ -823,14 +796,6 @@
         </div>
     </section>
 
-    <!-- Section connector: About → What I Do -->
-    <div class="section-connector sc-right" aria-hidden="true">
-        <svg width="48" height="52" viewBox="0 0 48 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 4 C10 18, 38 22, 36 44" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <path d="M30 38 L36 44 L42 37" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </svg>
-    </div>
-
     <!-- ================================
          WHAT I DO
     ================================ -->
@@ -902,14 +867,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Section connector: What I Do → Career -->
-    <div class="section-connector sc-left" aria-hidden="true">
-        <svg width="48" height="52" viewBox="0 0 48 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M40 4 C38 18, 10 22, 12 44" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <path d="M6 37 L12 44 L18 38" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </svg>
-    </div>
 
     <!-- ================================
          CAREER — HORIZONTAL TIMELINE
