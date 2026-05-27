@@ -1157,9 +1157,7 @@
                 </div>
                 <div class="modal-field" style="grid-column:1/-1">
                     <div class="modal-field-label">Color</div>
-                    <div class="modal-field-value" id="modal-colors" style="align-items:center; gap:0.5rem; flex-wrap:wrap;">
-                        <div class="modal-hex-dots" id="modal-hexes"></div>
-                    </div>
+                    <div class="modal-field-value" id="modal-colors" style="align-items:center; gap:0.5rem; flex-wrap:wrap;"></div>
                 </div>
             </div>
         </div>
@@ -1630,8 +1628,8 @@
             colorsTags.appendChild(t);
         });
 
-        const hexRow = document.getElementById('modal-hexes');
-        hexRow.innerHTML = '';
+        const hexRow = document.createElement('div');
+        hexRow.className = 'modal-hex-dots';
         (item.hex || []).forEach(h => {
             const dot = document.createElement('div');
             dot.className = 'hex-dot';
