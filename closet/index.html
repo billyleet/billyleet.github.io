@@ -706,6 +706,7 @@
             height: 100%;
             object-fit: cover;
             display: block;
+            cursor: zoom-in;
         }
 
         /* prev / next nav on modal image */
@@ -903,6 +904,59 @@
 
         @media (max-width: 420px) {
             .grid.view-small { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* ══════════════════════════════════════════
+           LIGHTBOX
+        ══════════════════════════════════════════ */
+
+        .lightbox-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.92);
+            z-index: 500;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            cursor: zoom-out;
+            animation: fadeIn 0.15s ease-out;
+        }
+
+        .lightbox-overlay.open { display: flex; }
+
+        .lightbox-overlay img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+            border-radius: 4px;
+            cursor: default;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.12s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-close:hover { background: rgba(255, 255, 255, 0.3); }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to   { opacity: 1; }
         }
     </style>
 </head>
@@ -1111,6 +1165,12 @@
         </div>
 
     </div>
+</div>
+
+<!-- Lightbox (full-viewport image view, opened by clicking the modal image) -->
+<div class="lightbox-overlay" id="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Full-size photo">
+    <img id="lightbox-img" src="" alt="">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
 </div>
 
 <script>
@@ -1545,7 +1605,7 @@
         const item = filteredItems[modalIdx];
         if (!item) return;
 
-        document.getElementById('modal-img').src = `photos/${item.photo}`;
+        document.getElementById('modal-img').src = `photos_large/${item.photo}`;
         document.getElementById('modal-img').alt = item.description || '';
 
         const catParts = [item.category, item.subcategory].filter(Boolean);
@@ -1614,7 +1674,35 @@
     document.getElementById('modal-next').addEventListener('click', () => {
         if (modalIdx < filteredItems.length - 1) { modalIdx++; populateModal(); }
     });
+    // ── Lightbox ───────────────────────────────────────────────────────────────
+
+    const lightboxEl    = document.getElementById('lightbox-overlay');
+    const lightboxImg   = document.getElementById('lightbox-img');
+    const modalImgEl    = document.getElementById('modal-img');
+
+    function openLightbox() {
+        lightboxImg.src = modalImgEl.src;
+        lightboxImg.alt = modalImgEl.alt;
+        lightboxEl.classList.add('open');
+    }
+
+    function closeLightbox() {
+        lightboxEl.classList.remove('open');
+        lightboxImg.src = '';
+    }
+
+    modalImgEl.addEventListener('click', openLightbox);
+    document.getElementById('lightbox-close').addEventListener('click', e => {
+        e.stopPropagation();
+        closeLightbox();
+    });
+    lightboxEl.addEventListener('click', closeLightbox);
+
     document.addEventListener('keydown', e => {
+        if (lightboxEl.classList.contains('open')) {
+            if (e.key === 'Escape') closeLightbox();
+            return;
+        }
         if (!document.getElementById('modal-overlay').classList.contains('open')) return;
         if (e.key === 'Escape')       closeModal();
         if (e.key === 'ArrowLeft'  && modalIdx > 0)                        { modalIdx--; populateModal(); }
