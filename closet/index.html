@@ -1,0 +1,1685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <title>Closet — Billy &amp; Michael</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --bg:            #f5f0e8;
+            --panel:         #ede8df;
+            --text:          #1a1a1a;
+            --text-secondary:#4a4540;
+            --accent:        #0c6b6b;
+            --accent-light:  rgba(12, 107, 107, 0.1);
+            --muted:         #8a8580;
+            --rule:          #d0cbc2;
+            --rule-light:    #e0dbd2;
+            --shadow-sm:     0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md:     0 4px 16px rgba(0,0,0,0.12);
+            --shadow-lg:     0 16px 48px rgba(0,0,0,0.22);
+            --sidebar-w:     260px;
+            --header-h:      52px;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg);
+            background-image: radial-gradient(circle, rgba(0,0,0,0.07) 1px, transparent 1px);
+            background-size: 22px 22px;
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ══════════════════════════════════════════
+           HEADER
+        ══════════════════════════════════════════ */
+
+        .site-header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: var(--header-h);
+            z-index: 200;
+            background: rgba(245, 240, 232, 0.94);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--rule);
+            display: flex;
+            align-items: center;
+            padding: 0 1.25rem;
+            gap: 1rem;
+        }
+
+        /* hamburger — mobile only */
+        .menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.25rem;
+            color: var(--text);
+            flex-shrink: 0;
+        }
+
+        .menu-btn svg { display: block; }
+
+        .header-title {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            border-left: 3px solid var(--accent);
+            padding-left: 0.65rem;
+            line-height: 1;
+        }
+
+        /* active-filter pill strip */
+        .active-pills {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 0.35rem;
+            flex: 1;
+            overflow: hidden;
+            min-width: 0;
+        }
+
+        .active-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: var(--accent);
+            color: white;
+            border-radius: 100px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.04em;
+            padding: 0.18rem 0.5rem 0.18rem 0.6rem;
+            white-space: nowrap;
+            animation: pillIn 0.15s ease;
+            flex-shrink: 0;
+        }
+
+        @keyframes pillIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+
+        .active-pill-remove {
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            cursor: pointer;
+            padding: 0;
+            font-size: 0.75rem;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            transition: color 0.1s;
+        }
+        .active-pill-remove:hover { color: white; }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-shrink: 0;
+            margin-left: auto;
+        }
+
+        .header-count {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .header-sticky {
+            background: linear-gradient(315deg, transparent 10px, #f5e642 0);
+            padding: 0.3rem 0.75rem 0.35rem 0.6rem;
+            font-family: 'Caveat', cursive;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            transform: rotate(1.5deg);
+            filter: drop-shadow(1px 2px 5px rgba(0,0,0,0.13));
+            white-space: nowrap;
+        }
+
+        /* ══════════════════════════════════════════
+           LAYOUT — sidebar + main
+        ══════════════════════════════════════════ */
+
+        .layout {
+            display: flex;
+            padding-top: var(--header-h);
+            min-height: 100vh;
+        }
+
+        /* ══════════════════════════════════════════
+           SIDEBAR
+        ══════════════════════════════════════════ */
+
+        .sidebar {
+            width: var(--sidebar-w);
+            flex-shrink: 0;
+            position: sticky;
+            top: var(--header-h);
+            height: calc(100vh - var(--header-h));
+            overflow-y: auto;
+            overflow-x: hidden;
+            background: var(--panel);
+            border-right: 1px solid var(--rule);
+            padding: 1.25rem 0;
+            scrollbar-width: thin;
+            scrollbar-color: var(--rule) transparent;
+        }
+
+        .sidebar::-webkit-scrollbar { width: 4px; }
+        .sidebar::-webkit-scrollbar-track { background: transparent; }
+        .sidebar::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 4px; }
+
+        /* overlay on mobile */
+        .sidebar-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.4);
+            z-index: 299;
+        }
+
+        /* Filter group */
+        .filter-group {
+            border-bottom: 1px solid var(--rule-light);
+        }
+
+        .filter-group-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.7rem 1.25rem;
+            cursor: pointer;
+            user-select: none;
+            transition: background 0.12s;
+        }
+
+        .filter-group-header:hover { background: rgba(0,0,0,0.03); }
+
+        .filter-group-name {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .filter-group-badge {
+            background: var(--accent);
+            color: white;
+            border-radius: 100px;
+            font-size: 0.55rem;
+            padding: 0.05rem 0.35rem;
+            font-weight: 600;
+            letter-spacing: 0;
+        }
+
+        .filter-group-chevron {
+            color: var(--muted);
+            transition: transform 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .filter-group.open .filter-group-chevron { transform: rotate(180deg); }
+
+        .filter-group-body {
+            display: none;
+            padding: 0.25rem 1rem 0.9rem;
+        }
+
+        .filter-group.open .filter-group-body { display: block; }
+
+        /* Owner: big pill buttons */
+        .owner-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .owner-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: white;
+            border: 1.5px solid var(--rule);
+            border-radius: 8px;
+            padding: 0.55rem 0.75rem;
+            cursor: pointer;
+            transition: all 0.15s ease;
+            text-align: left;
+            width: 100%;
+        }
+
+        .owner-btn:hover { border-color: var(--accent); }
+
+        .owner-btn.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: white;
+        }
+
+        .owner-btn-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .owner-btn-count {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.6rem;
+            opacity: 0.55;
+        }
+
+        .owner-btn.active .owner-btn-count { opacity: 0.7; }
+
+        /* Generic chip grid */
+        .chip-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+
+        .chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: white;
+            border: 1.5px solid var(--rule);
+            border-radius: 6px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 400;
+            padding: 0.28rem 0.55rem;
+            cursor: pointer;
+            transition: all 0.13s ease;
+            color: var(--text-secondary);
+            user-select: none;
+            line-height: 1.2;
+        }
+
+        .chip:hover { border-color: var(--accent); color: var(--accent); }
+
+        .chip.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: white;
+        }
+
+        /* Color chips — swatch + label */
+        .color-chip {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: white;
+            border: 1.5px solid var(--rule);
+            border-radius: 6px;
+            padding: 0.28rem 0.55rem 0.28rem 0.35rem;
+            cursor: pointer;
+            transition: all 0.13s ease;
+            color: var(--text-secondary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.72rem;
+            user-select: none;
+        }
+
+        .color-chip:hover { border-color: var(--accent); color: var(--accent); }
+        .color-chip.active { background: var(--accent); border-color: var(--accent); color: white; }
+        .color-chip.active .chip-swatch { border-color: rgba(255,255,255,0.3); }
+
+        .chip-swatch {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            border: 1px solid rgba(0,0,0,0.12);
+            flex-shrink: 0;
+        }
+
+        /* Brand: search-filtered list */
+        .brand-search {
+            width: 100%;
+            background: white;
+            border: 1.5px solid var(--rule);
+            border-radius: 6px;
+            padding: 0.4rem 0.6rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+            transition: border-color 0.15s;
+        }
+        .brand-search:focus { outline: none; border-color: var(--accent); }
+        .brand-search::placeholder { color: var(--muted); }
+
+        .brand-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            max-height: 180px;
+            overflow-y: auto;
+            scrollbar-width: thin;
+        }
+
+        .brand-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.3rem 0.4rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.12s;
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+        }
+
+        .brand-item:hover { background: rgba(0,0,0,0.04); }
+
+        .brand-item.active { color: var(--accent); font-weight: 500; }
+
+        .brand-check {
+            width: 14px;
+            height: 14px;
+            border: 1.5px solid var(--rule);
+            border-radius: 3px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.12s;
+        }
+
+        .brand-item.active .brand-check {
+            background: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .brand-check-mark {
+            display: none;
+            color: white;
+            font-size: 0.55rem;
+            line-height: 1;
+        }
+
+        .brand-item.active .brand-check-mark { display: block; }
+
+        /* Clear button in sidebar */
+        .sidebar-clear {
+            margin: 0.75rem 1.25rem 0;
+            display: block;
+            width: calc(100% - 2.5rem);
+            padding: 0.55rem;
+            background: none;
+            border: 1.5px solid var(--rule);
+            border-radius: 8px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.62rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+            cursor: pointer;
+            transition: all 0.15s;
+            text-align: center;
+        }
+
+        .sidebar-clear:hover { border-color: var(--text); color: var(--text); }
+
+        /* ══════════════════════════════════════════
+           MAIN — grid area
+        ══════════════════════════════════════════ */
+
+        .main {
+            flex: 1;
+            min-width: 0;
+            padding: 1.25rem;
+        }
+
+        /* Sort + view controls bar */
+        .toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            gap: 0.75rem;
+        }
+
+        .toolbar-left {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            color: var(--muted);
+            letter-spacing: 0.04em;
+        }
+
+        .view-btns {
+            display: flex;
+            gap: 0.25rem;
+        }
+
+        .view-btn {
+            background: white;
+            border: 1.5px solid var(--rule);
+            border-radius: 6px;
+            padding: 0.3rem 0.45rem;
+            cursor: pointer;
+            color: var(--muted);
+            transition: all 0.12s;
+            display: flex;
+            align-items: center;
+        }
+
+        .view-btn.active, .view-btn:hover { border-color: var(--accent); color: var(--accent); }
+        .view-btn.active { background: var(--accent-light); }
+
+        /* ══════════════════════════════════════════
+           GRID
+        ══════════════════════════════════════════ */
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+            gap: 1rem;
+        }
+
+        .grid.view-large {
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        }
+
+        .grid.view-small {
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 0.65rem;
+        }
+
+        /* ══════════════════════════════════════════
+           CARD
+        ══════════════════════════════════════════ */
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.18s ease, box-shadow 0.18s ease;
+            border: 1.5px solid transparent;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--rule);
+        }
+
+        .card-img-wrap {
+            aspect-ratio: 3/4;
+            overflow: hidden;
+            background: #ede9e0;
+            position: relative;
+        }
+
+        .card-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.35s ease, transform 0.35s ease;
+        }
+
+        .card:hover .card-img-wrap img { transform: scale(1.03); }
+
+        .card-img-wrap img.loading { opacity: 0; }
+
+        /* hover description overlay */
+        .card-hover-desc {
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            background: linear-gradient(to top, rgba(15,12,8,0.82) 0%, transparent 100%);
+            color: white;
+            font-size: 0.7rem;
+            line-height: 1.4;
+            padding: 1.5rem 0.65rem 0.6rem;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            pointer-events: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .card:hover .card-hover-desc { opacity: 1; }
+
+        .card-body {
+            padding: 0.55rem 0.7rem 0.65rem;
+        }
+
+        .card-sub {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 500;
+            color: var(--text);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.2rem;
+        }
+
+        .card-meta {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.35rem;
+        }
+
+        .card-owner {
+            font-size: 0.62rem;
+            color: var(--muted);
+            font-family: 'JetBrains Mono', monospace;
+            letter-spacing: 0.02em;
+        }
+
+        .card-colors {
+            display: flex;
+            gap: 2px;
+        }
+
+        .card-color-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            border: 1px solid rgba(0,0,0,0.08);
+        }
+
+        /* No-results */
+        .empty {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 5rem 1rem;
+            color: var(--muted);
+        }
+        .empty-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+        .empty-text {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.4rem;
+        }
+        .empty-sub {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem;
+            letter-spacing: 0.06em;
+        }
+
+        /* loading skeleton */
+        .skeleton-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        .skeleton-img {
+            aspect-ratio: 3/4;
+            background: linear-gradient(90deg, #e8e4dc 25%, #f0ece3 50%, #e8e4dc 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.4s infinite;
+        }
+        .skeleton-body { padding: 0.55rem 0.7rem; }
+        .skeleton-line {
+            height: 10px;
+            border-radius: 4px;
+            background: linear-gradient(90deg, #e8e4dc 25%, #f0ece3 50%, #e8e4dc 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.4s infinite;
+            margin-bottom: 0.4rem;
+        }
+        .skeleton-line:last-child { width: 55%; margin-bottom: 0; }
+
+        @keyframes shimmer {
+            0%   { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* ══════════════════════════════════════════
+           MODAL
+        ══════════════════════════════════════════ */
+
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(10, 8, 5, 0.75);
+            z-index: 400;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .modal-overlay.open { display: flex; }
+
+        .modal {
+            background: var(--bg);
+            border-radius: 12px;
+            max-width: 820px;
+            width: 100%;
+            max-height: 92vh;
+            display: grid;
+            grid-template-columns: 1fr 1.05fr;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            animation: modalIn 0.22s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        @keyframes modalIn {
+            from { opacity: 0; transform: scale(0.94) translateY(8px); }
+            to   { opacity: 1; transform: scale(1) translateY(0); }
+        }
+
+        .modal-img-wrap {
+            position: relative;
+            background: #ede9e0;
+            overflow: hidden;
+        }
+
+        .modal-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* prev / next nav on modal image */
+        .modal-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255,255,255,0.85);
+            border: none;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+            transition: background 0.12s, opacity 0.12s;
+            z-index: 2;
+            color: var(--text);
+        }
+
+        .modal-nav:hover { background: white; }
+        .modal-nav:disabled { opacity: 0.3; pointer-events: none; }
+        .modal-nav.prev { left: 0.65rem; }
+        .modal-nav.next { right: 0.65rem; }
+
+        /* item counter on image */
+        .modal-counter {
+            position: absolute;
+            bottom: 0.65rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.5);
+            color: white;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.58rem;
+            letter-spacing: 0.08em;
+            padding: 0.2rem 0.6rem;
+            border-radius: 100px;
+            white-space: nowrap;
+        }
+
+        .modal-info {
+            padding: 1.5rem 1.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            overflow-y: auto;
+        }
+
+        .modal-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .modal-category {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.62rem;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--accent);
+            border-left: 3px solid var(--accent);
+            padding-left: 0.55rem;
+            line-height: 1.5;
+        }
+
+        .modal-close {
+            background: rgba(0,0,0,0.06);
+            border: none;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: var(--muted);
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            transition: background 0.12s, color 0.12s;
+        }
+
+        .modal-close:hover { background: rgba(0,0,0,0.12); color: var(--text); }
+
+        .modal-desc {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--text);
+            margin-bottom: 1.25rem;
+        }
+
+        .modal-divider {
+            height: 1px;
+            background: var(--rule-light);
+            margin-bottom: 1rem;
+        }
+
+        .modal-fields {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.9rem 1.25rem;
+        }
+
+        .modal-field { }
+
+        .modal-field-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.57rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--muted);
+            margin-bottom: 0.3rem;
+        }
+
+        .modal-field-value {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem;
+        }
+
+        .modal-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            background: white;
+            border: 1px solid var(--rule);
+            border-radius: 5px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.45rem;
+            color: var(--text-secondary);
+        }
+
+        .modal-hex-dots {
+            display: flex;
+            gap: 0.35rem;
+            align-items: center;
+        }
+
+        .hex-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 1.5px solid rgba(0,0,0,0.08);
+            cursor: default;
+            position: relative;
+        }
+
+        /* ══════════════════════════════════════════
+           MOBILE
+        ══════════════════════════════════════════ */
+
+        @media (max-width: 700px) {
+            :root { --sidebar-w: 280px; }
+
+            .menu-btn { display: flex; }
+
+            .sidebar {
+                position: fixed;
+                top: 0; left: 0;
+                height: 100vh;
+                z-index: 300;
+                transform: translateX(-100%);
+                transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+                padding-top: calc(var(--header-h) + 0.5rem);
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .sidebar-overlay.open { display: block; }
+
+            .header-sticky { display: none; }
+            .active-pills { display: none; }
+
+            .main { padding: 0.85rem; }
+
+            .grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 0.65rem; }
+            .grid.view-large { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+            .grid.view-small { grid-template-columns: repeat(3, 1fr); gap: 0.4rem; }
+
+            .modal { grid-template-columns: 1fr; max-height: 95vh; }
+            .modal-img-wrap { max-height: 50vh; }
+            .modal-img-wrap img { max-height: 50vh; object-fit: contain; }
+            .modal-fields { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 420px) {
+            .grid.view-small { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sidebar overlay (mobile) -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- Header -->
+<header class="site-header">
+    <button class="menu-btn" id="menu-btn" aria-label="Open filters">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round">
+            <line x1="2" y1="5" x2="16" y2="5"/>
+            <line x1="2" y1="9" x2="16" y2="9"/>
+            <line x1="2" y1="13" x2="16" y2="13"/>
+        </svg>
+    </button>
+    <span class="header-title">Closet</span>
+    <div class="active-pills" id="active-pills"></div>
+    <div class="header-right">
+        <span class="header-count" id="count-display">loading…</span>
+        <div class="header-sticky">✦ our stuff</div>
+    </div>
+</header>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+
+        <!-- Owner -->
+        <div class="filter-group open" id="group-owner">
+            <div class="filter-group-header" data-group="owner">
+                <span class="filter-group-name">
+                    Owner
+                    <span class="filter-group-badge" id="badge-owner" style="display:none"></span>
+                </span>
+                <svg class="filter-group-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="2 4 6 8 10 4"/></svg>
+            </div>
+            <div class="filter-group-body">
+                <div class="owner-btns" id="owner-btns"></div>
+            </div>
+        </div>
+
+        <!-- Category -->
+        <div class="filter-group open" id="group-category">
+            <div class="filter-group-header" data-group="category">
+                <span class="filter-group-name">
+                    Category
+                    <span class="filter-group-badge" id="badge-category" style="display:none"></span>
+                </span>
+                <svg class="filter-group-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="2 4 6 8 10 4"/></svg>
+            </div>
+            <div class="filter-group-body">
+                <div class="chip-grid" id="cat-chips"></div>
+                <div id="subcat-wrap" style="display:none; margin-top:0.6rem; padding-top:0.6rem; border-top:1px solid var(--rule-light);">
+                    <div style="font-family:'JetBrains Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.4rem;">Style</div>
+                    <div class="chip-grid" id="subcat-chips"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Color -->
+        <div class="filter-group open" id="group-color">
+            <div class="filter-group-header" data-group="color">
+                <span class="filter-group-name">
+                    Color
+                    <span class="filter-group-badge" id="badge-color" style="display:none"></span>
+                </span>
+                <svg class="filter-group-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="2 4 6 8 10 4"/></svg>
+            </div>
+            <div class="filter-group-body">
+                <div class="chip-grid" id="color-chips"></div>
+            </div>
+        </div>
+
+        <!-- Pattern -->
+        <div class="filter-group" id="group-pattern">
+            <div class="filter-group-header" data-group="pattern">
+                <span class="filter-group-name">
+                    Pattern
+                    <span class="filter-group-badge" id="badge-pattern" style="display:none"></span>
+                </span>
+                <svg class="filter-group-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="2 4 6 8 10 4"/></svg>
+            </div>
+            <div class="filter-group-body">
+                <div class="chip-grid" id="pattern-chips"></div>
+            </div>
+        </div>
+
+        <!-- Material -->
+        <div class="filter-group" id="group-material">
+            <div class="filter-group-header" data-group="material">
+                <span class="filter-group-name">
+                    Material
+                    <span class="filter-group-badge" id="badge-material" style="display:none"></span>
+                </span>
+                <svg class="filter-group-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="2 4 6 8 10 4"/></svg>
+            </div>
+            <div class="filter-group-body">
+                <div class="chip-grid" id="material-chips"></div>
+            </div>
+        </div>
+
+        <!-- Brand -->
+        <div class="filter-group" id="group-brand">
+            <div class="filter-group-header" data-group="brand">
+                <span class="filter-group-name">
+                    Brand
+                    <span class="filter-group-badge" id="badge-brand" style="display:none"></span>
+                </span>
+                <svg class="filter-group-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="2 4 6 8 10 4"/></svg>
+            </div>
+            <div class="filter-group-body">
+                <input type="search" class="brand-search" id="brand-search" placeholder="Search brands…" autocomplete="off">
+                <div class="brand-list" id="brand-list"></div>
+            </div>
+        </div>
+
+        <button class="sidebar-clear" id="clear-btn">Clear all filters</button>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="toolbar">
+            <div class="toolbar-left" id="toolbar-label">Loading…</div>
+            <div class="view-btns">
+                <button class="view-btn" id="view-small" title="Small grid" aria-label="Small grid">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                        <rect x="0" y="0" width="6" height="6" rx="1"/><rect x="8" y="0" width="6" height="6" rx="1"/>
+                        <rect x="0" y="8" width="6" height="6" rx="1"/><rect x="8" y="8" width="6" height="6" rx="1"/>
+                    </svg>
+                </button>
+                <button class="view-btn active" id="view-med" title="Medium grid" aria-label="Medium grid">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                        <rect x="0" y="0" width="4" height="14" rx="1"/><rect x="5" y="0" width="4" height="14" rx="1"/><rect x="10" y="0" width="4" height="14" rx="1"/>
+                    </svg>
+                </button>
+                <button class="view-btn" id="view-large" title="Large grid" aria-label="Large grid">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                        <rect x="0" y="0" width="6" height="14" rx="1"/><rect x="8" y="0" width="6" height="14" rx="1"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="grid" id="grid">
+            <!-- skeleton placeholders -->
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+            <div class="skeleton-card"><div class="skeleton-img"></div><div class="skeleton-body"><div class="skeleton-line"></div><div class="skeleton-line"></div></div></div>
+        </div>
+    </main>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal" id="modal">
+
+        <div class="modal-img-wrap">
+            <img id="modal-img" src="" alt="">
+            <button class="modal-nav prev" id="modal-prev" aria-label="Previous item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="9 2 4 7 9 12"/></svg>
+            </button>
+            <button class="modal-nav next" id="modal-next" aria-label="Next item">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="5 2 10 7 5 12"/></svg>
+            </button>
+            <div class="modal-counter" id="modal-counter"></div>
+        </div>
+
+        <div class="modal-info">
+            <div class="modal-header">
+                <div class="modal-category" id="modal-category"></div>
+                <button class="modal-close" id="modal-close" aria-label="Close">✕</button>
+            </div>
+            <div class="modal-desc" id="modal-desc"></div>
+            <div class="modal-divider"></div>
+            <div class="modal-fields">
+                <div class="modal-field">
+                    <div class="modal-field-label">Owner</div>
+                    <div class="modal-field-value" id="modal-owner"></div>
+                </div>
+                <div class="modal-field">
+                    <div class="modal-field-label">Pattern</div>
+                    <div class="modal-field-value" id="modal-pattern"></div>
+                </div>
+                <div class="modal-field" id="modal-brand-wrap">
+                    <div class="modal-field-label">Brand</div>
+                    <div class="modal-field-value" id="modal-brand"></div>
+                </div>
+                <div class="modal-field">
+                    <div class="modal-field-label">Material</div>
+                    <div class="modal-field-value" id="modal-material"></div>
+                </div>
+                <div class="modal-field" style="grid-column:1/-1">
+                    <div class="modal-field-label">Color</div>
+                    <div class="modal-field-value" id="modal-colors" style="align-items:center; gap:0.5rem; flex-wrap:wrap;">
+                        <div class="modal-hex-dots" id="modal-hexes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+(function () {
+    'use strict';
+
+    // ── State ──────────────────────────────────────────────────────────────────
+
+    let ALL_ITEMS = [];
+    let filteredItems = [];
+    let modalIdx = 0;
+
+    const state = {
+        owner:      '',
+        categories: new Set(),
+        subcats:    new Set(),
+        colors:     new Set(),
+        brands:     new Set(),
+        patterns:   new Set(),
+        materials:  new Set(),
+    };
+
+    const COLOR_HEX = {
+        'Black':'#1a1a1a','White':'#f7f7f7','Grey':'#9a9a9a',
+        'Navy':'#1c2e4a','Blue':'#3465a4','Light Blue':'#7eb8d4',
+        'Red':'#c0392b','Burgundy':'#7b1a28','Pink':'#e8789a',
+        'Orange':'#e67e22','Yellow':'#f1c40f','Green':'#27ae60',
+        'Olive':'#6d7c3e','Brown':'#8b5e3c','Tan/Beige':'#c8aa7e',
+        'Purple':'#8e44ad','Multicolor':null,
+    };
+
+    // ── Init ───────────────────────────────────────────────────────────────────
+
+    async function init() {
+        try {
+            const res = await fetch('./data.json');
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            ALL_ITEMS = data.items;
+            buildFilters();
+            render();
+        } catch (e) {
+            document.getElementById('grid').innerHTML =
+                `<div class="empty"><div class="empty-icon">⚠️</div><div class="empty-text">Couldn't load inventory</div><div class="empty-sub">${e.message}</div></div>`;
+        }
+    }
+
+    // ── Build filters ──────────────────────────────────────────────────────────
+
+    function buildFilters() {
+        const colorHexMap = buildColorHexMap();
+
+        buildOwnerBtns();
+        buildChips('cat-chips', sortedUnique(ALL_ITEMS.map(i => i.category).filter(Boolean)), state.categories, onCatChange);
+        buildColorChips(colorHexMap);
+        buildChips('pattern-chips', sortedUnique(ALL_ITEMS.map(i => i.pattern).filter(Boolean)), state.patterns, render);
+        buildChips('material-chips', sortedUnique(ALL_ITEMS.flatMap(i => i.material).filter(Boolean)), state.materials, render);
+        buildBrandList();
+
+        // Collapsible groups
+        document.querySelectorAll('.filter-group-header').forEach(hdr => {
+            hdr.addEventListener('click', () => {
+                const group = hdr.closest('.filter-group');
+                group.classList.toggle('open');
+            });
+        });
+
+        document.getElementById('clear-btn').addEventListener('click', clearFilters);
+    }
+
+    function buildColorHexMap() {
+        const map = {};
+        ALL_ITEMS.forEach(item => {
+            const c = item.primary_color;
+            if (c && item.hex && item.hex.length > 0) {
+                if (!map[c]) map[c] = {};
+                const h = item.hex[0];
+                map[c][h] = (map[c][h] || 0) + 1;
+            }
+        });
+        const result = {};
+        for (const [color, counts] of Object.entries(map)) {
+            result[color] = Object.entries(counts).sort((a,b) => b[1]-a[1])[0][0];
+        }
+        return result;
+    }
+
+    function buildOwnerBtns() {
+        const el = document.getElementById('owner-btns');
+        const owners = sortedUnique(ALL_ITEMS.map(i => i.owner).filter(Boolean));
+        const counts = {};
+        ALL_ITEMS.forEach(i => { if (i.owner) counts[i.owner] = (counts[i.owner]||0)+1; });
+
+        ['', ...owners].forEach(val => {
+            const btn = document.createElement('button');
+            btn.className = 'owner-btn' + (val === state.owner ? ' active' : '');
+
+            const label = document.createElement('span');
+            label.className = 'owner-btn-label';
+            label.textContent = val || 'Everyone';
+
+            const count = document.createElement('span');
+            count.className = 'owner-btn-count';
+            count.textContent = val ? counts[val] : ALL_ITEMS.length;
+
+            btn.appendChild(label);
+            btn.appendChild(count);
+
+            btn.addEventListener('click', () => {
+                state.owner = val;
+                el.querySelectorAll('.owner-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                render();
+                updateBadge('owner', val ? 1 : 0);
+            });
+            el.appendChild(btn);
+        });
+        // activate Everyone
+        el.querySelector('.owner-btn').classList.add('active');
+    }
+
+    function buildChips(elId, values, stateSet, onChange) {
+        const el = document.getElementById(elId);
+        el.innerHTML = '';
+        values.forEach(val => {
+            const chip = document.createElement('button');
+            chip.className = 'chip' + (stateSet.has(val) ? ' active' : '');
+            chip.textContent = val;
+            chip.addEventListener('click', () => {
+                if (stateSet.has(val)) stateSet.delete(val);
+                else stateSet.add(val);
+                chip.classList.toggle('active', stateSet.has(val));
+                onChange();
+            });
+            el.appendChild(chip);
+        });
+    }
+
+    function buildColorChips(hexMap) {
+        const el = document.getElementById('color-chips');
+        el.innerHTML = '';
+        const colors = frequencySorted(ALL_ITEMS.map(i => i.primary_color).filter(Boolean));
+        colors.forEach(color => {
+            const chip = document.createElement('button');
+            chip.className = 'color-chip' + (state.colors.has(color) ? ' active' : '');
+
+            const swatch = document.createElement('span');
+            swatch.className = 'chip-swatch';
+            const hex = hexMap[color] || COLOR_HEX[color];
+            if (hex) swatch.style.background = hex;
+            else {
+                // multicolor — mini rainbow
+                swatch.style.background = 'linear-gradient(135deg,#e74c3c,#f1c40f,#27ae60,#3498db,#9b59b6)';
+            }
+
+            chip.appendChild(swatch);
+            chip.appendChild(document.createTextNode(color));
+            chip.addEventListener('click', () => {
+                if (state.colors.has(color)) state.colors.delete(color);
+                else state.colors.add(color);
+                chip.classList.toggle('active', state.colors.has(color));
+                updateBadge('color', state.colors.size);
+                render();
+            });
+            el.appendChild(chip);
+        });
+    }
+
+    function buildSubcatChips() {
+        const wrap = document.getElementById('subcat-wrap');
+        const el   = document.getElementById('subcat-chips');
+        if (state.categories.size === 0) { wrap.style.display = 'none'; state.subcats.clear(); return; }
+
+        const subcats = sortedUnique(
+            ALL_ITEMS.filter(i => state.categories.has(i.category)).map(i => i.subcategory).filter(Boolean)
+        );
+        if (subcats.length === 0) { wrap.style.display = 'none'; state.subcats.clear(); return; }
+
+        wrap.style.display = '';
+        el.innerHTML = '';
+        for (const s of [...state.subcats]) { if (!subcats.includes(s)) state.subcats.delete(s); }
+
+        subcats.forEach(val => {
+            const chip = document.createElement('button');
+            chip.className = 'chip' + (state.subcats.has(val) ? ' active' : '');
+            chip.textContent = val;
+            chip.addEventListener('click', () => {
+                if (state.subcats.has(val)) state.subcats.delete(val);
+                else state.subcats.add(val);
+                chip.classList.toggle('active', state.subcats.has(val));
+                updateBadge('category', state.categories.size + state.subcats.size);
+                render();
+            });
+            el.appendChild(chip);
+        });
+    }
+
+    let brandAllItems = [];
+    function buildBrandList() {
+        brandAllItems = sortedUnique(ALL_ITEMS.map(i => i.brand).filter(Boolean));
+        renderBrandList(brandAllItems);
+
+        const search = document.getElementById('brand-search');
+        search.addEventListener('input', () => {
+            const q = search.value.toLowerCase().trim();
+            renderBrandList(q ? brandAllItems.filter(b => b.toLowerCase().includes(q)) : brandAllItems);
+        });
+    }
+
+    function renderBrandList(brands) {
+        const el = document.getElementById('brand-list');
+        el.innerHTML = '';
+        brands.forEach(b => {
+            const item = document.createElement('div');
+            item.className = 'brand-item' + (state.brands.has(b) ? ' active' : '');
+
+            const check = document.createElement('div');
+            check.className = 'brand-check';
+            const mark = document.createElement('span');
+            mark.className = 'brand-check-mark';
+            mark.textContent = '✓';
+            check.appendChild(mark);
+
+            item.appendChild(check);
+            item.appendChild(document.createTextNode(b));
+
+            item.addEventListener('click', () => {
+                if (state.brands.has(b)) state.brands.delete(b);
+                else state.brands.add(b);
+                item.classList.toggle('active', state.brands.has(b));
+                updateBadge('brand', state.brands.size);
+                render();
+            });
+            el.appendChild(item);
+        });
+    }
+
+    function onCatChange() {
+        updateBadge('category', state.categories.size + state.subcats.size);
+        buildSubcatChips();
+        render();
+    }
+
+    // ── Active-filter header pills ─────────────────────────────────────────────
+
+    function updateBadge(group, count) {
+        const badge = document.getElementById(`badge-${group}`);
+        if (badge) {
+            badge.textContent = count;
+            badge.style.display = count > 0 ? '' : 'none';
+        }
+        refreshHeaderPills();
+    }
+
+    function refreshHeaderPills() {
+        const el = document.getElementById('active-pills');
+        el.innerHTML = '';
+
+        const add = (label, onRemove) => {
+            const pill = document.createElement('div');
+            pill.className = 'active-pill';
+            pill.appendChild(document.createTextNode(label));
+            const rm = document.createElement('button');
+            rm.className = 'active-pill-remove';
+            rm.setAttribute('aria-label', `Remove ${label}`);
+            rm.innerHTML = '&times;';
+            rm.addEventListener('click', onRemove);
+            pill.appendChild(rm);
+            el.appendChild(pill);
+        };
+
+        if (state.owner) add(state.owner, () => {
+            state.owner = '';
+            document.querySelectorAll('.owner-btn').forEach((b,i) => b.classList.toggle('active', i===0));
+            updateBadge('owner', 0); render();
+        });
+        state.categories.forEach(c => add(c, () => {
+            state.categories.delete(c);
+            document.querySelectorAll('#cat-chips .chip').forEach(ch => {
+                if (ch.textContent === c) ch.classList.remove('active');
+            });
+            onCatChange();
+        }));
+        state.subcats.forEach(c => add(c, () => {
+            state.subcats.delete(c);
+            document.querySelectorAll('#subcat-chips .chip').forEach(ch => {
+                if (ch.textContent === c) ch.classList.remove('active');
+            });
+            updateBadge('category', state.categories.size + state.subcats.size); render();
+        }));
+        state.colors.forEach(c => add(c, () => {
+            state.colors.delete(c);
+            document.querySelectorAll('#color-chips .color-chip').forEach(ch => {
+                if (ch.textContent === c) ch.classList.remove('active');
+            });
+            updateBadge('color', state.colors.size); render();
+        }));
+        state.patterns.forEach(c => add(c, () => {
+            state.patterns.delete(c);
+            document.querySelectorAll('#pattern-chips .chip').forEach(ch => {
+                if (ch.textContent === c) ch.classList.remove('active');
+            });
+            updateBadge('pattern', state.patterns.size); render();
+        }));
+        state.materials.forEach(c => add(c, () => {
+            state.materials.delete(c);
+            document.querySelectorAll('#material-chips .chip').forEach(ch => {
+                if (ch.textContent === c) ch.classList.remove('active');
+            });
+            updateBadge('material', state.materials.size); render();
+        }));
+        state.brands.forEach(c => add(c, () => {
+            state.brands.delete(c);
+            document.querySelectorAll('#brand-list .brand-item').forEach(item => {
+                if (item.textContent.trim() === c) item.classList.remove('active');
+            });
+            updateBadge('brand', state.brands.size); render();
+        }));
+    }
+
+    // ── Filter logic ───────────────────────────────────────────────────────────
+
+    function matchesFilters(item) {
+        if (state.owner && item.owner !== state.owner) return false;
+        if (state.categories.size && !state.categories.has(item.category)) return false;
+        if (state.subcats.size && !state.subcats.has(item.subcategory)) return false;
+        if (state.colors.size && !state.colors.has(item.primary_color)) return false;
+        if (state.brands.size && !state.brands.has(item.brand)) return false;
+        if (state.patterns.size && !state.patterns.has(item.pattern)) return false;
+        if (state.materials.size && !item.material.some(m => state.materials.has(m))) return false;
+        return true;
+    }
+
+    // ── Render grid ────────────────────────────────────────────────────────────
+
+    function render() {
+        filteredItems = ALL_ITEMS.filter(matchesFilters);
+        const total = ALL_ITEMS.length;
+
+        const countEl = document.getElementById('count-display');
+        const toolbarEl = document.getElementById('toolbar-label');
+        const n = filteredItems.length;
+        countEl.textContent = n === total ? `${total} items` : `${n} of ${total}`;
+        toolbarEl.textContent = n === total
+            ? `All ${total} items`
+            : `${n} item${n !== 1 ? 's' : ''} — filtered from ${total}`;
+
+        const grid = document.getElementById('grid');
+        grid.innerHTML = '';
+
+        if (filteredItems.length === 0) {
+            const msg = document.createElement('div');
+            msg.className = 'empty';
+            msg.innerHTML = `<div class="empty-icon">🔍</div><div class="empty-text">Nothing here yet</div><div class="empty-sub">Try removing a filter or two</div>`;
+            grid.appendChild(msg);
+            return;
+        }
+
+        filteredItems.forEach((item, idx) => {
+            grid.appendChild(makeCard(item, idx));
+        });
+    }
+
+    function makeCard(item, idx) {
+        const card = document.createElement('div');
+        card.className = 'card';
+
+        const imgWrap = document.createElement('div');
+        imgWrap.className = 'card-img-wrap';
+
+        const img = document.createElement('img');
+        img.className = 'loading';
+        img.loading = 'lazy';
+        img.alt = item.description || item.subcategory || 'Clothing item';
+        img.src = `photos/${item.photo}`;
+        img.onload  = () => img.classList.remove('loading');
+        img.onerror = () => { img.src = ''; imgWrap.style.background = '#e8e4dc'; };
+        imgWrap.appendChild(img);
+
+        if (item.description) {
+            const desc = document.createElement('div');
+            desc.className = 'card-hover-desc';
+            desc.textContent = item.description;
+            imgWrap.appendChild(desc);
+        }
+
+        const body = document.createElement('div');
+        body.className = 'card-body';
+
+        const sub = document.createElement('div');
+        sub.className = 'card-sub';
+        sub.textContent = item.subcategory || item.category || '—';
+
+        const meta = document.createElement('div');
+        meta.className = 'card-meta';
+
+        const owner = document.createElement('span');
+        owner.className = 'card-owner';
+        owner.textContent = item.owner || '—';
+
+        const colors = document.createElement('div');
+        colors.className = 'card-colors';
+        const hexArr = item.hex && item.hex.length ? item.hex : (COLOR_HEX[item.primary_color] ? [COLOR_HEX[item.primary_color]] : []);
+        hexArr.slice(0, 3).forEach(h => {
+            const dot = document.createElement('span');
+            dot.className = 'card-color-dot';
+            dot.style.background = h;
+            colors.appendChild(dot);
+        });
+
+        meta.appendChild(owner);
+        meta.appendChild(colors);
+        body.appendChild(sub);
+        body.appendChild(meta);
+        card.appendChild(imgWrap);
+        card.appendChild(body);
+
+        card.addEventListener('click', () => openModal(idx));
+        return card;
+    }
+
+    // ── Modal ──────────────────────────────────────────────────────────────────
+
+    function openModal(idx) {
+        modalIdx = idx;
+        populateModal();
+        document.getElementById('modal-overlay').classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function populateModal() {
+        const item = filteredItems[modalIdx];
+        if (!item) return;
+
+        document.getElementById('modal-img').src = `photos/${item.photo}`;
+        document.getElementById('modal-img').alt = item.description || '';
+
+        const catParts = [item.category, item.subcategory].filter(Boolean);
+        document.getElementById('modal-category').textContent = catParts.join(' → ');
+        document.getElementById('modal-desc').textContent = item.description || '—';
+
+        setField('modal-owner',    [item.owner].filter(Boolean));
+        setField('modal-pattern',  [item.pattern].filter(Boolean));
+        setField('modal-material', item.material || []);
+
+        const brandWrap = document.getElementById('modal-brand-wrap');
+        if (item.brand) { setField('modal-brand', [item.brand]); brandWrap.style.display = ''; }
+        else            { brandWrap.style.display = 'none'; }
+
+        // Colors
+        const colorsTags = document.getElementById('modal-colors');
+        colorsTags.innerHTML = '';
+        [item.primary_color, item.secondary_color].filter(Boolean).forEach(c => {
+            const t = document.createElement('span');
+            t.className = 'modal-tag';
+            t.textContent = c;
+            colorsTags.appendChild(t);
+        });
+
+        const hexRow = document.getElementById('modal-hexes');
+        hexRow.innerHTML = '';
+        (item.hex || []).forEach(h => {
+            const dot = document.createElement('div');
+            dot.className = 'hex-dot';
+            dot.style.background = h;
+            dot.title = h;
+            hexRow.appendChild(dot);
+        });
+        colorsTags.appendChild(hexRow);
+
+        // nav
+        document.getElementById('modal-prev').disabled = modalIdx === 0;
+        document.getElementById('modal-next').disabled = modalIdx === filteredItems.length - 1;
+        document.getElementById('modal-counter').textContent = `${modalIdx + 1} / ${filteredItems.length}`;
+    }
+
+    function setField(elId, values) {
+        const el = document.getElementById(elId);
+        el.innerHTML = '';
+        const list = values.length ? values : ['—'];
+        list.forEach(v => {
+            const tag = document.createElement('span');
+            tag.className = 'modal-tag';
+            tag.textContent = v;
+            el.appendChild(tag);
+        });
+    }
+
+    function closeModal() {
+        document.getElementById('modal-overlay').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+    document.getElementById('modal-overlay').addEventListener('click', e => {
+        if (e.target === e.currentTarget) closeModal();
+    });
+    document.getElementById('modal-prev').addEventListener('click', () => {
+        if (modalIdx > 0) { modalIdx--; populateModal(); }
+    });
+    document.getElementById('modal-next').addEventListener('click', () => {
+        if (modalIdx < filteredItems.length - 1) { modalIdx++; populateModal(); }
+    });
+    document.addEventListener('keydown', e => {
+        if (!document.getElementById('modal-overlay').classList.contains('open')) return;
+        if (e.key === 'Escape')       closeModal();
+        if (e.key === 'ArrowLeft'  && modalIdx > 0)                        { modalIdx--; populateModal(); }
+        if (e.key === 'ArrowRight' && modalIdx < filteredItems.length - 1) { modalIdx++; populateModal(); }
+    });
+
+    // ── View toggle ────────────────────────────────────────────────────────────
+
+    ['small','med','large'].forEach(size => {
+        document.getElementById(`view-${size}`).addEventListener('click', () => {
+            const grid = document.getElementById('grid');
+            grid.className = 'grid';
+            if (size !== 'med') grid.classList.add(`view-${size}`);
+            document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(`view-${size}`).classList.add('active');
+        });
+    });
+
+    // ── Mobile sidebar ─────────────────────────────────────────────────────────
+
+    document.getElementById('menu-btn').addEventListener('click', () => {
+        document.getElementById('sidebar').classList.toggle('open');
+        document.getElementById('sidebar-overlay').classList.toggle('open');
+    });
+    document.getElementById('sidebar-overlay').addEventListener('click', () => {
+        document.getElementById('sidebar').classList.remove('open');
+        document.getElementById('sidebar-overlay').classList.remove('open');
+    });
+
+    // ── Clear ──────────────────────────────────────────────────────────────────
+
+    function clearFilters() {
+        state.owner = '';
+        state.categories.clear();
+        state.subcats.clear();
+        state.colors.clear();
+        state.brands.clear();
+        state.patterns.clear();
+        state.materials.clear();
+
+        document.querySelectorAll('.chip.active, .color-chip.active').forEach(c => c.classList.remove('active'));
+        document.querySelectorAll('.owner-btn').forEach((b,i) => b.classList.toggle('active', i===0));
+        document.querySelectorAll('.brand-item.active').forEach(b => b.classList.remove('active'));
+        document.getElementById('brand-search').value = '';
+        renderBrandList(brandAllItems);
+
+        document.getElementById('subcat-wrap').style.display = 'none';
+
+        ['owner','category','color','pattern','material','brand'].forEach(g => updateBadge(g, 0));
+        render();
+    }
+
+    // ── Helpers ────────────────────────────────────────────────────────────────
+
+    function sortedUnique(arr) { return [...new Set(arr)].sort(); }
+    function frequencySorted(arr) {
+        const freq = {};
+        arr.forEach(v => freq[v] = (freq[v]||0)+1);
+        return [...new Set(arr)].sort((a,b) => freq[b]-freq[a]);
+    }
+
+    // ── Boot ───────────────────────────────────────────────────────────────────
+
+    init();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,6972 @@
+{
+  "generated_at": "2026-05-27T03:17:32Z",
+  "count": 358,
+  "items": [
+    {
+      "n": 1,
+      "photo": "0001.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Purple",
+      "secondary_color": "",
+      "pattern": "Graphic",
+      "brand": "unknown",
+      "description": "Faded purple short-sleeve t-shirt with 'MAINE' embroidered across the chest accented with small blue and green floral motifs.",
+      "hex": [
+        "#7d7eae"
+      ]
+    },
+    {
+      "n": 2,
+      "photo": "0002.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Yellow",
+      "pattern": "Graphic",
+      "brand": "Steel City",
+      "description": "Black raglan-sleeve t-shirt with yellow sleeves and 'STEEL CITY' graphic in yellow across the chest.",
+      "hex": [
+        "#1a1a1a",
+        "#e0a81b"
+      ]
+    },
+    {
+      "n": 3,
+      "photo": "0003.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Yellow",
+      "pattern": "Graphic",
+      "brand": "Steel City",
+      "description": "Heather grey short-sleeve t-shirt with black and yellow keystone-shaped 'STEEL CITY' graphic on left chest.",
+      "hex": [
+        "#8a8a8a",
+        "#1a1a1a",
+        "#c9a227"
+      ]
+    },
+    {
+      "n": 4,
+      "photo": "0004.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Duolingo",
+      "description": "Short-sleeve blue pocket t-shirt with a faint tonal circular crest printed on the chest pocket.",
+      "hex": [
+        "#6A8DC2"
+      ]
+    },
+    {
+      "n": 5,
+      "photo": "0005.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "Yellow",
+      "pattern": "Graphic",
+      "brand": "Steel City",
+      "description": "Light blue short-sleeve t-shirt with yellow distressed 'Pitt' script graphic on chest.",
+      "hex": [
+        "#6BA3CC",
+        "#E8B82A"
+      ]
+    },
+    {
+      "n": 6,
+      "photo": "0006.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Solid white short-sleeve crewneck t-shirt with visible Uniqlo label at the back neck.",
+      "hex": [
+        "#F2F0EB"
+      ]
+    },
+    {
+      "n": 7,
+      "photo": "0007.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Blue",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "White short-sleeve t-shirt with blue 'TEQUILA TACOS CINCO' text and line-art graphic of a margarita glass and taco on the chest.",
+      "hex": [
+        "#F2F0EB",
+        "#1FA8E0"
+      ]
+    },
+    {
+      "n": 8,
+      "photo": "0008.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Polyester",
+        "Cotton",
+        "Rayon"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "The Rail",
+      "description": "Heathered teal-green short-sleeve v-neck t-shirt with subtle flecked texture; interior neck tag shows partial 'RAIL' text.",
+      "hex": [
+        "#2a7d6f"
+      ]
+    },
+    {
+      "n": 9,
+      "photo": "0009.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Polyester",
+        "Cotton",
+        "Rayon"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with small white skull graphic on left chest.",
+      "hex": [
+        "#0F0F11",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "n": 10,
+      "photo": "0010.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Tank top",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "Navy",
+      "pattern": "Solid",
+      "brand": "Billy Leet",
+      "description": "Sleeveless olive green crochet open-knit tunic top with navy blue trim around the neckline and armholes.",
+      "hex": [
+        "#5d6132",
+        "#2f3a52"
+      ]
+    },
+    {
+      "n": 11,
+      "photo": "0011.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Grey heather short-sleeve t-shirt with NYC-themed all-over print including taxi, pizza, hydrant, cyclist, and 'NYC' and 'THANKS' text graphics.",
+      "hex": [
+        "#B5B3AE",
+        "#D94A3A",
+        "#E8B83C",
+        "#2E4A8A"
+      ]
+    },
+    {
+      "n": 12,
+      "photo": "0012.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with all-over white origami paper crane print and chest pocket.",
+      "hex": [
+        "#0e0e10",
+        "#e8e8e8"
+      ]
+    },
+    {
+      "n": 13,
+      "photo": "0013.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Zara",
+      "description": "Olive green short-sleeve crewneck t-shirt with 'Zara' label at inner collar.",
+      "hex": [
+        "#8a9678"
+      ]
+    },
+    {
+      "n": 14,
+      "photo": "0014.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Dark green short-sleeve t-shirt with white alligator graphic and 'west bloomfield' text on left chest.",
+      "hex": [
+        "#2d4435",
+        "#ffffff"
+      ]
+    },
+    {
+      "n": 15,
+      "photo": "0015.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with small chest graphic of red boxing gloves with yellow halo next to a blue boxing glove.",
+      "hex": [
+        "#1d1d1f",
+        "#b8302a",
+        "#3aa6c4",
+        "#e8c64a"
+      ]
+    },
+    {
+      "n": 16,
+      "photo": "0016.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with chest pocket featuring chevron pattern in red, yellow, and grey, with small logo patch on pocket.",
+      "hex": [
+        "#0e0e10",
+        "#5a5a5c",
+        "#c4361f",
+        "#e0b53a"
+      ]
+    },
+    {
+      "n": 17,
+      "photo": "0017.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "Rip n Dip",
+      "description": "Black short-sleeve pocket t-shirt with a red devil cat character peeking out of the chest pocket.",
+      "hex": [
+        "#1a1a1a",
+        "#c8403a",
+        "#e8b04a"
+      ]
+    },
+    {
+      "n": 18,
+      "photo": "0018.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "Target",
+      "description": "Black short-sleeve t-shirt with 'SPICE GIRLS' graphic on chest, letters filled with band member photos.",
+      "hex": [
+        "#0e0e10",
+        "#d97a3a",
+        "#e8c9a8",
+        "#ffffff"
+      ]
+    },
+    {
+      "n": 19,
+      "photo": "0019.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Navy short-sleeve t-shirt with 'KIKKOMAN' printed in white on the left chest.",
+      "hex": [
+        "#1f3a5f"
+      ]
+    },
+    {
+      "n": 20,
+      "photo": "0020.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Brown",
+      "pattern": "Graphic",
+      "brand": "H·Y Corporation",
+      "description": "White short-sleeve t-shirt with brown-bordered graphic of a lucky cat, 'GOOD LUCK' text and Japanese characters on front.",
+      "hex": [
+        "#EFEAE2",
+        "#6B3A1E",
+        "#D9A441",
+        "#2B2B2B"
+      ]
+    },
+    {
+      "n": 21,
+      "photo": "0021.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Green",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Heathered navy short-sleeve t-shirt featuring a Pennsylvania state-shaped graphic filled with green foliage and yellow flowers.",
+      "hex": [
+        "#3a4a63",
+        "#4a7a3e",
+        "#e8d24a",
+        "#e8e4c8"
+      ]
+    },
+    {
+      "n": 22,
+      "photo": "0022.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "River Island",
+      "description": "Dark green short-sleeve t-shirt with crew neck and chest pocket, heavily wrinkled with possible faint stain on front.",
+      "hex": [
+        "#2f4641"
+      ]
+    },
+    {
+      "n": 23,
+      "photo": "0023.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Yellow",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black ringer tee with yellow trim on collar and sleeves, featuring a yellow cartoon bear graphic with raised arms on the chest.",
+      "hex": [
+        "#1c1c1e",
+        "#f2c81a"
+      ]
+    },
+    {
+      "n": 24,
+      "photo": "0024.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Yellow",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Short-sleeve t-shirt with all-over graphic print of cartoon cats wearing sweaters in grey, yellow, and burgundy tones.",
+      "hex": [
+        "#b5ada1",
+        "#d4b96a",
+        "#9a5a5c",
+        "#6f6a63"
+      ]
+    },
+    {
+      "n": 25,
+      "photo": "0025.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Yellow",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Yellow short-sleeve t-shirt with rows of black onion graphics and red 'Onion Maiden' logo parody on lower right.",
+      "hex": [
+        "#F2A81D",
+        "#2B2A28",
+        "#C8341B"
+      ]
+    },
+    {
+      "n": 26,
+      "photo": "0026.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Jack & Jones",
+      "description": "Olive green short-sleeve crewneck t-shirt with curved hem and 'JACK & JONES' label at inner neckline.",
+      "hex": [
+        "#4d5235"
+      ]
+    },
+    {
+      "n": 27,
+      "photo": "0027.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Olive green short-sleeve t-shirt with embroidered white goose in cage graphic and 'got too silly' text below.",
+      "hex": [
+        "#6b6e57",
+        "#ffffff",
+        "#e8a23a"
+      ]
+    },
+    {
+      "n": 28,
+      "photo": "0028.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "White",
+      "pattern": "Other",
+      "brand": "J.Crew",
+      "description": "Short-sleeve dip-dye t-shirt with navy top fading to white bottom, chest pocket, 'J.Crew' label at neck.",
+      "hex": [
+        "#3a4a6b",
+        "#e2dccf"
+      ]
+    },
+    {
+      "n": 29,
+      "photo": "0029.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Orange",
+      "pattern": "Graphic",
+      "brand": "Queer PGH",
+      "description": "Beige short-sleeve tee with cartoon orange character wearing a green beret and 'fruity cutie' text below.",
+      "hex": [
+        "#D6C4A5",
+        "#E89B3C",
+        "#8AA64A"
+      ]
+    },
+    {
+      "n": 30,
+      "photo": "0030.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with white text reading 'YOU'RE DOING AMAZING SWEETIE' across the chest.",
+      "hex": [
+        "#1a1a1a",
+        "#e8e8e8"
+      ]
+    },
+    {
+      "n": 31,
+      "photo": "0031.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Short-sleeve solid grey crewneck t-shirt with a relaxed, boxy fit.",
+      "hex": [
+        "#8a7f7a"
+      ]
+    },
+    {
+      "n": 32,
+      "photo": "0032.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with colorful tropical birds graphic and 'Tropical Birds of the Rainforest' text below the print.",
+      "hex": [
+        "#1c1c1c",
+        "#e8b71f",
+        "#c0392b",
+        "#5d8aa8"
+      ]
+    },
+    {
+      "n": 33,
+      "photo": "0033.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Long-sleeved T-shirt",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Black long-sleeve mock-neck/turtleneck top, solid color, viewed from the back.",
+      "hex": [
+        "#1a1a1c"
+      ]
+    },
+    {
+      "n": 34,
+      "photo": "0034.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Crop top",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black cropped short-sleeve t-shirt with red bubble-style graphic text reading 'REARRANGE MY GUTS!' across the chest.",
+      "hex": [
+        "#1a1a1a",
+        "#d32a23"
+      ]
+    },
+    {
+      "n": 35,
+      "photo": "0035.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Amazon Essentials",
+      "description": "White ribbed sleeveless tank top with scoop neckline and standard armholes.",
+      "hex": [
+        "#EDE9E2"
+      ]
+    },
+    {
+      "n": 36,
+      "photo": "0036.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Amazon Essentials",
+      "description": "White ribbed sleeveless tank top with scoop neckline and 'amazon essentials' label at inner collar.",
+      "hex": [
+        "#E8E4DC"
+      ]
+    },
+    {
+      "n": 37,
+      "photo": "0037.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Graphic",
+      "brand": "Duolingo",
+      "description": "Heather grey short-sleeve t-shirt with 'duolingo' printed in dark lettering across the chest.",
+      "hex": [
+        "#8a8a8a",
+        "#3a3a3a"
+      ]
+    },
+    {
+      "n": 38,
+      "photo": "0038.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Tank top",
+      "material": [
+        "Nylon",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Short-sleeve V-neck top in light off-white with flutter sleeves and a flowy drape.",
+      "hex": [
+        "#D3D2CE"
+      ]
+    },
+    {
+      "n": 39,
+      "photo": "0039.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Nylon",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "White short-sleeve V-neck t-shirt in a soft, drapey fabric with a relaxed longline fit.",
+      "hex": [
+        "#E8E5E0"
+      ]
+    },
+    {
+      "n": 40,
+      "photo": "0040.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Polyester",
+        "Nylon",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Short-sleeve V-neck t-shirt in off-white with a relaxed, slightly elongated fit and visible wrinkles.",
+      "hex": [
+        "#D8D5CE"
+      ]
+    },
+    {
+      "n": 41,
+      "photo": "0041.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Polyester",
+        "Nylon",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "White short-sleeve V-neck t-shirt with a relaxed, lightweight drape and visible wrinkling throughout.",
+      "hex": [
+        "#E8E4DD"
+      ]
+    },
+    {
+      "n": 42,
+      "photo": "0042.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Polo Ralph Lauren",
+      "description": "White v-neck short-sleeve t-shirt with 'POLO Ralph Lauren' label at neck and small polo pony embroidered near hem.",
+      "hex": [
+        "#E8E2D8"
+      ]
+    },
+    {
+      "n": 43,
+      "photo": "0043.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "New Look",
+      "description": "Short-sleeve white crewneck t-shirt with 'New Look' printed on inner neckline.",
+      "hex": [
+        "#E8E2D8"
+      ]
+    },
+    {
+      "n": 44,
+      "photo": "0044.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Hanes",
+      "description": "Solid white short-sleeve crew-neck t-shirt with no visible graphics or text.",
+      "hex": [
+        "#EDEAE5"
+      ]
+    },
+    {
+      "n": 45,
+      "photo": "0045.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Hanes",
+      "description": "Plain white short-sleeve crewneck t-shirt with visible 'Hanes' label at the inner neck.",
+      "hex": [
+        "#EDEAE3"
+      ]
+    },
+    {
+      "n": 46,
+      "photo": "0046.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Hanes",
+      "description": "Plain white short-sleeve crew-neck t-shirt with no visible graphics or text.",
+      "hex": [
+        "#E8E6E1"
+      ]
+    },
+    {
+      "n": 47,
+      "photo": "0047.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Hanes",
+      "description": "Plain white short-sleeve crewneck t-shirt with 'Hanes' tag at the back collar.",
+      "hex": [
+        "#E8E5DE"
+      ]
+    },
+    {
+      "n": 48,
+      "photo": "0048.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Tank top",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Amazon Essentials",
+      "description": "Black sleeveless tank top with crew neckline and 'amazon essentials' label at inner collar.",
+      "hex": [
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 49,
+      "photo": "0049.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Calvin Klein",
+      "description": "Short-sleeve V-neck t-shirt in solid navy with 'Calvin Klein' label at the neck.",
+      "hex": [
+        "#1f2530"
+      ]
+    },
+    {
+      "n": 50,
+      "photo": "0050.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Calvin Klein",
+      "description": "Solid black short-sleeve V-neck t-shirt with 'Calvin Klein' label at the inner collar.",
+      "hex": [
+        "#1c1f24"
+      ]
+    },
+    {
+      "n": 51,
+      "photo": "0051.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Calvin Klein",
+      "description": "Short-sleeve V-neck t-shirt in black with 'Calvin Klein' label at the inner neckline.",
+      "hex": [
+        "#1c1f24"
+      ]
+    },
+    {
+      "n": 52,
+      "photo": "0052.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve crewneck t-shirt with a white Instagram camera logo printed on the center chest.",
+      "hex": [
+        "#1a1a1d",
+        "#f2f2f2"
+      ]
+    },
+    {
+      "n": 53,
+      "photo": "0053.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Tank top",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "White ribbed tank top with 'COWBOY' printed in black collegiate-style lettering across the chest.",
+      "hex": [
+        "#F2EFE8",
+        "#1A1A1A"
+      ]
+    },
+    {
+      "n": 54,
+      "photo": "0054.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Acrylic",
+        "Polyester",
+        "Cotton"
+      ],
+      "primary_color": "Light Blue",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "Tee Jays",
+      "description": "Light blue short-sleeve t-shirt with Santa Fe ALCO PA-1 train graphic and 'ALCO PA-1 2000 H.P.' text, also reads 'SANTA FE'.",
+      "hex": [
+        "#9CC6DD",
+        "#C8341F",
+        "#F2C84B",
+        "#B0B2B4"
+      ]
+    },
+    {
+      "n": 55,
+      "photo": "0055.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Tank top",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Light Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Steele",
+      "description": "Sleeveless tank top in solid teal/turquoise with a scoop neckline and no visible graphics or text.",
+      "hex": [
+        "#4DBDC2"
+      ]
+    },
+    {
+      "n": 56,
+      "photo": "0056.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Red",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Red short-sleeve t-shirt with large white circle graphic on chest containing 'THING 1' in black hand-drawn lettering.",
+      "hex": [
+        "#D8211E",
+        "#FFFFFF",
+        "#000000"
+      ]
+    },
+    {
+      "n": 57,
+      "photo": "0057.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "Hanes",
+      "description": "White short-sleeve t-shirt featuring a photographic portrait graphic of a smiling man wearing a red plaid shirt on the chest.",
+      "hex": [
+        "#E8E4DC",
+        "#8B4A4A",
+        "#3B2A22",
+        "#D4A48A"
+      ]
+    },
+    {
+      "n": 58,
+      "photo": "0058.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "Duolingo",
+      "description": "Cream/off-white short-sleeve t-shirt with graphic of cartoon characters holding a rainbow pride flag and a green owl character.",
+      "hex": [
+        "#EFE7D6",
+        "#E63946",
+        "#F4A23C",
+        "#F4D03F"
+      ]
+    },
+    {
+      "n": 59,
+      "photo": "0059.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Colorblock",
+      "brand": "A New Day",
+      "description": "Black ribbed sleeveless tank top with contrasting white trim around neckline and armholes, 'A New Day' label visible at inner collar.",
+      "hex": [
+        "#1a1a1a",
+        "#f5f5f0"
+      ]
+    },
+    {
+      "n": 60,
+      "photo": "0060.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Yellow",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Navy short-sleeve t-shirt with 'University of Pittsburgh' in yellow across chest and a yellow paw print near hem.",
+      "hex": [
+        "#1f2a44",
+        "#f2c41c"
+      ]
+    },
+    {
+      "n": 61,
+      "photo": "0061.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with rainbow Instagram logo on left chest and '2019' printed on left sleeve.",
+      "hex": [
+        "#1c1c1c",
+        "#e94e8a",
+        "#f5c542",
+        "#3aa0e0"
+      ]
+    },
+    {
+      "n": 62,
+      "photo": "0062.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Heather grey short-sleeve t-shirt with microphone graphic and 'Research Associate Program' text on left chest.",
+      "hex": [
+        "#5a6473"
+      ]
+    },
+    {
+      "n": 63,
+      "photo": "0063.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Tank top",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black sleeveless cut-off tee with cartoon Jesus graphic, 'Disappointments' in multicolor letters and 'ALL OF YOU' in red dripping text.",
+      "hex": [
+        "#111111",
+        "#F2C500",
+        "#E23B26",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "n": 64,
+      "photo": "0064.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "Light Blue",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Teal blue short-sleeve t-shirt with NASA-style circular graphic featuring 'Jellyfish' wordmark in blue with orange and yellow swooshes.",
+      "hex": [
+        "#246b80",
+        "#b4e4dc",
+        "#e87d2a",
+        "#1f3a8a"
+      ]
+    },
+    {
+      "n": 65,
+      "photo": "0065.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Pink",
+      "secondary_color": "Light Blue",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Pink short-sleeve t-shirt with NASA-style circular logo graphic on chest reading 'Jellyfish' in blue and orange.",
+      "hex": [
+        "#D6298A",
+        "#A8DCD9",
+        "#1F3A8A",
+        "#E8862E"
+      ]
+    },
+    {
+      "n": 66,
+      "photo": "0066.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "Dubwear Clothing",
+      "description": "Blue short-sleeve t-shirt with white 'CRBLM' graphic and 'Centre for Research on Brain, Language and Music / Centre de recherche sur le cerveau, le langage et la musique' text on chest.",
+      "hex": [
+        "#1E78C8",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "n": 67,
+      "photo": "0067.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Pink",
+      "secondary_color": "Light Blue",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Pink short-sleeve t-shirt with circular light blue graphic and 'Jellyfish' wordmark in blue and orange across the chest.",
+      "hex": [
+        "#D6217C",
+        "#A8DCD9",
+        "#2A3F8F",
+        "#E8741C"
+      ]
+    },
+    {
+      "n": 68,
+      "photo": "0068.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Crop top",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "Zara",
+      "description": "White short-sleeve cropped t-shirt with 'That's Love Chico' embroidered in red cursive script across the chest.",
+      "hex": [
+        "#F0EBE3",
+        "#B83A3A"
+      ]
+    },
+    {
+      "n": 69,
+      "photo": "0069.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Yellow",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Mustard yellow short-sleeve t-shirt with small faded chest print reading 'cancun '23'.",
+      "hex": [
+        "#D4B25C"
+      ]
+    },
+    {
+      "n": 70,
+      "photo": "0070.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with 'mead slut' printed in white gothic-style font across the chest.",
+      "hex": [
+        "#1a1a1c",
+        "#e8e4d8"
+      ]
+    },
+    {
+      "n": 71,
+      "photo": "0071.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Red",
+      "pattern": "Solid",
+      "brand": "Duolingo",
+      "description": "White short-sleeve t-shirt with small red 'duolingo' wordmark and logo on left chest.",
+      "hex": [
+        "#EFEDE8",
+        "#C8345A"
+      ]
+    },
+    {
+      "n": 72,
+      "photo": "0072.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Cotton",
+        "Acrylic"
+      ],
+      "primary_color": "Multicolor",
+      "secondary_color": "Black",
+      "pattern": "Checked",
+      "brand": "",
+      "description": "Knit V-neck button cardigan with multicolor checkered pattern in red, navy, orange, grey, and purple squares, trimmed in black.",
+      "hex": [
+        "#1f2230",
+        "#a93545",
+        "#c97a36",
+        "#5a6680"
+      ]
+    },
+    {
+      "n": 73,
+      "photo": "0073.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with white line-art graphic of a domed church and lightning bolts, captioned 'Banned in Polish Hill'.",
+      "hex": [
+        "#1a1a1a",
+        "#e8e6e1"
+      ]
+    },
+    {
+      "n": 74,
+      "photo": "0074.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Black long-sleeve button-up shirt with chest pocket and Uniqlo label at collar.",
+      "hex": [
+        "#1f2226"
+      ]
+    },
+    {
+      "n": 75,
+      "photo": "0075.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "Orange",
+      "pattern": "Plaid",
+      "brand": "J.Crew",
+      "description": "Long-sleeve button-down plaid flannel shirt in green with navy and orange check pattern, single chest pocket, 'J.Crew' label visible at collar.",
+      "hex": [
+        "#3d4a35",
+        "#cf6a3a",
+        "#2a3a4a"
+      ]
+    },
+    {
+      "n": 76,
+      "photo": "0076.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton",
+        "Acrylic",
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Grey",
+      "pattern": "Solid",
+      "brand": "Club Monaco",
+      "description": "Heathered navy/grey button-up overshirt with two chest flap pockets, rolled cuffs revealing lighter interior, and curved hem.",
+      "hex": [
+        "#4a566b",
+        "#8a99a8"
+      ]
+    },
+    {
+      "n": 77,
+      "photo": "0077.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "White",
+      "pattern": "Other",
+      "brand": "Carhartt",
+      "description": "Navy crewneck sweatshirt with white geometric/aztec-style pattern band across chest and small Carhartt label at hem.",
+      "hex": [
+        "#1f2434",
+        "#e8e6dd"
+      ]
+    },
+    {
+      "n": 78,
+      "photo": "0078.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "Uniqlo",
+      "description": "White short-sleeve t-shirt with black cat illustration, Japanese kanji, and 'BIJOFU' text printed on chest; 'UT' neck label visible.",
+      "hex": [
+        "#EDE7DC",
+        "#1A1A1A"
+      ]
+    },
+    {
+      "n": 79,
+      "photo": "0079.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton",
+        "Wool"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Scotch & Soda",
+      "description": "Dark green crewneck sweater with small embroidered sewing-machine logo on chest and 'Scotch & Soda' neck label.",
+      "hex": [
+        "#1f3a2e"
+      ]
+    },
+    {
+      "n": 80,
+      "photo": "0080.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Light Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Short-sleeve light blue chambray button-up shirt with mandarin collar, dark buttons, and single chest pocket.",
+      "hex": [
+        "#8AA5AE"
+      ]
+    },
+    {
+      "n": 81,
+      "photo": "0081.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Short-sleeve button-up shirt in navy with mystical graphic print including tarot cards, moons, suns, eyes, crystal balls, and constellations in yellow, red, and light blue.",
+      "hex": [
+        "#1E3A6B",
+        "#E8B629",
+        "#B83A2E",
+        "#8FB8D9"
+      ]
+    },
+    {
+      "n": 82,
+      "photo": "0082.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Graphic",
+      "brand": "Ellesse",
+      "description": "Black crewneck sweatshirt with 'ellesse' wordmark and red/orange half-dome logo on chest.",
+      "hex": [
+        "#1a1a1a",
+        "#ffffff",
+        "#e63027",
+        "#f3a01a"
+      ]
+    },
+    {
+      "n": 83,
+      "photo": "0083.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt featuring a black-and-white Tom of Finland-style graphic of a figure in leather harness and cap.",
+      "hex": [
+        "#1a1a1a",
+        "#e8e8e8"
+      ]
+    },
+    {
+      "n": 84,
+      "photo": "0084.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Acrylic",
+        "Polyester"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "Aelfric Eden",
+      "description": "Olive-green knit crewneck sweater with black dinosaur outlines and a teal standing dinosaur graphic, 'AELFRIC EDEN' label at neck.",
+      "hex": [
+        "#000000",
+        "#3f6b6e"
+      ]
+    },
+    {
+      "n": 85,
+      "photo": "0085.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Viscose"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Yellow",
+      "pattern": "Floral",
+      "brand": "Asos",
+      "description": "Short-sleeve button-up shirt with dark background and large painterly floral print in yellow, pink, and grey roses and peonies.",
+      "hex": [
+        "#2c2a26",
+        "#d9c074",
+        "#c98a96",
+        "#a8a89a"
+      ]
+    },
+    {
+      "n": 86,
+      "photo": "0086.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "J.Crew",
+      "description": "Long-sleeve button-up oxford shirt in muted sage green with a single chest pocket and 'J.CREW' label on inner collar.",
+      "hex": [
+        "#A8AE94"
+      ]
+    },
+    {
+      "n": 87,
+      "photo": "0087.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Wool",
+        "Nylon"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Yellow",
+      "pattern": "Colorblock",
+      "brand": "Next",
+      "description": "Crewneck knit sweater with colorblock design: mustard yellow upper, light grey middle stripe, and navy lower body; 'SIGNATURE' label at neck.",
+      "hex": [
+        "#1c2542",
+        "#d49a3a",
+        "#c9c7be"
+      ]
+    },
+    {
+      "n": 88,
+      "photo": "0088.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton",
+        "Acrylic"
+      ],
+      "primary_color": "Red",
+      "secondary_color": "Blue",
+      "pattern": "Other",
+      "brand": "",
+      "description": "Vintage-style crewneck knit sweater with geometric striped pattern in red, teal blue, purple, and yellow.",
+      "hex": [
+        "#B83244",
+        "#2C7A8C",
+        "#3E3A5C",
+        "#E0A82E"
+      ]
+    },
+    {
+      "n": 89,
+      "photo": "0089.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Rayon",
+        "Cotton",
+        "Silk"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "Blue",
+      "pattern": "Striped",
+      "brand": "Studious (Japan)",
+      "description": "Long-sleeve crewneck knit sweater with wavy horizontal stripes in olive green, teal, blue, and tan/brown.",
+      "hex": [
+        "#4a4f30",
+        "#28597a",
+        "#7a6b51",
+        "#3a5a4a"
+      ]
+    },
+    {
+      "n": 90,
+      "photo": "0090.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Pink",
+      "secondary_color": "",
+      "pattern": "Floral",
+      "brand": "Parke & Ronan",
+      "description": "Pink crewneck sweatshirt with floral embroidery around the neckline and on one sleeve in cream and rose tones.",
+      "hex": [
+        "#D89A86",
+        "#E8C9B5",
+        "#A56450"
+      ]
+    },
+    {
+      "n": 91,
+      "photo": "0091.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Polo",
+      "material": [
+        "Cotton",
+        "Viscose"
+      ],
+      "primary_color": "Orange",
+      "secondary_color": "Tan/Beige",
+      "pattern": "Striped",
+      "brand": "H&M",
+      "description": "Short-sleeve knit V-neck polo shirt with vertical orange and cream stripes, 'H&M' label visible at collar.",
+      "hex": [
+        "#B85A2E",
+        "#E8DCC4"
+      ]
+    },
+    {
+      "n": 92,
+      "photo": "0092.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Jack & Jones",
+      "description": "Black textured knit crewneck sweater with long sleeves and 'JACK&JONES' label at back neck and lower hem.",
+      "hex": [
+        "#1a1a1f"
+      ]
+    },
+    {
+      "n": 93,
+      "photo": "0093.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Rayon"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "Cholula",
+      "description": "Short-sleeve button-up camp shirt in dark grey with allover 'Cholula Hot Sauce' bottle and logo print in red, yellow, and orange.",
+      "hex": [
+        "#2C2C30",
+        "#C8202B",
+        "#E8A23A",
+        "#F0E0C0"
+      ]
+    },
+    {
+      "n": 94,
+      "photo": "0094.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Rayon"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "Cholula",
+      "description": "Short-sleeve button-up camp shirt with all-over 'Cholula Hot Sauce Original' bottle print on black background.",
+      "hex": [
+        "#1c1c1e",
+        "#c8262a",
+        "#e2b341",
+        "#e8d6b8"
+      ]
+    },
+    {
+      "n": 95,
+      "photo": "0095.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "Light Blue",
+      "pattern": "Striped",
+      "brand": "Billy Leet",
+      "description": "Short-sleeve open-front crochet cardigan with diagonal stripes in two shades of blue and an openwork knit pattern.",
+      "hex": [
+        "#2f5a78",
+        "#7d9bb0"
+      ]
+    },
+    {
+      "n": 96,
+      "photo": "0096.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Purple",
+      "pattern": "Floral",
+      "brand": "INCERUN",
+      "description": "Sheer black short-sleeve button-up shirt with purple floral embroidery and green vine details, 'INCERUN' label visible at collar.",
+      "hex": [
+        "#1a1a1a",
+        "#8a5ba8",
+        "#4a6b3a",
+        "#3a5a6a"
+      ]
+    },
+    {
+      "n": 97,
+      "photo": "0097.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Yellow",
+      "pattern": "Striped",
+      "brand": "",
+      "description": "Short-sleeve button-up camp shirt with bold vertical white and yellow stripes and a single chest pocket.",
+      "hex": [
+        "#F5F0E6",
+        "#E5A828"
+      ]
+    },
+    {
+      "n": 98,
+      "photo": "0098.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Short-sleeve button-up camp shirt with white background and scattered geometric block print in red, blue, light blue, pink, and yellow.",
+      "hex": [
+        "#FFFFFF",
+        "#E63329",
+        "#1F4FA8",
+        "#6DC5E3"
+      ]
+    },
+    {
+      "n": 99,
+      "photo": "0099.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Orange",
+      "pattern": "Other",
+      "brand": "Normal Brand",
+      "description": "Short-sleeve button-up shirt in cream/beige with speckled orange and brown flecks throughout, chest pocket, and interior label reading 'THE NORMAL BRAND'.",
+      "hex": [
+        "#e8d9c2",
+        "#c97a4a",
+        "#6b4a32"
+      ]
+    },
+    {
+      "n": 100,
+      "photo": "0100.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Polyester",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Other",
+      "brand": "Coofandy",
+      "description": "White short-sleeve camp-collar shirt with allover eyelet/broderie texture and button front placket.",
+      "hex": [
+        "#EDE8E0"
+      ]
+    },
+    {
+      "n": 101,
+      "photo": "0101.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Brown",
+      "pattern": "Solid",
+      "brand": "Percival",
+      "description": "Cream open-knit mesh short-sleeve button-up shirt with contrasting brown collar trim and a chest pocket; blue branded tag at hem.",
+      "hex": [
+        "#F1E8D0",
+        "#9A7C66"
+      ]
+    },
+    {
+      "n": 102,
+      "photo": "0102.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Pink",
+      "secondary_color": "Light Blue",
+      "pattern": "Other",
+      "brand": "",
+      "description": "Short-sleeve button-up camp collar shirt with pink, light blue, and white tie-dye cloud-like pattern.",
+      "hex": [
+        "#F2B5BE",
+        "#B9C7DC",
+        "#F5F1EE"
+      ]
+    },
+    {
+      "n": 103,
+      "photo": "0103.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Orange",
+      "secondary_color": "White",
+      "pattern": "Other",
+      "brand": "Portuguese Flannel",
+      "description": "Short-sleeve button-up camp shirt in orange with small white dot pattern, chest pocket, and 'Portuguese Flannel' label at collar.",
+      "hex": [
+        "#E8951F",
+        "#F0E6D2"
+      ]
+    },
+    {
+      "n": 104,
+      "photo": "0104.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Polyester",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Blue",
+      "pattern": "Other",
+      "brand": "",
+      "description": "Short-sleeve button-up shirt with white background and allover blue umbrella-like print, contrasting darker placket and inner collar.",
+      "hex": [
+        "#E8E6DE",
+        "#7A92AE",
+        "#2E3F5B"
+      ]
+    },
+    {
+      "n": 105,
+      "photo": "0105.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Light Blue",
+      "secondary_color": "Navy",
+      "pattern": "Other",
+      "brand": "",
+      "description": "Light blue short-sleeve button-up shirt with small navy owl motifs printed throughout and a chest pocket.",
+      "hex": [
+        "#B8CCD7",
+        "#2A3A5C"
+      ]
+    },
+    {
+      "n": 106,
+      "photo": "0106.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Light Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Topman",
+      "description": "Short-sleeve chambray button-up shirt in light blue with chest pocket and 'TOPMAN' label at collar.",
+      "hex": [
+        "#8499a8"
+      ]
+    },
+    {
+      "n": 107,
+      "photo": "0107.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Orange",
+      "pattern": "Other",
+      "brand": "Next",
+      "description": "Short-sleeve button-up shirt with navy background and geometric medallion print in orange and cream tones.",
+      "hex": [
+        "#2d3a55",
+        "#b8623d",
+        "#d9c3a4"
+      ]
+    },
+    {
+      "n": 108,
+      "photo": "0108.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Olive",
+      "pattern": "Other",
+      "brand": "Fabindia",
+      "description": "Short-sleeve button-up shirt with white background and olive/black paisley-leaf block print pattern, 'fabindia' label visible on inner collar.",
+      "hex": [
+        "#E8E0D0",
+        "#8C7A3E",
+        "#2C2820"
+      ]
+    },
+    {
+      "n": 109,
+      "photo": "0109.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "Tan/Beige",
+      "pattern": "Graphic",
+      "brand": "Forever 21",
+      "description": "Short-sleeve button-up shirt in navy blue with allover tan/orange pug dog print and chest pocket.",
+      "hex": [
+        "#1f3a6b",
+        "#d99a55",
+        "#7a4a2a"
+      ]
+    },
+    {
+      "n": 110,
+      "photo": "0110.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Orange",
+      "secondary_color": "Green",
+      "pattern": "Floral",
+      "brand": "Billy Reid",
+      "description": "Short-sleeve button-up shirt with cactus and floral print in orange, green, cream, and grey tones.",
+      "hex": [
+        "#c46a3e",
+        "#5e6b4a",
+        "#e8d8b4",
+        "#8a8a82"
+      ]
+    },
+    {
+      "n": 111,
+      "photo": "0111.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Polo",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Black",
+      "pattern": "Other",
+      "brand": "Billy Reid",
+      "description": "Short-sleeve knit polo shirt in grey with black geometric art deco-style pattern throughout.",
+      "hex": [
+        "#6B6457",
+        "#1F1D1C"
+      ]
+    },
+    {
+      "n": 112,
+      "photo": "0112.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Burgundy",
+      "pattern": "Graphic",
+      "brand": "Billy Reid",
+      "description": "Short-sleeve button-up shirt in grey with burgundy bird graphic print, two chest pockets, and curved hem.",
+      "hex": [
+        "#9a8f86",
+        "#7a2a23"
+      ]
+    },
+    {
+      "n": 113,
+      "photo": "0113.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Orange",
+      "pattern": "Floral",
+      "brand": "Flag & Anthem",
+      "description": "Short-sleeve button-up shirt in washed grey with tropical floral and bird-of-paradise print, chest pocket with small logo tab.",
+      "hex": [
+        "#4a4a4a",
+        "#a89a8a",
+        "#c97a5a",
+        "#3a3a3a"
+      ]
+    },
+    {
+      "n": 114,
+      "photo": "0114.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Black",
+      "pattern": "Other",
+      "brand": "Billy Reid",
+      "description": "Short-sleeve button-up shirt in tan/beige with allover black geometric crosshatch pattern and button-down collar.",
+      "hex": [
+        "#2c2a24"
+      ]
+    },
+    {
+      "n": 115,
+      "photo": "0115.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "Paul Smith",
+      "description": "Black short-sleeve button-up shirt with small white bicycle print all over.",
+      "hex": [
+        "#1f1f20",
+        "#d9d9d9"
+      ]
+    },
+    {
+      "n": 116,
+      "photo": "0116.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Polo",
+      "material": [
+        "Polyester",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Black short-sleeve mesh/fishnet polo shirt with collar and quarter-zip front closure.",
+      "hex": [
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 117,
+      "photo": "0117.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Billy Reid",
+      "description": "Olive long-sleeve button-down shirt with chest pocket and button-down collar.",
+      "hex": [
+        "#7a6840"
+      ]
+    },
+    {
+      "n": 118,
+      "photo": "0118.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "Only & Sons",
+      "description": "Long-sleeve olive/tan button-up shirt with black bird (crow/raven) silhouette print throughout, 'ONLY & SONS' label at collar.",
+      "hex": [
+        "#9A8259",
+        "#1C1A17"
+      ]
+    },
+    {
+      "n": 119,
+      "photo": "0119.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "Brown",
+      "pattern": "Plaid",
+      "brand": "Dam Good",
+      "description": "Long-sleeve button-down flannel shirt in blue and navy plaid with brown and white accent lines, single chest pocket, interior label reads 'DAM GOOD'.",
+      "hex": [
+        "#1f3a5f",
+        "#2d6b85",
+        "#8a5a3b",
+        "#0f1e30"
+      ]
+    },
+    {
+      "n": 120,
+      "photo": "0120.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Light Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Scotch & Soda",
+      "description": "Light blue long-sleeve button-up oxford shirt with small embroidered sewing machine logo on chest and 'Scotch & Soda' label at collar.",
+      "hex": [
+        "#A8C4DC"
+      ]
+    },
+    {
+      "n": 121,
+      "photo": "0121.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Long-sleeve denim button-down shirt in medium blue wash with chest pocket and button-down collar.",
+      "hex": [
+        "#4A6E94"
+      ]
+    },
+    {
+      "n": 122,
+      "photo": "0122.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "White",
+      "pattern": "Floral",
+      "brand": "Express",
+      "description": "Long-sleeve button-up shirt in blue with small white floral print, 'XPRESS' visible on interior collar label.",
+      "hex": [
+        "#3d4d6b",
+        "#c9d2dc"
+      ]
+    },
+    {
+      "n": 123,
+      "photo": "0123.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Le31",
+      "description": "Long-sleeve button-down chambray shirt in medium blue with single chest pocket and button-down collar.",
+      "hex": [
+        "#4f6b8a"
+      ]
+    },
+    {
+      "n": 124,
+      "photo": "0124.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton",
+        "Polyester",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Red",
+      "pattern": "Checked",
+      "brand": "Asos",
+      "description": "Long-sleeve button-up shirt in navy, red, and white checked pattern with chest pocket and 'asos' label at collar.",
+      "hex": [
+        "#2c3149",
+        "#8a3a48",
+        "#d8d4c8"
+      ]
+    },
+    {
+      "n": 125,
+      "photo": "0125.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Purple",
+      "secondary_color": "White",
+      "pattern": "Checked",
+      "brand": "Express",
+      "description": "Long-sleeve gingham check button-up shirt in purple and white with chest pocket and 'EXPRESS' label at collar.",
+      "hex": [
+        "#9989B8",
+        "#E8E2EC"
+      ]
+    },
+    {
+      "n": 126,
+      "photo": "0126.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Rue Saint Patrick",
+      "description": "Tan/beige long-sleeve button-up shirt with chest pocket and floral-patterned inner collar trim.",
+      "hex": [
+        "#9B8775"
+      ]
+    },
+    {
+      "n": 127,
+      "photo": "0127.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Multicolor",
+      "pattern": "Floral",
+      "brand": "Next",
+      "description": "Navy long-sleeve button-up shirt with allover small floral print in orange, pink, red, and blue; 'next' label visible at collar.",
+      "hex": [
+        "#2b2f44",
+        "#c97a3a",
+        "#b85a5a",
+        "#d9b89a"
+      ]
+    },
+    {
+      "n": 128,
+      "photo": "0128.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Tan/Beige",
+      "pattern": "Floral",
+      "brand": "Le Chateau",
+      "description": "Long-sleeve button-up shirt with black background and floral print in cream, tan, and grey tones, 'Le Chateau' label visible at collar.",
+      "hex": [
+        "#1a1814",
+        "#e8d9b8",
+        "#b8862f",
+        "#a89a8f"
+      ]
+    },
+    {
+      "n": 129,
+      "photo": "0129.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Grey",
+      "pattern": "Other",
+      "brand": "Hawker Rye",
+      "description": "Long-sleeve button-up shirt in white with small scattered grey dot print, chest pocket, and partially legible collar label.",
+      "hex": [
+        "#EFE8DC",
+        "#7A7468"
+      ]
+    },
+    {
+      "n": 130,
+      "photo": "0130.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Navy",
+      "pattern": "Other",
+      "brand": "Express",
+      "description": "Long-sleeve button-up shirt in white with small navy polka dot print and blue accent inside collar.",
+      "hex": [
+        "#E8E4DB",
+        "#2A3955"
+      ]
+    },
+    {
+      "n": 131,
+      "photo": "0131.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Express",
+      "description": "Long-sleeve button-up dress shirt in off-white/cream with pointed collar and barrel cuffs; inner label shows 'MX'.",
+      "hex": [
+        "#EFE8D4"
+      ]
+    },
+    {
+      "n": 132,
+      "photo": "0132.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Other",
+      "brand": "Flint and Tinder",
+      "description": "Long-sleeve button-down shirt in beige with dark fleck/nep speckled texture, chest pocket, and 'Flint and Tinder' label at collar.",
+      "hex": [
+        "#C9B89C"
+      ]
+    },
+    {
+      "n": 133,
+      "photo": "0133.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Red",
+      "secondary_color": "Navy",
+      "pattern": "Plaid",
+      "brand": "Eddie Bauer",
+      "description": "Long-sleeve button-down shirt in red and navy plaid with yellow and white accent lines, chest pocket, and 'Eddie Bauer' label at collar.",
+      "hex": [
+        "#a8202a",
+        "#1a1f2e",
+        "#d4b94a",
+        "#e8e2d0"
+      ]
+    },
+    {
+      "n": 134,
+      "photo": "0134.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Burgundy",
+      "secondary_color": "White",
+      "pattern": "Floral",
+      "brand": "Next",
+      "description": "Long-sleeve button-up shirt in burgundy with allover small white and tan ditsy floral print.",
+      "hex": [
+        "#7A3A30",
+        "#D9C7A8",
+        "#3D1A14"
+      ]
+    },
+    {
+      "n": 135,
+      "photo": "0135.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Button-down",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Long-sleeve button-down corduroy shirt in tan/beige with a single chest pocket and button-down collar.",
+      "hex": [
+        "#b0a496"
+      ]
+    },
+    {
+      "n": 136,
+      "photo": "0136.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Graphic",
+      "brand": "Revival",
+      "description": "Grey heathered crewneck sweatshirt with 'Lawrenceville Penna.' printed in black across the chest and 'Revival' label at neck.",
+      "hex": [
+        "#8a8a88",
+        "#1c1c1c"
+      ]
+    },
+    {
+      "n": 137,
+      "photo": "0137.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton",
+        "Acrylic"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Knit crewneck sweater in light beige/tan with ribbed cuffs and hem, small Uniqlo logo tag at neckline.",
+      "hex": [
+        "#b3a896"
+      ]
+    },
+    {
+      "n": 138,
+      "photo": "0138.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Polo",
+      "material": [
+        "Wool"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Banana Republic",
+      "description": "Black quarter-zip knit pullover sweater with button placket, 'Banana Republic' label at collar, and small red tab at hem.",
+      "hex": [
+        "#0d0d0d"
+      ]
+    },
+    {
+      "n": 139,
+      "photo": "0139.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Polyester",
+        "Wool",
+        "Acrylic"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Navy crewneck raglan-sleeve knit sweater with marled texture and ribbed collar, cuffs, and hem.",
+      "hex": [
+        "#3a4f66"
+      ]
+    },
+    {
+      "n": 140,
+      "photo": "0140.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Duolingo",
+      "description": "Navy crewneck sweatshirt with 'duolingo' and 'UX RESEARCH • EST 2018' printed in white on the chest.",
+      "hex": [
+        "#1f2a44"
+      ]
+    },
+    {
+      "n": 141,
+      "photo": "0141.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Wool"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Cabela's",
+      "description": "Olive green cable-knit crewneck sweater with chunky textured knit pattern throughout and ribbed cuffs, collar, and hem.",
+      "hex": [
+        "#4a4a35"
+      ]
+    },
+    {
+      "n": 142,
+      "photo": "0142.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Hoodie",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "Champion",
+      "description": "Black hoodie with all-over paisley and floral print in blue, purple, pink, and tan, with 'Champion' script logo on chest.",
+      "hex": [
+        "#1a1a1c",
+        "#4a6b8a",
+        "#a07ba0",
+        "#c9b59a"
+      ]
+    },
+    {
+      "n": 143,
+      "photo": "0143.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Burgundy",
+      "secondary_color": "Navy",
+      "pattern": "Other",
+      "brand": "Brian MacNeil",
+      "description": "Long-sleeve marled knit crewneck sweater in burgundy, navy, and white heathered yarn with ribbed cuffs and hem.",
+      "hex": [
+        "#6B3A4A",
+        "#2E2E45",
+        "#C9B9B5"
+      ]
+    },
+    {
+      "n": 144,
+      "photo": "0144.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Merino wool"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Brown",
+      "pattern": "Solid",
+      "brand": "Bridge & Burn",
+      "description": "Tan/beige knit cardigan with darker brown V-neck placket, cuffs, hem, and pocket trim; 'Bridge & Burn' label at neck.",
+      "hex": [
+        "#A88564",
+        "#8B5A2B"
+      ]
+    },
+    {
+      "n": 145,
+      "photo": "0145.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "One432",
+      "description": "Cream crewneck sweatshirt with allover small black embroidered skulls and lightning bolts; interior tag reads '432'.",
+      "hex": [
+        "#EFE7D4",
+        "#2A2A2A"
+      ]
+    },
+    {
+      "n": 146,
+      "photo": "0146.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Wool"
+      ],
+      "primary_color": "Purple",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Jones",
+      "description": "Heathered purple crewneck knit sweater with ribbed cuffs and hem and small button detail at left shoulder; interior label reads 'Jones'.",
+      "hex": [
+        "#5E4C5C"
+      ]
+    },
+    {
+      "n": 147,
+      "photo": "0147.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Acrylic",
+        "Wool"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Red",
+      "pattern": "Other",
+      "brand": "",
+      "description": "Navy fair isle knit crewneck sweater with white snowflake motifs and red contrast trim at collar and hem.",
+      "hex": [
+        "#1f2a44",
+        "#b23a2c",
+        "#e8e2d3"
+      ]
+    },
+    {
+      "n": 148,
+      "photo": "0148.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Wool"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Alchemy (NZ)",
+      "description": "Grey knit crewneck sweater with raglan sleeves, ribbed cuff trim, and rolled hem details.",
+      "hex": [
+        "#8A8C8E"
+      ]
+    },
+    {
+      "n": 149,
+      "photo": "0149.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "J.Crew",
+      "description": "Dark green crewneck knit sweater with ribbed collar, cuffs, and hem, long sleeves, solid color throughout.",
+      "hex": []
+    },
+    {
+      "n": 150,
+      "photo": "0150.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Everlane",
+      "description": "Heather grey crewneck sweatshirt with raglan sleeves, 'Everlane' neck label, and 'Instagram' tag at hem.",
+      "hex": [
+        "#9C9C9A"
+      ]
+    },
+    {
+      "n": 151,
+      "photo": "0151.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton",
+        "Linen",
+        "Wool"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Multicolor",
+      "pattern": "Other",
+      "brand": "Polo Ralph Lauren",
+      "description": "Tan fair isle knit crewneck sweater with brown, green, blue, and red patterned stripes; 'Polo by Ralph Lauren' label at neck.",
+      "hex": [
+        "#d4b87c",
+        "#6b4a30",
+        "#7a8a5e",
+        "#a8b0c0"
+      ]
+    },
+    {
+      "n": 152,
+      "photo": "0152.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Grey crewneck sweatshirt with a small black line-art Pikachu graphic on the left chest.",
+      "hex": [
+        "#A9A9AA",
+        "#1C1C1C"
+      ]
+    },
+    {
+      "n": 153,
+      "photo": "0153.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Polyester",
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Grey",
+      "pattern": "Floral",
+      "brand": "Jean Piere",
+      "description": "Long-sleeve crewneck sweatshirt in black with grey tropical palm-leaf print, neck label reading 'EXPLORERS FOR STYLE', and small embroidered logo on chest.",
+      "hex": [
+        "#2c2f33",
+        "#7a8189"
+      ]
+    },
+    {
+      "n": 154,
+      "photo": "0154.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Brown",
+      "pattern": "Other",
+      "brand": "Pull&Bear",
+      "description": "Beige knit crewneck sweater with Fair Isle-style geometric pattern in brown, navy, and cream across the chest; 'Pull&Bear' label at neck.",
+      "hex": [
+        "#C9B48A",
+        "#8A6334",
+        "#2E3148",
+        "#EFE6D2"
+      ]
+    },
+    {
+      "n": 155,
+      "photo": "0155.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton",
+        "Acrylic"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Black",
+      "pattern": "Other",
+      "brand": "Protegé",
+      "description": "Long-sleeve crewneck knit sweater with geometric tribal-style pattern in tan, beige, black, and cream tones.",
+      "hex": [
+        "#b8a884",
+        "#1f1c18",
+        "#e2dccb",
+        "#6b5d44"
+      ]
+    },
+    {
+      "n": 156,
+      "photo": "0156.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Navy",
+      "pattern": "Colorblock",
+      "brand": "River Island",
+      "description": "Knit crewneck sweater with navy top, gradient marled middle, and cream/white bottom in a colorblock ombre design.",
+      "hex": [
+        "#E8DFCB",
+        "#1C1F2E",
+        "#7A7E8C"
+      ]
+    },
+    {
+      "n": 157,
+      "photo": "0157.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Blue",
+      "pattern": "Solid",
+      "brand": "Comfort Colors",
+      "description": "Grey-teal crewneck sweatshirt with small turquoise turtle embroidery on left chest and 'Comfort Colors' neck label.",
+      "hex": [
+        "#7a8c8a",
+        "#2f8a9a"
+      ]
+    },
+    {
+      "n": 158,
+      "photo": "0158.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Green",
+      "pattern": "Graphic",
+      "brand": "Duolingo",
+      "description": "Heather grey crewneck sweatshirt with small chest graphic reading 'OWLIDAYS 2022 2023' in grey and green.",
+      "hex": [
+        "#D5D3CE",
+        "#7AB942",
+        "#4A4A4A"
+      ]
+    },
+    {
+      "n": 159,
+      "photo": "0159.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Silk",
+        "Cotton",
+        "Cashmere"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Banana Republic",
+      "description": "Grey long-sleeve V-neck knit sweater with 'Banana Republic' label at back neck.",
+      "hex": [
+        "#8a8a8a"
+      ]
+    },
+    {
+      "n": 160,
+      "photo": "0160.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "White",
+      "pattern": "Striped",
+      "brand": "Lyle & Scott",
+      "description": "Navy long-sleeve knit sweater with white horizontal stripes on upper half, solid navy lower half, and yellow eagle logo on chest; 'LYLE & SCOTT' label visible at neck.",
+      "hex": [
+        "#1f2433",
+        "#d9d6cb",
+        "#e9c11a"
+      ]
+    },
+    {
+      "n": 161,
+      "photo": "0161.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Green",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "White crewneck sweatshirt with a small rectangular embroidered patch on the chest depicting a green scene with orange and pink details.",
+      "hex": [
+        "#F2EEE8",
+        "#5C6B45",
+        "#C46B3A"
+      ]
+    },
+    {
+      "n": 162,
+      "photo": "0162.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Mohair",
+        "Wool",
+        "Acrylic"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "Brown",
+      "pattern": "Other",
+      "brand": "",
+      "description": "V-neck button-front cardigan in muted green with small rust-brown dotted motifs and an ornate tapestry-style pattern across the lower front and pockets.",
+      "hex": [
+        "#4a5a55",
+        "#7a4a3a",
+        "#3a3f4a",
+        "#8a8a5a"
+      ]
+    },
+    {
+      "n": 163,
+      "photo": "0163.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Hoodie",
+      "material": [
+        "Polyester",
+        "Cotton",
+        "Rayon"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Dark heather grey zip-up hoodie with white drawstrings, white zipper, and front kangaroo pockets.",
+      "hex": [
+        "#3d3e40"
+      ]
+    },
+    {
+      "n": 164,
+      "photo": "0164.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Burgundy",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Heather grey crewneck sweatshirt with distressed burgundy 'Y'all' script graphic across the chest.",
+      "hex": [
+        "#c9c3b6",
+        "#8a3a3a"
+      ]
+    },
+    {
+      "n": 165,
+      "photo": "0165.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Green",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Tan/beige crewneck sweatshirt with embroidered tapestry-style graphic of Frog and Toad riding a tandem bicycle, banner reads 'Frog and Toad'.",
+      "hex": [
+        "#C4A782",
+        "#6B7A4B",
+        "#8B5A3C",
+        "#D9C9A8"
+      ]
+    },
+    {
+      "n": 166,
+      "photo": "0166.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Purple",
+      "secondary_color": "Pink",
+      "pattern": "Other",
+      "brand": "Zara",
+      "description": "Crewneck knit sweater in heathered purple and pink marled yarn with ribbed cuffs and hem, 'Zara Man' label at neck.",
+      "hex": [
+        "#6b5878",
+        "#8a6a82",
+        "#4a4a6a"
+      ]
+    },
+    {
+      "n": 167,
+      "photo": "0167.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Vest",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "L.L.Bean",
+      "description": "Black puffer vest with snap-button closure, stand collar, 'L.L.Bean' embroidered on chest, and small white logo on left chest.",
+      "hex": [
+        "#0E0E0E"
+      ]
+    },
+    {
+      "n": 168,
+      "photo": "0168.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Burgundy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Threadbare",
+      "description": "Burgundy chenille-knit crewneck sweater with ribbed collar, cuffs, and hem, 'Threadbare' label visible at neckline.",
+      "hex": [
+        "#5a2f2c"
+      ]
+    },
+    {
+      "n": 169,
+      "photo": "0169.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton",
+        "Nylon"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Billy Reid",
+      "description": "Navy crewneck knit sweater with subtle textured chevron pattern and ribbed cuffs, collar, and hem.",
+      "hex": [
+        "#2c3a4d"
+      ]
+    },
+    {
+      "n": 170,
+      "photo": "0170.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Acrylic",
+        "Nylon",
+        "Wool",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Tan/Beige",
+      "pattern": "Other",
+      "brand": "Reiss",
+      "description": "Crewneck knit sweater in grey with tonal beige geometric/aztec pattern, 'REISS' label visible at inner collar.",
+      "hex": [
+        "#8A8A88",
+        "#B8B0A4"
+      ]
+    },
+    {
+      "n": 171,
+      "photo": "0171.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Red",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "Jack & Jones",
+      "description": "Crewneck holiday sweater with cream upper, navy deer-and-forest silhouette, red Nordic snowflake band, and solid red lower body; neck label reads 'ORIGINALS BY JACK & JONES'.",
+      "hex": [
+        "#c8141c",
+        "#f1e7d2",
+        "#1f2a44"
+      ]
+    },
+    {
+      "n": 172,
+      "photo": "0172.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Hoodie",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Purple",
+      "secondary_color": "",
+      "pattern": "Graphic",
+      "brand": "Uniqlo",
+      "description": "Purple pullover hoodie with kangaroo pocket and small white radiating figure graphic on left chest.",
+      "hex": [
+        "#3D2456"
+      ]
+    },
+    {
+      "n": 173,
+      "photo": "0173.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Cream knit crewneck sweater with graphic design of cats and a sun in yellow, blue, and green tones.",
+      "hex": [
+        "#EFE3C6",
+        "#3E72A6",
+        "#7E9D8A",
+        "#E9B22A"
+      ]
+    },
+    {
+      "n": 174,
+      "photo": "0174.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Acrylic",
+        "Polyester",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Yellow",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Mustard yellow ribbed turtleneck sweater with fuzzy soft knit texture and long sleeves.",
+      "hex": [
+        "#C9A91C"
+      ]
+    },
+    {
+      "n": 175,
+      "photo": "0175.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Viscose",
+        "Cotton"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "White",
+      "pattern": "Other",
+      "brand": "Devred",
+      "description": "Crewneck knit sweater with navy and white woven texture pattern, solid navy ribbed collar, cuffs, and hem.",
+      "hex": [
+        "#3a4a63",
+        "#c9cdd4"
+      ]
+    },
+    {
+      "n": 176,
+      "photo": "0176.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "Grey",
+      "pattern": "Graphic",
+      "brand": "Bonobos",
+      "description": "Olive green crewneck sweatshirt with embroidered geometric grey raccoon graphic on chest and 'BONOBOS' label at neck.",
+      "hex": [
+        "#8A7A2A",
+        "#6E6E6E",
+        "#2E2E2E",
+        "#E8E8E8"
+      ]
+    },
+    {
+      "n": 177,
+      "photo": "0177.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Acrylic",
+        "Cotton",
+        "Polyester",
+        "Nylon",
+        "Viscose"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Navy",
+      "pattern": "Graphic",
+      "brand": "Adam Freak",
+      "description": "Cream knit crewneck sweater featuring a large navy whale graphic with blue striped belly, 'ADAM FREAK' label at collar.",
+      "hex": [
+        "#EFE6D2",
+        "#1E2A47",
+        "#6A9BD1"
+      ]
+    },
+    {
+      "n": 178,
+      "photo": "0178.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Beige crewneck sweatshirt with red 'TORONTO' arched text, raccoon graphic, and 'THE RACCOON CITY' printed on the chest.",
+      "hex": [
+        "#d8c4a0",
+        "#a83a2c"
+      ]
+    },
+    {
+      "n": 179,
+      "photo": "0179.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Wool",
+        "Acrylic"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Burgundy",
+      "pattern": "Other",
+      "brand": "",
+      "description": "Grey V-neck button-up cardigan with Fair Isle knit pattern in burgundy, navy, and cream; 'dobber' label at collar.",
+      "hex": [
+        "#9c9a93",
+        "#5d3f44",
+        "#d8cdb8"
+      ]
+    },
+    {
+      "n": 180,
+      "photo": "0180.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Black",
+      "pattern": "Other",
+      "brand": "Marine Layer",
+      "description": "Open-front long knit cardigan with tan/beige and black woven texture, notched lapels, and front patch pockets.",
+      "hex": [
+        "#b8a78d",
+        "#2e2a26"
+      ]
+    },
+    {
+      "n": 181,
+      "photo": "0181.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Blue",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black crewneck sweatshirt with NASA-style parody logo on chest reading 'CUM' in red letters on a blue circle.",
+      "hex": [
+        "#0E0E10",
+        "#1F4E9D",
+        "#C8242C",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "n": 182,
+      "photo": "0182.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Light Blue",
+      "secondary_color": "Yellow",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Light blue knit crewneck sweater with SpongeBob, Patrick, and jellyfish graphic, black flower silhouettes, and yellow ribbed hem.",
+      "hex": [
+        "#8BD4DE",
+        "#C9D442",
+        "#000000",
+        "#E89B86"
+      ]
+    },
+    {
+      "n": 183,
+      "photo": "0183.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Orange",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "F/X Fusion",
+      "description": "Orange cable-knit pullover sweater with mock neck, two-button henley placket, and textured diamond and waffle knit panels.",
+      "hex": [
+        "#D9531E"
+      ]
+    },
+    {
+      "n": 184,
+      "photo": "0184.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Hoodie",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Grey",
+      "pattern": "Graphic",
+      "brand": "Tentree",
+      "description": "Dark grey pullover hoodie with grey upper section featuring black tree/forest silhouette graphic and front kangaroo pocket.",
+      "hex": [
+        "#2e2e2e",
+        "#7e8389"
+      ]
+    },
+    {
+      "n": 185,
+      "photo": "0185.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Acrylic",
+        "Mohair",
+        "Wool"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Burgundy",
+      "pattern": "Plaid",
+      "brand": "",
+      "description": "Knit crewneck sweater in a dark plaid pattern of black and burgundy with ribbed collar, cuffs, and hem.",
+      "hex": [
+        "#2e2c2a",
+        "#6b1f25"
+      ]
+    },
+    {
+      "n": 186,
+      "photo": "0186.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Navy",
+      "pattern": "Colorblock",
+      "brand": "Zara",
+      "description": "Long-sleeve crewneck sweater in cream with navy upper chest/shoulders and a red horizontal stripe across the chest.",
+      "hex": [
+        "#E8DFD0",
+        "#1B1F33",
+        "#A8302B"
+      ]
+    },
+    {
+      "n": 187,
+      "photo": "0187.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Wool",
+        "Acrylic",
+        "Viscose"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "White",
+      "pattern": "Other",
+      "brand": "Carlo Colucci",
+      "description": "Navy textured knit cardigan with white, light blue, and brown vertical patterned stripes, button front, and 'Carlo Colucci' label at neck.",
+      "hex": [
+        "#1f2840",
+        "#d9d4c5",
+        "#7a8aa5",
+        "#6b3a2e"
+      ]
+    },
+    {
+      "n": 188,
+      "photo": "0188.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Navy",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Oversized beige V-neck cardigan with navy cat face print all over, navy ribbed trim, button front, and one yellow cat graphic at hem.",
+      "hex": [
+        "#D9C8A8",
+        "#1F2238",
+        "#E2B340"
+      ]
+    },
+    {
+      "n": 189,
+      "photo": "0189.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "L.L.Bean",
+      "description": "Olive green cable-knit crewneck sweater with textured Aran-style stitching down the front and ribbed cuffs and hem.",
+      "hex": [
+        "#8a8b5a"
+      ]
+    },
+    {
+      "n": 190,
+      "photo": "0190.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Wool",
+        "Acrylic"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Olive",
+      "pattern": "Other",
+      "brand": "",
+      "description": "Crewneck knit sweater in dark grey with olive and mustard geometric diamond and striped bands across chest and waist.",
+      "hex": [
+        "#4a4a4a",
+        "#6b6a4a",
+        "#a8884a",
+        "#2f2f2f"
+      ]
+    },
+    {
+      "n": 191,
+      "photo": "0191.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Multicolor",
+      "pattern": "Floral",
+      "brand": "",
+      "description": "Long-sleeve knit pullover sweater with black background and allover floral pattern in pink, orange, yellow, and sage green.",
+      "hex": [
+        "#1a1410",
+        "#c97a5a",
+        "#d49a3a",
+        "#a8b39a"
+      ]
+    },
+    {
+      "n": 192,
+      "photo": "0192.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton",
+        "Polyester",
+        "Rayon"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Navy",
+      "pattern": "Striped",
+      "brand": "Uniqlo",
+      "description": "Cream crewneck sweater with navy horizontal Breton stripes and small Uniqlo label at back neck.",
+      "hex": [
+        "#EFE7D6",
+        "#1B2235"
+      ]
+    },
+    {
+      "n": 193,
+      "photo": "0193.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Duolingo",
+      "description": "Navy crewneck sweatshirt with 'duolingo' and 'UX RESEARCH • EST 2018' printed on the left chest.",
+      "hex": [
+        "#1d2b40"
+      ]
+    },
+    {
+      "n": 194,
+      "photo": "0194.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Long-sleeved T-shirt",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Long-sleeve grey athletic crewneck shirt with contrast white flatlock stitching along raglan seams and side panels.",
+      "hex": [
+        "#8a8784"
+      ]
+    },
+    {
+      "n": 195,
+      "photo": "0195.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Long-sleeved T-shirt",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Baleaf",
+      "description": "Grey long-sleeve athletic shirt with 'BALEAF' wordmark on left chest and 'baleaf' logo on inner neck label.",
+      "hex": [
+        "#A8A9AB"
+      ]
+    },
+    {
+      "n": 196,
+      "photo": "0196.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Polyester",
+        "Cotton",
+        "Rayon"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Yellow",
+      "pattern": "Graphic",
+      "brand": "Duolingo",
+      "description": "Heathered navy short-sleeve t-shirt with 'Transforming Testing for Good' graphic and sunburst design on chest, 'duolingo' wordmark on right sleeve.",
+      "hex": [
+        "#3a4759",
+        "#e8c547",
+        "#e8e8e8"
+      ]
+    },
+    {
+      "n": 197,
+      "photo": "0197.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Black short-sleeve t-shirt with 'I'M SLUT' printed in red bubble letters on left chest.",
+      "hex": [
+        "#1a1a1a",
+        "#d6224a"
+      ]
+    },
+    {
+      "n": 198,
+      "photo": "0198.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Polyester",
+        "Rayon",
+        "Acrylic",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Solid black short-sleeve crewneck t-shirt with a slightly elongated hem and no visible graphics or text.",
+      "hex": [
+        "#0d0d10"
+      ]
+    },
+    {
+      "n": 199,
+      "photo": "0199.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Jack & Jones",
+      "description": "Black short-sleeve crewneck t-shirt with 'JACK & JONES' label at back neck and small white tag near hem.",
+      "hex": [
+        "#0e0e10"
+      ]
+    },
+    {
+      "n": 200,
+      "photo": "0200.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Multicolor",
+      "secondary_color": "Yellow",
+      "pattern": "Graphic",
+      "brand": "Upper Playground",
+      "description": "Short-sleeve crewneck t-shirt with all-over photographic graphic print of sour gummy worm candies in yellow, red, green, and orange.",
+      "hex": [
+        "#E8C842",
+        "#D93B2A",
+        "#8FB84A",
+        "#E89A3C"
+      ]
+    },
+    {
+      "n": 201,
+      "photo": "0201.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Yellow",
+      "secondary_color": "Red",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Yellow short-sleeve t-shirt with circular graphic reading 'United States Naval Nuclear Power School Orlando, Florida' and 'Class 8403' on open book.",
+      "hex": [
+        "#F2D438",
+        "#C8332B",
+        "#2A4A7A"
+      ]
+    },
+    {
+      "n": 202,
+      "photo": "0202.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Yellow",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Yellow short-sleeve t-shirt featuring a black polka-dot pumpkin graphic on the chest, Yayoi Kusama-style.",
+      "hex": [
+        "#E8C019",
+        "#1A1A1A"
+      ]
+    },
+    {
+      "n": 203,
+      "photo": "0203.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Navy",
+      "pattern": "Other",
+      "brand": "",
+      "description": "Short-sleeve grey crewneck t-shirt with subtle vertical pinstripes and small scattered navy novelty motifs throughout.",
+      "hex": [
+        "#A8A8A8",
+        "#3B4A66"
+      ]
+    },
+    {
+      "n": 204,
+      "photo": "0204.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Polyester",
+        "Cotton",
+        "Viscose"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Heathered navy short-sleeve t-shirt with 'Pittsburgh' in white script and 'CHAMP CITY N'AT' printed across the chest.",
+      "hex": [
+        "#4a5878",
+        "#e8e6df"
+      ]
+    },
+    {
+      "n": 205,
+      "photo": "0205.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Hanes",
+      "description": "Plain white short-sleeve crewneck t-shirt with visible Hanes neck label.",
+      "hex": [
+        "#E8E6E1"
+      ]
+    },
+    {
+      "n": 206,
+      "photo": "0206.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Hanes",
+      "description": "Plain white short-sleeve crewneck t-shirt with no visible graphics or text.",
+      "hex": [
+        "#E8E6E1"
+      ]
+    },
+    {
+      "n": 207,
+      "photo": "0207.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Amazon Essentials",
+      "description": "White ribbed sleeveless tank top with scoop neckline and faint interior brand label.",
+      "hex": [
+        "#EDEAE3"
+      ]
+    },
+    {
+      "n": 208,
+      "photo": "0208.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Orange",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Short-sleeve orange t-shirt with black woodcut-style graphic of raccoons around a campfire under a moon.",
+      "hex": [
+        "#C9501F",
+        "#1E1A17"
+      ]
+    },
+    {
+      "n": 209,
+      "photo": "0209.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Multicolor",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Navy short-sleeve t-shirt with a contrasting multicolor geometric diamond-patterned chest pocket in red, yellow, blue, and white.",
+      "hex": [
+        "#1a2238",
+        "#c83b2c",
+        "#d9a52a",
+        "#7fb3c4"
+      ]
+    },
+    {
+      "n": 210,
+      "photo": "0210.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Crop top",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Olive green cropped short-sleeve t-shirt with white Smokey Bear graphic reading 'Smokey Says Keep It Green' and 'SMOKEY' on hat.",
+      "hex": [
+        "#5d6648",
+        "#d8d4c4"
+      ]
+    },
+    {
+      "n": 211,
+      "photo": "0211.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Burgundy",
+      "pattern": "Graphic",
+      "brand": "Black & Liberty",
+      "description": "White short-sleeve t-shirt with burgundy horse and horseshoe graphic on left chest and 'Luck' script lettering.",
+      "hex": [
+        "#EDE8E0",
+        "#7A2A2E"
+      ]
+    },
+    {
+      "n": 212,
+      "photo": "0212.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Orange",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Black short-sleeve crewneck t-shirt with a small orange feather embroidery on the left chest.",
+      "hex": [
+        "#0F0F11",
+        "#E87C2A"
+      ]
+    },
+    {
+      "n": 213,
+      "photo": "0213.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Black",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "White short-sleeve t-shirt with black 'ARCHIPELAGO ANALYTICS' text and dotted geometric graphic on chest.",
+      "hex": [
+        "#E8E5DE",
+        "#1A1A1A"
+      ]
+    },
+    {
+      "n": 214,
+      "photo": "0214.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Undershirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Amazon Essentials",
+      "description": "White ribbed sleeveless tank top with scoop neckline.",
+      "hex": [
+        "#EDE8E0"
+      ]
+    },
+    {
+      "n": 215,
+      "photo": "0215.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Rayon",
+        "Cotton"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Green",
+      "pattern": "Graphic",
+      "brand": "",
+      "description": "Tan/beige short-sleeve t-shirt with green T-rex graphic holding a calendar, 'THURSDAY' in green block letters above.",
+      "hex": [
+        "#D7C3A3",
+        "#7BA84A",
+        "#3E5C7A",
+        "#E8DCC4"
+      ]
+    },
+    {
+      "n": 216,
+      "photo": "0216.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Polo",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Light Blue",
+      "pattern": "Striped",
+      "brand": "Banana Republic",
+      "description": "Short-sleeve polo shirt with thin navy and light blue horizontal stripes, solid navy collar, and 'Banana Republic' label at neck.",
+      "hex": [
+        "#2a3850",
+        "#6b7a92"
+      ]
+    },
+    {
+      "n": 217,
+      "photo": "0217.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Short-sleeve button-down",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Red",
+      "pattern": "Checked",
+      "brand": "Essley",
+      "description": "Short-sleeve button-up camp shirt in white with red and navy windowpane check pattern and chest pocket.",
+      "hex": [
+        "#EDE6DB",
+        "#C24A4E",
+        "#2E3A55"
+      ]
+    },
+    {
+      "n": 218,
+      "photo": "0218.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Devred",
+      "description": "Short-sleeve heathered dark green crewneck t-shirt with no visible graphics.",
+      "hex": [
+        "#4a5a52"
+      ]
+    },
+    {
+      "n": 219,
+      "photo": "0219.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Graphic",
+      "brand": "AllSaints",
+      "description": "Short-sleeve black t-shirt with all-over small constellation and zodiac symbol print in white/grey.",
+      "hex": [
+        "#1a1c22",
+        "#c8c8cc"
+      ]
+    },
+    {
+      "n": 220,
+      "photo": "0220.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "New Look",
+      "description": "Black short-sleeve crew-neck t-shirt with 'NEW LOOK MEN' label at the neck.",
+      "hex": [
+        "#0e0e10"
+      ]
+    },
+    {
+      "n": 221,
+      "photo": "0221.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "New Look",
+      "description": "Short-sleeve crewneck t-shirt in solid grey with a plain front and no visible graphics.",
+      "hex": [
+        "#9c918a"
+      ]
+    },
+    {
+      "n": 222,
+      "photo": "0222.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Express",
+      "description": "Cream/beige textured knit crewneck sweater with subtle diamond pattern weave and ribbed cuffs and hem.",
+      "hex": [
+        "#D8C9AC"
+      ]
+    },
+    {
+      "n": 223,
+      "photo": "0223.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Black crewneck sweatshirt with raglan sleeves, V-stitch detail at neckline, and visible Uniqlo tag inside collar.",
+      "hex": [
+        "#15151a"
+      ]
+    },
+    {
+      "n": 224,
+      "photo": "0224.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Eddie Bauer",
+      "description": "Black hooded zip-up jacket with 'Eddie Bauer' label at collar, white cartoon character logo on chest, and 'Bauer' wordmark on right chest.",
+      "hex": [
+        "#0e0e10"
+      ]
+    },
+    {
+      "n": 225,
+      "photo": "0225.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Wool",
+        "Polyester"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Olive-gold V-neck cardigan with metallic shimmer threads, button front closure, and two front patch pockets.",
+      "hex": [
+        "#9A8141"
+      ]
+    },
+    {
+      "n": 226,
+      "photo": "0226.jpg",
+      "owner": "Shared",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Tan suede bomber jacket with ribbed cuffs and hem, full zip closure, and dark fleece-lined interior.",
+      "hex": [
+        "#a8895f"
+      ]
+    },
+    {
+      "n": 227,
+      "photo": "0227.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Brown",
+      "secondary_color": "Green",
+      "pattern": "Solid",
+      "brand": "Duolingo",
+      "description": "Brown canvas zip-up work jacket with a 'D' patch on the chest and a green name patch reading 'Billy'.",
+      "hex": [
+        "#7a6850",
+        "#c5d96a",
+        "#ffffff"
+      ]
+    },
+    {
+      "n": 228,
+      "photo": "0228.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Hoodie",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Blue full-zip hooded sweatshirt with drawstrings, kangaroo pockets, and a small white sticker reading 'KID' on the chest.",
+      "hex": [
+        "#5b7e9a"
+      ]
+    },
+    {
+      "n": 229,
+      "photo": "0229.jpg",
+      "owner": "Michael",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Orange",
+      "secondary_color": "Multicolor",
+      "pattern": "Checked",
+      "brand": "One432",
+      "description": "Quilted patchwork jacket with cream corduroy yoke and collar, body in orange, light blue, yellow, tan, and brown square patches; tag reads '432'.",
+      "hex": [
+        "#E2691F",
+        "#A7C7DC",
+        "#E2B33A",
+        "#A47148"
+      ]
+    },
+    {
+      "n": 230,
+      "photo": "0230.jpg",
+      "owner": "Michael",
+      "category": "Outerwear",
+      "subcategory": "Coat",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "Brown",
+      "pattern": "Checked",
+      "brand": "Polo Ralph Lauren",
+      "description": "Long tweed overcoat in dark olive and brown checked pattern with notched lapels, three-button front, and welt pockets.",
+      "hex": [
+        "#3d3a26",
+        "#5a4632",
+        "#1f1e15"
+      ]
+    },
+    {
+      "n": 231,
+      "photo": "0231.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Other",
+      "brand": "Carbon2Cobalt",
+      "description": "Full-zip mock-neck knit cardigan sweater in navy with cable knit panels and herringbone textured center.",
+      "hex": [
+        "#2a3849"
+      ]
+    },
+    {
+      "n": 232,
+      "photo": "0232.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "American Eagle",
+      "description": "Light blue denim trucker jacket with cream sherpa collar and red/black plaid flannel lining; interior label reads 'American Eagle'.",
+      "hex": [
+        "#6f8aab",
+        "#e8dcc2",
+        "#b8232a"
+      ]
+    },
+    {
+      "n": 233,
+      "photo": "0233.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Cotton",
+        "Denim"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Everlane",
+      "description": "Black denim trucker jacket with classic collar, button front, two chest flap pockets, and side welt pockets.",
+      "hex": [
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 234,
+      "photo": "0234.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Brooks Brothers",
+      "description": "Navy quilted puffer jacket with stand collar, full zip with snap placket, and two front flap pockets.",
+      "hex": [
+        "#1c2238"
+      ]
+    },
+    {
+      "n": 235,
+      "photo": "0235.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Leather",
+        "Viscose"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Billy Reid",
+      "description": "Olive-grey suede western-style shirt jacket with snap closures, two flap chest pockets, and pointed collar.",
+      "hex": [
+        "#8a8a78"
+      ]
+    },
+    {
+      "n": 236,
+      "photo": "0236.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Nylon",
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Perry Ellis",
+      "description": "Navy hooded quilted puffer jacket with full zip, 'PERRY ELLIS PORTFOLIO' label inside collar and 'PERRY ELLIS' printed along zipper placket.",
+      "hex": [
+        "#2e3441"
+      ]
+    },
+    {
+      "n": 237,
+      "photo": "0237.jpg",
+      "owner": "Michael",
+      "category": "Outerwear",
+      "subcategory": "Coat",
+      "material": [
+        "Wool",
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Only & Sons",
+      "description": "Long grey wool-blend overcoat with stand collar, button front placket, and side pockets; interior label reads 'Only & Sons'.",
+      "hex": [
+        "#8a8a85"
+      ]
+    },
+    {
+      "n": 238,
+      "photo": "0238.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Selected",
+      "description": "Black faux leather moto-style jacket with stand collar, full zip closure, two chest flap pockets, and side pockets.",
+      "hex": [
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 239,
+      "photo": "0239.jpg",
+      "owner": "Michael",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Forever 21",
+      "description": "Classic medium-wash denim jacket with button front, chest flap pockets, and faded whisker detailing; interior label reads '21'.",
+      "hex": [
+        "#4a6886"
+      ]
+    },
+    {
+      "n": 240,
+      "photo": "0240.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Hoodie",
+      "material": [
+        "Polyester",
+        "Cotton",
+        "Rayon"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Duolingo",
+      "description": "Dark heather grey zip-up hoodie with white drawstrings and 'duolingo' wordmark on left chest.",
+      "hex": [
+        "#3a3a3c"
+      ]
+    },
+    {
+      "n": 241,
+      "photo": "0241.jpg",
+      "owner": "Michael",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Black",
+      "pattern": "Solid",
+      "brand": "Baubax",
+      "description": "Navy bomber-style jacket with hood, full zip closure, chest snap pocket, zippered side pocket, and black ribbed cuffs/hem with thumbhole sleeve extensions.",
+      "hex": [
+        "#1f2f54",
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 242,
+      "photo": "0242.jpg",
+      "owner": "Michael",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Nylon",
+        "Polyester",
+        "Cotton"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Purple",
+      "pattern": "Colorblock",
+      "brand": "Reebok",
+      "description": "Vintage nylon windbreaker jacket with navy, purple, and teal colorblock chevron panels and 'Reebok' wordmark with logo on chest.",
+      "hex": [
+        "#1f2547",
+        "#3d3a8c",
+        "#2ea7a2"
+      ]
+    },
+    {
+      "n": 243,
+      "photo": "0243.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Leather",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Croft & Barrow",
+      "description": "Black leather zip-front bomber jacket with pointed collar, side pockets, and quilted inner lining; label reads 'croft & barrow'.",
+      "hex": [
+        "#0e0e0e"
+      ]
+    },
+    {
+      "n": 244,
+      "photo": "0244.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Coat",
+      "material": [
+        "Merino wool",
+        "Nylon",
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Pendleton",
+      "description": "Navy blue wool Pendleton coat with wide notched lapel collar, button front closure, and buttoned cuff tabs.",
+      "hex": [
+        "#1d3a5f"
+      ]
+    },
+    {
+      "n": 245,
+      "photo": "0245.jpg",
+      "owner": "Shared",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "RYE",
+      "description": "Navy bomber jacket with white-striped ribbed collar, cuffs, and hem, zip front, and 'RYE' label at neck.",
+      "hex": [
+        "#27314A",
+        "#EFE9DC"
+      ]
+    },
+    {
+      "n": 246,
+      "photo": "0246.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Billy Reid",
+      "description": "Olive-grey button-up shirt jacket with pointed collar, chest patch pocket, and front button closure.",
+      "hex": [
+        "#6e6a5b"
+      ]
+    },
+    {
+      "n": 247,
+      "photo": "0247.jpg",
+      "owner": "Michael",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Orange",
+      "pattern": "Colorblock",
+      "brand": "Iriedaily",
+      "description": "Hooded zip-up windbreaker jacket with navy upper and orange lower colorblock, white zippers, and 'IRIEDAILY' wordmark on chest.",
+      "hex": [
+        "#1F3F66",
+        "#D5731F",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "n": 248,
+      "photo": "0248.jpg",
+      "owner": "Michael",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Nylon",
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Alchemy (NZ)",
+      "description": "Mid-length grey hooded parka jacket with full front zipper, stand collar, and side hand pockets.",
+      "hex": [
+        "#8a8a82"
+      ]
+    },
+    {
+      "n": 249,
+      "photo": "0249.jpg",
+      "owner": "Michael",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "Red",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Olive green diamond-quilted barn jacket with brown corduroy collar and red plaid lining visible at lapel.",
+      "hex": [
+        "#7d6a3a",
+        "#3d3328",
+        "#a8292e"
+      ]
+    },
+    {
+      "n": 250,
+      "photo": "0250.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Nylon",
+        "Spandex / Elastane",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Black hooded puffer jacket with quilted horizontal baffles, zip and snap front closure, and adjustable cuffs.",
+      "hex": [
+        "#2b2826"
+      ]
+    },
+    {
+      "n": 251,
+      "photo": "0251.jpg",
+      "owner": "Michael",
+      "category": "Tops",
+      "subcategory": "Cardigan",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Botvela",
+      "description": "Olive green chunky cable-knit shawl collar cardigan with button front and two front patch pockets.",
+      "hex": [
+        "#5a5a36"
+      ]
+    },
+    {
+      "n": 252,
+      "photo": "0252.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Nylon"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Alchemy (NZ)",
+      "description": "Black full-zip hooded shell jacket with zippered hand pockets and minimalist styling.",
+      "hex": [
+        "#1c1c1e"
+      ]
+    },
+    {
+      "n": 253,
+      "photo": "0253.jpg",
+      "owner": "Billy",
+      "category": "Outerwear",
+      "subcategory": "Jacket",
+      "material": [
+        "Nylon",
+        "Spandex / Elastane",
+        "Polyester"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Banana Republic",
+      "description": "Black zip-up jacket with sherpa-lined collar, two zippered side pockets, and 'Banana Republic' label at inner neck.",
+      "hex": [
+        "#1a1a1e"
+      ]
+    },
+    {
+      "n": 254,
+      "photo": "0254.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "T-shirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Burgundy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Devred",
+      "description": "Short-sleeve crew-neck t-shirt in heathered burgundy with a plain solid front.",
+      "hex": [
+        "#6b2f3c"
+      ]
+    },
+    {
+      "n": 255,
+      "photo": "0255.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Wool"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Billy Leet",
+      "description": "Navy cable-knit crewneck sweater with textured fisherman-style knit panels down the front and sleeves.",
+      "hex": [
+        "#1f2a44"
+      ]
+    },
+    {
+      "n": 256,
+      "photo": "0256.jpg",
+      "owner": "Billy",
+      "category": "Tops",
+      "subcategory": "Sweater",
+      "material": [
+        "Wool",
+        "Acrylic"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "Tan/Beige",
+      "pattern": "Colorblock",
+      "brand": "Billy Leet",
+      "description": "Knit crewneck sweater with cream/beige upper portion and dark green lower portion in a colorblock design.",
+      "hex": [
+        "#2d4030",
+        "#d4c8ad"
+      ]
+    },
+    {
+      "n": 257,
+      "photo": "0257.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Chinos / Trousers",
+      "material": [
+        "Wool",
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Shelby & Sons",
+      "description": "Grey tailored dress trousers with flat front, slim fit, and side pockets.",
+      "hex": [
+        "#5e5e5e"
+      ]
+    },
+    {
+      "n": 258,
+      "photo": "0258.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Devred",
+      "description": "Olive green skinny jeans with button fly closure and standard five-pocket styling.",
+      "hex": [
+        "#4f5135"
+      ]
+    },
+    {
+      "n": 259,
+      "photo": "0259.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Chinos / Trousers",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Banana Republic",
+      "description": "Dark grey/black slim-fit five-pocket pants with 'Banana Republic' label visible at waistband interior.",
+      "hex": [
+        "#2c2c2e"
+      ]
+    },
+    {
+      "n": 260,
+      "photo": "0260.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Levi's",
+      "description": "Slim-fit dark blue denim jeans with heavy fading and whiskering at the thighs and a small distressed area on the left front.",
+      "hex": [
+        "#3a4a5e"
+      ]
+    },
+    {
+      "n": 261,
+      "photo": "0261.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "7 Diamonds",
+      "description": "Olive green five-pocket slim-fit jeans with standard zip fly and rivet detailing.",
+      "hex": [
+        "#54582E"
+      ]
+    },
+    {
+      "n": 262,
+      "photo": "0262.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Chinos / Trousers",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Black flat-front chino-style trousers with belt loops, button closure, and slim straight leg.",
+      "hex": [
+        "#1f1f1f"
+      ]
+    },
+    {
+      "n": 263,
+      "photo": "0263.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Olive green slim-fit jeans with five-pocket styling and contrast stitching.",
+      "hex": [
+        "#5a5e4a"
+      ]
+    },
+    {
+      "n": 264,
+      "photo": "0264.jpg",
+      "owner": "Shared",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "Feeld",
+      "description": "Cream/white elastic-waist shorts with abstract multicolor graphic print featuring orange, yellow, blue, green, and purple shapes.",
+      "hex": [
+        "#F1E9D6",
+        "#E25A2C",
+        "#E8C24A",
+        "#3B4A9E"
+      ]
+    },
+    {
+      "n": 265,
+      "photo": "0265.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Lee Rider",
+      "description": "Medium-wash blue denim jeans with faded whiskering at the hips and contrast stitching.",
+      "hex": [
+        "#3d5878"
+      ]
+    },
+    {
+      "n": 266,
+      "photo": "0266.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Sweatpants",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "H&M",
+      "description": "Cream/off-white fleece jogger sweatpants with drawstring waist, side pockets, and ribbed cuffs.",
+      "hex": [
+        "#E8E1D0"
+      ]
+    },
+    {
+      "n": 267,
+      "photo": "0267.jpg",
+      "owner": "Shared",
+      "category": "Bottoms",
+      "subcategory": "Sweatpants",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Navy jogger-style pants with elastic waistband, side pockets, and ribbed cuffs at ankles.",
+      "hex": [
+        "#2a3a4d"
+      ]
+    },
+    {
+      "n": 268,
+      "photo": "0268.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Sweatpants",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Asos",
+      "description": "Heathered blue jogger sweatpants with drawstring waistband, side pockets, and ribbed cuffs.",
+      "hex": [
+        "#2f5068"
+      ]
+    },
+    {
+      "n": 269,
+      "photo": "0269.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Sweatpants",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Nike",
+      "description": "Grey fleece jogger sweatpants with ribbed cuffs, elastic waistband, and white 'Nike' swoosh logo embroidered on right thigh.",
+      "hex": [
+        "#A8A8A8"
+      ]
+    },
+    {
+      "n": 270,
+      "photo": "0270.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Sweatpants",
+      "material": [
+        "Cotton",
+        "Polyester",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Orange",
+      "pattern": "Solid",
+      "brand": "Jumper",
+      "description": "Grey heathered jogger sweatpants with orange zippered side pockets and a small logo patch near the right pocket.",
+      "hex": [
+        "#8a8a85",
+        "#d96b3a"
+      ]
+    },
+    {
+      "n": 271,
+      "photo": "0271.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Navy blue slim-fit jeans with five-pocket styling and button-fly closure.",
+      "hex": [
+        "#2c4762"
+      ]
+    },
+    {
+      "n": 272,
+      "photo": "0272.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Levi's",
+      "description": "Black slim-fit jeans with five-pocket styling, belt loops, and zip fly.",
+      "hex": [
+        "#1c1d22"
+      ]
+    },
+    {
+      "n": 273,
+      "photo": "0273.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Denim",
+        "Polyester"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Medium-wash denim short overalls with adjustable straps, chest pocket with button flap, and side pockets.",
+      "hex": [
+        "#4A76A0"
+      ]
+    },
+    {
+      "n": 274,
+      "photo": "0274.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Black slim-fit jeans with five-pocket styling and visible zipper fly.",
+      "hex": [
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 275,
+      "photo": "0275.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Olive green athletic shorts with elastic waistband and side pockets.",
+      "hex": [
+        "#6B6A56"
+      ]
+    },
+    {
+      "n": 276,
+      "photo": "0276.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Amazon Essentials",
+      "description": "Navy blue casual chino shorts with belt loops, front zip closure, and side pockets.",
+      "hex": [
+        "#3a4452"
+      ]
+    },
+    {
+      "n": 277,
+      "photo": "0277.jpg",
+      "owner": "Shared",
+      "category": "Tops",
+      "subcategory": "Sweatshirt",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Billy Reid",
+      "description": "Long-sleeve heathered grey crewneck sweatshirt with raglan sleeves and a small chest pocket featuring a wooden button.",
+      "hex": [
+        "#A8A9A4"
+      ]
+    },
+    {
+      "n": 278,
+      "photo": "0278.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Heathered grey athletic shorts with elastic waistband and side pockets.",
+      "hex": [
+        "#8a8a8a"
+      ]
+    },
+    {
+      "n": 279,
+      "photo": "0279.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Chinos / Trousers",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "J.Crew",
+      "description": "Olive-green flat-front chino pants with 'J.Crew' label visible at the waistband interior.",
+      "hex": [
+        "#6b7d6e"
+      ]
+    },
+    {
+      "n": 280,
+      "photo": "0280.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Lulu Lemon",
+      "description": "Black athletic shorts with elastic waistband and side pockets.",
+      "hex": [
+        "#1f1f21"
+      ]
+    },
+    {
+      "n": 281,
+      "photo": "0281.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Carhartt",
+      "description": "Tan/beige cotton shorts with cuffed hems, belt loops, and a button-zip closure.",
+      "hex": [
+        "#b5a684"
+      ]
+    },
+    {
+      "n": 282,
+      "photo": "0282.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Levi's",
+      "description": "Black slim-fit jeans with five-pocket styling and visible zip fly.",
+      "hex": [
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 283,
+      "photo": "0283.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Sonoma",
+      "description": "Slim-fit faded black denim jeans with 'SONOMA' visible on waistband tag and standard five-pocket styling.",
+      "hex": [
+        "#2b2b2d"
+      ]
+    },
+    {
+      "n": 284,
+      "photo": "0284.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Levi's",
+      "description": "Slim-fit medium-wash blue denim jeans with classic five-pocket styling and faded whiskering at the hips and thighs.",
+      "hex": [
+        "#3d597a"
+      ]
+    },
+    {
+      "n": 285,
+      "photo": "0285.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Polyester",
+        "Nylon",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Yellow",
+      "pattern": "Floral",
+      "brand": "Steele",
+      "description": "Black shorts with allover white and yellow floral/clover print.",
+      "hex": [
+        "#1c1a17",
+        "#e8d9b8",
+        "#d4a82a"
+      ]
+    },
+    {
+      "n": 286,
+      "photo": "0286.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Maamgic",
+      "description": "White cotton sweat shorts with drawstring waistband, side pockets, and small embroidered logo on lower right leg.",
+      "hex": [
+        "#F2F1ED"
+      ]
+    },
+    {
+      "n": 287,
+      "photo": "0287.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Maamgic",
+      "description": "White casual shorts with elastic waistband, single button closure, and side pockets.",
+      "hex": [
+        "#EFEAE2"
+      ]
+    },
+    {
+      "n": 288,
+      "photo": "0288.jpg",
+      "owner": "Shared",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Olive green fleece sweat shorts with drawstring waist and side pockets.",
+      "hex": [
+        "#5a5e3a"
+      ]
+    },
+    {
+      "n": 289,
+      "photo": "0289.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Polyester",
+        "Nylon",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Steele",
+      "description": "Olive green mid-rise shorts with front button closure, belt loops, and standard five-pocket styling.",
+      "hex": [
+        "#6b6b41"
+      ]
+    },
+    {
+      "n": 290,
+      "photo": "0290.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "All In Motion",
+      "description": "Solid grey flat-front chino shorts with belt loops and side pockets.",
+      "hex": [
+        "#7A8590"
+      ]
+    },
+    {
+      "n": 291,
+      "photo": "0291.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Olive green flat-front chino shorts with belt loops, slant front pockets, and button closure.",
+      "hex": [
+        "#6b7340"
+      ]
+    },
+    {
+      "n": 292,
+      "photo": "0292.jpg",
+      "owner": "Shared",
+      "category": "Bottoms",
+      "subcategory": "Swimwear",
+      "material": [
+        "Polyester",
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Multicolor",
+      "pattern": "Graphic",
+      "brand": "RVCA",
+      "description": "Grey shorts with allover multicolor bird print and small 'RVCA' tag on lower right leg.",
+      "hex": [
+        "#5d5e63",
+        "#d94a3a",
+        "#e8b84a",
+        "#4a8fc2"
+      ]
+    },
+    {
+      "n": 293,
+      "photo": "0293.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Chubbies",
+      "description": "Black casual shorts with elastic waistband and front button closure.",
+      "hex": [
+        "#1c1c1c"
+      ]
+    },
+    {
+      "n": 294,
+      "photo": "0294.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "H&M",
+      "description": "Black denim shorts with five-pocket styling, button and zip fly closure, and faded wear throughout.",
+      "hex": [
+        "#2e2c2b"
+      ]
+    },
+    {
+      "n": 295,
+      "photo": "0295.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Pink",
+      "secondary_color": "Multicolor",
+      "pattern": "Solid",
+      "brand": "PrideBunny",
+      "description": "Peach pink denim shorts with rolled cuffs revealing a rainbow striped lining and five-pocket styling.",
+      "hex": [
+        "#F5B5A0",
+        "#E94B4B",
+        "#F2C84B",
+        "#4FB3D9"
+      ]
+    },
+    {
+      "n": 296,
+      "photo": "0296.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Polyester",
+        "Nylon",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Yellow",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Steele",
+      "description": "Mustard yellow shorts with front zipper, belt loops, and four-pocket styling.",
+      "hex": [
+        "#B5832A"
+      ]
+    },
+    {
+      "n": 297,
+      "photo": "0297.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Swimwear",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Red",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "",
+      "description": "Red board shorts with white drawstring, white contrast stitching, and a small circular logo patch on the lower right leg.",
+      "hex": [
+        "#E63329",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "n": 298,
+      "photo": "0298.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Swimwear",
+      "material": [
+        "Polyester",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "Multicolor",
+      "pattern": "Floral",
+      "brand": "DC2Miami",
+      "description": "Dark green athletic shorts with red, yellow, and pink floral print, drawstring waist, and side zip pockets.",
+      "hex": [
+        "#2d3a2a",
+        "#d83a2a",
+        "#e6b423",
+        "#e88aa8"
+      ]
+    },
+    {
+      "n": 299,
+      "photo": "0299.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Swimwear",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Black",
+      "pattern": "Solid",
+      "brand": "Amazon Essentials",
+      "description": "Grey athletic shorts with elastic waistband, black drawstring, and black inner lining visible at the hem.",
+      "hex": [
+        "#9a9a9c",
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 300,
+      "photo": "0300.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Swimwear",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "H&M",
+      "description": "Navy blue swim or casual shorts with white drawstring waistband and side pockets.",
+      "hex": [
+        "#3e4a5c"
+      ]
+    },
+    {
+      "n": 301,
+      "photo": "0301.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Amazon Essentials",
+      "description": "Grey casual chino-style shorts with belt loops, front pockets, and button closure.",
+      "hex": [
+        "#5a6068"
+      ]
+    },
+    {
+      "n": 302,
+      "photo": "0302.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Chubbies",
+      "description": "Navy cotton casual shorts with elastic waistband and button closure.",
+      "hex": [
+        "#2c3a55"
+      ]
+    },
+    {
+      "n": 303,
+      "photo": "0303.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Swimwear",
+      "material": [
+        "Polyester"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Parke & Ronen",
+      "description": "Navy shorts with white drawstring waistband and a small label on the lower right leg.",
+      "hex": [
+        "#1f2a47"
+      ]
+    },
+    {
+      "n": 304,
+      "photo": "0304.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "H&M",
+      "description": "Grey denim shorts with five-pocket styling, faded whisker detailing, and 'H&M' logo on inner waistband.",
+      "hex": [
+        "#7a716a"
+      ]
+    },
+    {
+      "n": 305,
+      "photo": "0305.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "American Eagle",
+      "description": "Grey casual shorts with elastic waistband, drawstring tie, and side pockets.",
+      "hex": [
+        "#9a9a95"
+      ]
+    },
+    {
+      "n": 306,
+      "photo": "0306.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Unknown"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Bonobos",
+      "description": "Light grey flat-front chino shorts with belt loops, slant pockets, and button closure.",
+      "hex": [
+        "#9ea0a0"
+      ]
+    },
+    {
+      "n": 307,
+      "photo": "0307.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "H&M",
+      "description": "Medium-wash denim shorts with cuffed hems, five-pocket styling, and subtle fading at the thighs.",
+      "hex": [
+        "#3d5872"
+      ]
+    },
+    {
+      "n": 308,
+      "photo": "0308.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Light Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Asos",
+      "description": "Light blue denim shorts with five-pocket styling and mid-length inseam.",
+      "hex": [
+        "#B8CEDD"
+      ]
+    },
+    {
+      "n": 309,
+      "photo": "0309.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "Levi's",
+      "description": "Distressed medium-wash blue denim jeans with heavy white paint splatter across the front thighs and faded whiskering.",
+      "hex": [
+        "#5b7a99",
+        "#d8d4cc"
+      ]
+    },
+    {
+      "n": 310,
+      "photo": "0310.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Chinos / Trousers",
+      "material": [
+        "Cotton",
+        "Polyester"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Express",
+      "description": "Light beige/grey flat-front tailored dress trousers with belt loops and slim straight leg.",
+      "hex": [
+        "#c5bdb0"
+      ]
+    },
+    {
+      "n": 311,
+      "photo": "0311.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Chinos / Trousers",
+      "material": [
+        "Polyester",
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Brown",
+      "secondary_color": "Black",
+      "pattern": "Striped",
+      "brand": "Mr Turk",
+      "description": "Slim-fit brown trousers with thin vertical black pinstripes, slanted front pockets, and a button-zip closure.",
+      "hex": [
+        "#6b4f47",
+        "#2b1f1d"
+      ]
+    },
+    {
+      "n": 312,
+      "photo": "0312.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Kenzo",
+      "description": "Medium-wash blue denim jeans with button fly, five-pocket styling, and contrast orange stitching.",
+      "hex": [
+        "#3C638C"
+      ]
+    },
+    {
+      "n": 313,
+      "photo": "0313.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Chinos / Trousers",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Banana Republic",
+      "description": "Tan/beige flat-front chino pants with slim straight legs and 'Banana Republic' label visible at waistband.",
+      "hex": [
+        "#A8855A"
+      ]
+    },
+    {
+      "n": 314,
+      "photo": "0314.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Banana Republic",
+      "description": "Black five-pocket jeans with silver rivets and button closure, hanging on a 'Banana Republic Traveler' branded hanger.",
+      "hex": [
+        "#1a1a1c"
+      ]
+    },
+    {
+      "n": 315,
+      "photo": "0315.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Black slim-fit denim jeans with five-pocket styling and a button-zip closure.",
+      "hex": [
+        "#1f1f20"
+      ]
+    },
+    {
+      "n": 316,
+      "photo": "0316.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Faded black skinny jeans with whiskering at the thighs and a slim tapered leg.",
+      "hex": [
+        "#2c2c2e"
+      ]
+    },
+    {
+      "n": 317,
+      "photo": "0317.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Levi's",
+      "description": "Black slim-fit denim jeans with five-pocket styling and button-and-zip closure.",
+      "hex": [
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 318,
+      "photo": "0318.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Chinos / Trousers",
+      "material": [
+        "Cotton",
+        "Nylon",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Jack & Jones",
+      "description": "Olive green cargo pants with side flap pockets, elastic waistband with buckle, and drawstring cinch cuffs at the ankles.",
+      "hex": [
+        "#7c7a5e"
+      ]
+    },
+    {
+      "n": 319,
+      "photo": "0319.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Chinos / Trousers",
+      "material": [
+        "Cotton",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Black slim-fit chino-style trousers with flat front, belt loops, side pockets, and single button closure.",
+      "hex": [
+        "#1a1a1c"
+      ]
+    },
+    {
+      "n": 320,
+      "photo": "0320.jpg",
+      "owner": "Billy",
+      "category": "Bottoms",
+      "subcategory": "Jeans",
+      "material": [
+        "Denim"
+      ],
+      "primary_color": "Light Blue",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Uniqlo",
+      "description": "Light wash blue denim jeans with classic five-pocket styling and subtle fading at the thighs.",
+      "hex": [
+        "#8FB4D1"
+      ]
+    },
+    {
+      "n": 321,
+      "photo": "0321.jpg",
+      "owner": "Michael",
+      "category": "Bottoms",
+      "subcategory": "Shorts",
+      "material": [
+        "Cotton",
+        "Polyester",
+        "Nylon",
+        "Spandex / Elastane"
+      ],
+      "primary_color": "Navy",
+      "secondary_color": "Orange",
+      "pattern": "Graphic",
+      "brand": "Steele",
+      "description": "Navy shorts with abstract orange and grey geometric print throughout.",
+      "hex": [
+        "#2c3142",
+        "#d97b2a",
+        "#a8a39a"
+      ]
+    },
+    {
+      "n": 322,
+      "photo": "0322.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Black",
+      "pattern": "Solid",
+      "brand": "Nike",
+      "description": "White low-top leather sneaker with black Nike swoosh on side and white laces.",
+      "hex": [
+        "#EDE8E0",
+        "#1A1A1A"
+      ]
+    },
+    {
+      "n": 323,
+      "photo": "0323.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "White",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Target",
+      "description": "Low-top white canvas lace-up sneaker with rubber sole.",
+      "hex": [
+        "#EDE7D8"
+      ]
+    },
+    {
+      "n": 324,
+      "photo": "0324.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Boots",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "Brown",
+      "pattern": "Solid",
+      "brand": "Atheist Shoes",
+      "description": "Black leather lace-up ankle boot with brown laces, cap toe, and dark sole, vintage style.",
+      "hex": [
+        "#1c1c1c",
+        "#3d2a1f"
+      ]
+    },
+    {
+      "n": 325,
+      "photo": "0325.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Yellow",
+      "pattern": "Solid",
+      "brand": "Atheist Shoes",
+      "description": "Tan leather high-top sneaker-style shoe with yellow laces, cap toe stitching, and a low profile sole.",
+      "hex": [
+        "#A6692E",
+        "#E8C547"
+      ]
+    },
+    {
+      "n": 326,
+      "photo": "0326.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "Feiyue",
+      "description": "Black canvas low-top laceless sneaker with silver side arrow logo, faded silver heel wordmark, and white rubber sole with gum trim.",
+      "hex": [
+        "#111114",
+        "#c0c0c0",
+        "#ece7dc"
+      ]
+    },
+    {
+      "n": 327,
+      "photo": "0327.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "Onitsuka Tiger",
+      "description": "Black canvas slip-on sneaker with tonal black side stripes, metal eyelets without laces, and a white midsole.",
+      "hex": [
+        "#0e0e10",
+        "#ffffff"
+      ]
+    },
+    {
+      "n": 328,
+      "photo": "0328.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Loafers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "L.L.Bean",
+      "description": "Tan suede moccasin slipper with cream shearling lining, whipstitched edges, and 'L.L.Bean' label on the side.",
+      "hex": [
+        "#A0682F",
+        "#E8DCC4"
+      ]
+    },
+    {
+      "n": 329,
+      "photo": "0329.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Wool"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "Allbirds",
+      "description": "Dark green wool sneaker with matching laces and white rubber sole.",
+      "hex": [
+        "#2d3a24",
+        "#f1ece1"
+      ]
+    },
+    {
+      "n": 330,
+      "photo": "0330.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Orange",
+      "secondary_color": "Brown",
+      "pattern": "Solid",
+      "brand": "Atheist Shoes",
+      "description": "Tan/orange nubuck leather low-profile sneaker with brown leather laces and white rubber sole.",
+      "hex": [
+        "#D88B3A",
+        "#8B5A2B",
+        "#E8E0D0"
+      ]
+    },
+    {
+      "n": 331,
+      "photo": "0331.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Wool"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "Allbirds",
+      "description": "Low-top wool knit sneaker in light grey with matching laces and a white rubber midsole.",
+      "hex": [
+        "#a8a89e",
+        "#ece8e0"
+      ]
+    },
+    {
+      "n": 332,
+      "photo": "0332.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Brown",
+      "pattern": "Solid",
+      "brand": "Atheist Shoes",
+      "description": "High-top beige suede sneaker with brown laces and tan rubber sole.",
+      "hex": [
+        "#C8B89C",
+        "#7A5B43"
+      ]
+    },
+    {
+      "n": 333,
+      "photo": "0333.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Tan/Beige",
+      "pattern": "Solid",
+      "brand": "Onitsuka Tiger",
+      "description": "Low-top perforated leather sneaker in off-white with tan/beige laces, gold heel tab, and small gold logo on the side.",
+      "hex": [
+        "#D8D4C5",
+        "#B8A988",
+        "#C9B57A"
+      ]
+    },
+    {
+      "n": 334,
+      "photo": "0334.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Boots",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Brown",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "UGG",
+      "description": "Brown leather chukka boot with lace-up front, stitched detailing, and 'UGG' logo embossed on the heel.",
+      "hex": [
+        "#7B5A3F"
+      ]
+    },
+    {
+      "n": 335,
+      "photo": "0335.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sandals",
+      "material": [
+        "Synthetic blend"
+      ],
+      "primary_color": "Brown",
+      "secondary_color": "Multicolor",
+      "pattern": "Colorblock",
+      "brand": "Teva",
+      "description": "Sport sandal with brown, burgundy, navy, and yellow webbing straps and a black rubber sole with tan tread.",
+      "hex": [
+        "#8B5E3C",
+        "#6E1F2E",
+        "#2E2E3A",
+        "#D49A1E"
+      ]
+    },
+    {
+      "n": 336,
+      "photo": "0336.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Green",
+      "pattern": "Colorblock",
+      "brand": "Nike",
+      "description": "Nike Dunk Low sneaker in white leather with dark green overlays, swoosh, and laces, on white rubber midsole.",
+      "hex": [
+        "#F2EFE8",
+        "#2F4A44"
+      ]
+    },
+    {
+      "n": 337,
+      "photo": "0337.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Yellow",
+      "pattern": "Solid",
+      "brand": "CAMPER",
+      "description": "Beige leather low-top sneaker with yellow accent on toe, white sole with 'CAMPER' printed on the midsole, and small red tab at heel.",
+      "hex": [
+        "#cfc6b3",
+        "#d4a83a",
+        "#f1ece4"
+      ]
+    },
+    {
+      "n": 338,
+      "photo": "0338.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Yellow",
+      "secondary_color": "Black",
+      "pattern": "Colorblock",
+      "brand": "Onitsuka Tiger",
+      "description": "Yellow leather low-top sneaker with iconic black tiger stripes on the sides, suede toe box, and white rubber sole.",
+      "hex": [
+        "#E8B412",
+        "#1A1A1A",
+        "#C9893A"
+      ]
+    },
+    {
+      "n": 339,
+      "photo": "0339.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Dress shoes",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Aldo",
+      "description": "Black leather oxford dress shoe with lace-up closure, pointed toe, and low stacked heel.",
+      "hex": [
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 340,
+      "photo": "0340.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Cotton"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "Converse",
+      "description": "Black mid-top canvas sneaker with white laces, white rubber toe cap and sole, and 'Converse' label visible at heel tab.",
+      "hex": [
+        "#1a1a1a",
+        "#e8e4d8"
+      ]
+    },
+    {
+      "n": 341,
+      "photo": "0341.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "New Balance",
+      "description": "All-black low-top leather sneaker with embossed 'N' logo, '550' on side, and 'new balance' wordmark on midsole.",
+      "hex": [
+        "#0f0f0f"
+      ]
+    },
+    {
+      "n": 342,
+      "photo": "0342.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Dress shoes",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Aldo",
+      "description": "Tan leather pointed-toe derby dress shoe with dark brown laces and black sole.",
+      "hex": [
+        "#B6722E"
+      ]
+    },
+    {
+      "n": 343,
+      "photo": "0343.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Synthetic blend"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "Black",
+      "pattern": "Solid",
+      "brand": "Adidas",
+      "description": "Blue Adidas athletic running sneaker with black three-stripe logo on side, white sole, and 'climacool' wordmark on heel.",
+      "hex": [
+        "#1ca5d6",
+        "#1a1a1a",
+        "#e8e8e6"
+      ]
+    },
+    {
+      "n": 344,
+      "photo": "0344.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "Brown",
+      "pattern": "Colorblock",
+      "brand": "unknown",
+      "description": "Low-top sneaker with olive green suede and canvas panels, brown leather heel accent, brown laces, and white rubber sole.",
+      "hex": [
+        "#6B6A4A",
+        "#7A5236",
+        "#C9BFA0",
+        "#E8E4DA"
+      ]
+    },
+    {
+      "n": 345,
+      "photo": "0345.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Boots",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Brown",
+      "secondary_color": "Black",
+      "pattern": "Solid",
+      "brand": "H&M",
+      "description": "Brown suede Chelsea ankle boot with black elastic side panel and pull tab, low stacked heel.",
+      "hex": [
+        "#5a4034",
+        "#2b2724"
+      ]
+    },
+    {
+      "n": 346,
+      "photo": "0346.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Boots",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Aston Gray",
+      "description": "Tan suede chukka boot with brown laces, low rubber sole, and ankle-high lace-up design.",
+      "hex": [
+        "#B5895A"
+      ]
+    },
+    {
+      "n": 347,
+      "photo": "0347.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Yellow",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "Vans",
+      "description": "Yellow suede low-top lace-up sneaker with white side stripe, white laces, and white rubber sole with red Vans heel tab.",
+      "hex": [
+        "#E8A317",
+        "#F5F0E6"
+      ]
+    },
+    {
+      "n": 348,
+      "photo": "0348.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Navy",
+      "pattern": "Colorblock",
+      "brand": "Onitsuka Tiger",
+      "description": "White leather low-top sneaker with navy crossed side stripes and a red accent stripe, white rubber toe cap and sole.",
+      "hex": [
+        "#E8E2D5",
+        "#1F2A44",
+        "#A8262F"
+      ]
+    },
+    {
+      "n": 349,
+      "photo": "0349.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Green",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "Atheist Shoes",
+      "description": "Green leather low-top sneaker with brown laces and white rubber sole.",
+      "hex": [
+        "#2f5b40",
+        "#f1ece0",
+        "#5b4a32"
+      ]
+    },
+    {
+      "n": 350,
+      "photo": "0350.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Grey",
+      "pattern": "Solid",
+      "brand": "unknown",
+      "description": "Low-top white leather sneaker with grey suede toe and heel panels, perforated side detail, and a small triangular logo on the heel.",
+      "hex": [
+        "#E8E4DC",
+        "#B8B2A8"
+      ]
+    },
+    {
+      "n": 351,
+      "photo": "0351.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Nylon"
+      ],
+      "primary_color": "Blue",
+      "secondary_color": "Light Blue",
+      "pattern": "Colorblock",
+      "brand": "Brooks",
+      "description": "Brooks Ghost Max running shoe in blue and light blue knit with white midsole, 'BROOKS' wordmark on side and 'GHOST MAX' on heel.",
+      "hex": [
+        "#1f6f86",
+        "#7ed3d1",
+        "#ffffff",
+        "#e8a02a"
+      ]
+    },
+    {
+      "n": 352,
+      "photo": "0352.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sandals",
+      "material": [
+        "Synthetic blend"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Grey",
+      "pattern": "Plaid",
+      "brand": "Crocs",
+      "description": "Tan Crocs clog with 'crocs' embossed on side and grey and white plaid fuzzy lining around collar.",
+      "hex": [
+        "#C2A984",
+        "#8A8175",
+        "#E8E2D6"
+      ]
+    },
+    {
+      "n": 353,
+      "photo": "0353.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Nylon"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "White",
+      "pattern": "Solid",
+      "brand": "Nike",
+      "description": "Black Nike Flyknit running shoe with white swoosh logo on side and white midsole.",
+      "hex": [
+        "#111114",
+        "#e8e6e1"
+      ]
+    },
+    {
+      "n": 354,
+      "photo": "0354.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Dress shoes",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Black",
+      "secondary_color": "",
+      "pattern": "Solid",
+      "brand": "Cole Haan",
+      "description": "Black leather lace-up derby dress shoe with stitched apron toe and low stacked heel.",
+      "hex": [
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 355,
+      "photo": "0355.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Tan/Beige",
+      "secondary_color": "Green",
+      "pattern": "Solid",
+      "brand": "Atheist Shoes",
+      "description": "Beige leather low-top lace-up sneaker with mint green laces and a dark grey circular patch on the heel.",
+      "hex": [
+        "#c9bca6",
+        "#b8e3b0",
+        "#5a5a5a"
+      ]
+    },
+    {
+      "n": 356,
+      "photo": "0356.jpg",
+      "owner": "Billy",
+      "category": "Shoes",
+      "subcategory": "Boots",
+      "material": [
+        "Leather"
+      ],
+      "primary_color": "Olive",
+      "secondary_color": "Tan/Beige",
+      "pattern": "Solid",
+      "brand": "Olukai",
+      "description": "Olive green leather chukka-style ankle boot with brown laces and tan rubber sole.",
+      "hex": [
+        "#4a4a32",
+        "#8b5a2b",
+        "#1a1a1a"
+      ]
+    },
+    {
+      "n": 357,
+      "photo": "0357.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Nylon"
+      ],
+      "primary_color": "Grey",
+      "secondary_color": "Orange",
+      "pattern": "Other",
+      "brand": "Nike",
+      "description": "Grey Nike running sneaker with orange geometric print, black swoosh logo, orange heel accent, and white flexible sole.",
+      "hex": [
+        "#A8B5B8",
+        "#F58A3C",
+        "#2A2A2A",
+        "#FFFFFF"
+      ]
+    },
+    {
+      "n": 358,
+      "photo": "0358.jpg",
+      "owner": "Michael",
+      "category": "Shoes",
+      "subcategory": "Sneakers",
+      "material": [
+        "Synthetic blend"
+      ],
+      "primary_color": "White",
+      "secondary_color": "Light Blue",
+      "pattern": "Striped",
+      "brand": "Puma",
+      "description": "Puma soccer cleat in white and light blue with horizontal striped pattern, black Puma logo and wordmark 'PUMA' on side.",
+      "hex": [
+        "#E8E4D8",
+        "#7FD8CE",
+        "#1A1A1A"
+      ]
+    }
+  ]
+}
