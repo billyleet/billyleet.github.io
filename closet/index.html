@@ -146,17 +146,6 @@
             white-space: nowrap;
         }
 
-        .header-sticky {
-            background: linear-gradient(315deg, transparent 10px, #f5e642 0);
-            padding: 0.3rem 0.75rem 0.35rem 0.6rem;
-            font-family: 'Caveat', cursive;
-            font-size: 0.8rem;
-            font-weight: 700;
-            color: #1a1a1a;
-            transform: rotate(1.5deg);
-            filter: drop-shadow(1px 2px 5px rgba(0,0,0,0.13));
-            white-space: nowrap;
-        }
 
         /* ══════════════════════════════════════════
            LAYOUT — sidebar + main
@@ -887,7 +876,6 @@
 
             .sidebar-overlay.open { display: block; }
 
-            .header-sticky { display: none; }
             .active-pills { display: none; }
 
             .main { padding: 0.85rem; }
@@ -978,7 +966,6 @@
     <div class="active-pills" id="active-pills"></div>
     <div class="header-right">
         <span class="header-count" id="count-display">loading…</span>
-        <div class="header-sticky">✦ our stuff</div>
     </div>
 </header>
 
@@ -1190,6 +1177,27 @@
         patterns:   new Set(),
         materials:  new Set(),
     };
+
+    const COLOR_ORDER = [
+        'Black', 'Grey', 'White',
+        'Brown', 'Tan/Beige',
+        'Red', 'Burgundy', 'Pink',
+        'Orange', 'Yellow',
+        'Olive', 'Green',
+        'Light Blue', 'Blue', 'Navy',
+        'Purple',
+        'Multicolor',
+    ];
+    const COLOR_RANK = Object.fromEntries(COLOR_ORDER.map((c, i) => [c, i]));
+
+    function spectrumCompare(a, b) {
+        const ra = COLOR_RANK[a.primary_color] ?? COLOR_ORDER.length;
+        const rb = COLOR_RANK[b.primary_color] ?? COLOR_ORDER.length;
+        if (ra !== rb) return ra - rb;
+        return (a.category || '').localeCompare(b.category || '')
+            || (a.subcategory || '').localeCompare(b.subcategory || '')
+            || a.n - b.n;
+    }
 
     const COLOR_HEX = {
         'Black':'#1a1a1a','White':'#f7f7f7','Grey':'#9a9a9a',
@@ -1505,7 +1513,7 @@
     // ── Render grid ────────────────────────────────────────────────────────────
 
     function render() {
-        filteredItems = ALL_ITEMS.filter(matchesFilters);
+        filteredItems = ALL_ITEMS.filter(matchesFilters).sort(spectrumCompare);
         const total = ALL_ITEMS.length;
 
         const countEl = document.getElementById('count-display');
