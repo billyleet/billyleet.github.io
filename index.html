@@ -7,7 +7,7 @@
     <title>Billy Leet — UX Researcher</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Shantell+Sans:wght@400;500;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <style>
 
@@ -22,21 +22,22 @@
         }
 
         :root {
-            --bg:            #f5f0e8;
-            --text:          #1a1a1a;
-            --text-secondary:#4a4540;
-            --accent:        #0c6b6b;
-            --accent-bg:     rgba(12, 107, 107, 0.09);
-            --muted:         #8a8580;
-            --rule:          #d0cbc2;
-            --shadow:        rgba(0, 0, 0, 0.11);
+            --bg:            #fbfbf9;   /* canvas white */
+            --text:          #1c1d21;   /* ink */
+            --text-secondary:#4a4c53;
+            --accent:        #2f54d1;   /* marker blue */
+            --accent-bg:     rgba(47, 84, 209, 0.08);
+            --hl:            rgba(245, 230, 66, 0.55); /* highlighter swipe */
+            --muted:         #8b8d94;
+            --rule:          #dfe0e2;
+            --shadow:        rgba(30, 34, 60, 0.11);
         }
 
         html { scroll-behavior: smooth; }
 
         body {
             background-color: var(--bg);
-            background-image: radial-gradient(circle, rgba(0,0,0,0.1) 1px, transparent 1px);
+            background-image: radial-gradient(circle, rgba(28,29,33,0.09) 1px, transparent 1px);
             background-size: 22px 22px;
             background-attachment: local;
             color: var(--text);
@@ -56,30 +57,9 @@
             padding: 0 2.5rem;
         }
 
-        /* ================================
-           SCROLL ANIMATIONS
-        ================================ */
-
-        .animate-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.65s ease, transform 0.65s ease;
-        }
-
-        .animate-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
         @media (prefers-reduced-motion: reduce) {
-            .animate-in { opacity: 1; transform: none; transition: none; }
-
-            .hero-badge, .hero-name, .hero-statement, .hero-cta, .hero-availability { animation: none; }
-
-        }
-
-        @media print {
-            .animate-in { opacity: 1 !important; transform: none !important; }
+            .hero-name, .hero-statement, .hero-cta, .hero-availability,
+            .cursor-chip { animation: none; }
         }
 
         /* ================================
@@ -91,18 +71,29 @@
             border-bottom: 1px solid var(--rule);
         }
 
-        /* FigJam-style frame header: bold caps + accent left border */
+        /* Board section header: marker writing with a highlighter swipe */
         .section-label {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.85rem;
+            font-family: 'Shantell Sans', cursive;
+            font-size: 1.6rem;
             font-weight: 700;
-            letter-spacing: 0.22em;
-            text-transform: uppercase;
             color: var(--text);
             margin-bottom: 4.5rem;
-            padding-left: 1rem;
-            border-left: 4px solid var(--accent);
             display: inline-block;
+            position: relative;
+            transform: rotate(-0.8deg);
+        }
+
+        .section-label::before {
+            content: '';
+            position: absolute;
+            left: -0.5rem;
+            right: -0.75rem;
+            top: 52%;
+            height: 0.85em;
+            background: var(--hl);
+            transform: translateY(-42%) rotate(-0.6deg) skewX(-8deg);
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+            z-index: -1;
         }
 
         /* ================================
@@ -118,45 +109,102 @@
             position: relative;
         }
 
-        /* FigJam "frame" border */
+        /* A selected frame on the canvas: accent border + corner handles */
         .hero-frame {
-            border: 2px solid var(--text);
-            border-radius: 8px;
+            border: 2px solid var(--accent);
+            border-radius: 2px;
             position: relative;
-            padding: 3.5rem 3rem 4rem;
+            padding: 4rem 3rem 4.5rem;
             width: 100%;
             text-align: center;
+            background: rgba(255, 255, 255, 0.55);
         }
 
-        /* Pill badge for eyebrow label */
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            background: var(--accent-bg);
-            color: var(--accent);
-            border: 1.5px solid var(--accent);
-            border-radius: 100px;
+        /* Frame name, like a canvas layer label */
+        .frame-label {
+            position: absolute;
+            top: -1.7rem;
+            left: 0;
             font-family: 'JetBrains Mono', monospace;
             font-size: 0.68rem;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            padding: 0.3rem 0.9rem;
-            margin-bottom: 1.75rem;
-            animation: fadeUp 0.6s ease 0.1s both;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+        }
+
+        /* Corner selection handles */
+        .hero-frame .handle {
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            background: #fff;
+            border: 2px solid var(--accent);
+        }
+
+        .handle.tl { top: -6px;    left: -6px;  }
+        .handle.tr { top: -6px;    right: -6px; }
+        .handle.bl { bottom: -6px; left: -6px;  }
+        .handle.br { bottom: -6px; right: -6px; }
+
+        /* Collaborator cursor chip */
+        .cursor-chip {
+            position: absolute;
+            display: flex;
+            align-items: flex-start;
+            gap: 0;
+            pointer-events: none;
+            z-index: 3;
+            animation: cursorDrift 5s ease-in-out infinite;
+        }
+
+        .cursor-chip svg {
+            width: 17px;
+            height: 17px;
+            flex-shrink: 0;
+        }
+
+        .cursor-chip .chip-name {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #fff;
+            padding: 0.18rem 0.55rem;
+            border-radius: 4px 12px 12px 12px;
+            margin: 13px 0 0 -3px;
+            white-space: nowrap;
+        }
+
+        .cursor-billy { top: 8%; right: 6%; }
+        .cursor-billy .chip-name { background: var(--accent); }
+        .cursor-billy svg { color: var(--accent); }
+
+        .cursor-walter { bottom: -14px; right: 18%; animation-delay: 2.5s; }
+        .cursor-walter .chip-name { background: #9c6bd4; }
+        .cursor-walter svg { color: #9c6bd4; }
+
+        @keyframes cursorDrift {
+            0%, 100% { transform: translate(0, 0); }
+            35%      { transform: translate(-9px, 6px); }
+            70%      { transform: translate(5px, -4px); }
         }
 
         .hero-name {
-            font-family: 'DM Serif Display', serif;
-            font-size: clamp(3.5rem, 11vw, 13rem);
-            line-height: 0.88;
-            letter-spacing: -0.02em;
+            font-family: 'Shantell Sans', cursive;
+            font-size: clamp(3.2rem, 9vw, 8.5rem);
+            font-weight: 700;
+            line-height: 1.02;
+            letter-spacing: -0.01em;
             color: var(--text);
             margin-bottom: 2rem;
+            transform: rotate(-1.2deg);
             animation: fadeUp 0.8s ease 0.2s both;
         }
 
-        .hero-name .first { display: block; }
-        .hero-name .last  { display: block; font-style: italic; }
+        .hero-name .underline-svg {
+            display: block;
+            width: min(58%, 340px);
+            margin: 0.4rem auto 0;
+            color: var(--accent);
+        }
 
         .hero-statement {
             max-width: 640px;
@@ -224,23 +272,26 @@
         /* Scroll hint chevron */
         .scroll-hint {
             position: absolute;
-            bottom: 1.5rem;
+            bottom: 1.25rem;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-50%) rotate(-3deg);
             color: var(--muted);
             opacity: 1;
             transition: opacity 0.4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.1rem;
+        }
+
+        .scroll-note {
+            font-family: 'Caveat', cursive;
+            font-size: 1.25rem;
         }
 
         .scroll-hint svg {
-            width: 28px;
-            height: 28px;
-            animation: bob 2s ease-in-out infinite;
-        }
-
-        @keyframes bob {
-            0%, 100% { transform: translateY(0); }
-            50%      { transform: translateY(6px); }
+            width: 16px;
+            height: 27px;
         }
 
         /* ================================
@@ -267,9 +318,10 @@
             transform: rotate(-2deg);
             position: sticky;
             top: 4rem;
-            font-family: 'DM Serif Display', serif;
-            font-size: clamp(1.35rem, 2vw, 1.8rem);
-            line-height: 1.3;
+            font-family: 'Shantell Sans', cursive;
+            font-weight: 500;
+            font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+            line-height: 1.4;
             color: #1a1a1a;
         }
 
@@ -379,14 +431,6 @@
             pointer-events: none;
         }
 
-        .sticky-number {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.58rem;
-            letter-spacing: 0.18em;
-            color: rgba(0,0,0,0.28);
-            margin-bottom: 0.5rem;
-        }
-
         .sticky-title {
             font-family: 'Caveat', cursive;
             font-size: 1.4rem;
@@ -437,12 +481,18 @@
             padding-top: 1rem;
         }
 
-        /* The track is a thick horizontal line */
+        /* The track is a hand-drawn marker line */
         .timeline-track {
-            height: 3px;
-            background: var(--text);
+            height: 14px;
             position: relative;
             margin-bottom: 0;
+            color: var(--text);
+        }
+
+        .timeline-track svg {
+            display: block;
+            width: 100%;
+            height: 14px;
         }
 
         /* Five cards in a grid below the track */
@@ -468,19 +518,20 @@
             opacity: 1;
         }
 
+        /* "current" flag: a mini sticky slapped on the card corner */
         .tc-badge {
             position: absolute;
-            top: 0.5rem;
-            right: 0.5rem;
-            background: var(--accent-bg);
-            color: var(--accent);
-            border: 1.5px solid var(--accent);
-            border-radius: 100px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.62rem;
-            letter-spacing: 0.14em;
-            text-transform: uppercase;
-            padding: 0.25rem 0.7rem;
+            top: -0.4rem;
+            right: 0.6rem;
+            background: #f5e642;
+            color: #1a1a1a;
+            font-family: 'Caveat', cursive;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.1;
+            padding: 0.2rem 0.6rem 0.3rem;
+            transform: rotate(4deg);
+            box-shadow: 1px 2px 5px rgba(0,0,0,0.16);
         }
 
         .timeline-card {
@@ -503,24 +554,24 @@
             position: absolute;
             top: -2rem;
             left: 50%;
-            transform: translateX(-50%);
-            width: 2px;
+            transform: translateX(-50%) rotate(1.5deg);
+            width: 0;
             height: 2rem;
-            background: var(--text);
+            border-left: 2px dashed var(--muted);
         }
 
         /* Dot sitting on the timeline track */
         .timeline-card::after {
             content: '';
             position: absolute;
-            top: calc(-2rem - 6px);
+            top: calc(-2rem - 8px);
             left: 50%;
-            transform: translateX(-50%);
-            width: 12px;
+            transform: translateX(-50%) rotate(-4deg);
+            width: 13px;
             height: 12px;
-            background: white;
+            background: var(--bg);
             border: 2.5px solid var(--accent);
-            border-radius: 50%;
+            border-radius: 55% 45% 50% 50% / 50% 55% 45% 50%;
         }
 
         /* Subtle rotations on some cards */
@@ -537,9 +588,10 @@
         }
 
         .tc-company {
-            font-family: 'DM Serif Display', serif;
-            font-size: 1.2rem;
-            line-height: 1.2;
+            font-family: 'Shantell Sans', cursive;
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1.25;
         }
 
         .tc-role {
@@ -597,8 +649,9 @@
         }
 
         .footer-name {
-            font-family: 'DM Serif Display', serif;
-            font-size: 1.1rem;
+            font-family: 'Shantell Sans', cursive;
+            font-weight: 500;
+            font-size: 1.05rem;
             color: var(--text);
         }
 
@@ -632,20 +685,6 @@
             font-size: 0.63rem;
             letter-spacing: 0.1em;
             color: var(--muted);
-        }
-
-        /* ================================
-           STICKER DECORATIONS
-        ================================ */
-
-        .sticker {
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            opacity: 0.9;
-            pointer-events: none;
-            z-index: 0;
-            transform: rotate(var(--r, 0deg));
         }
 
         /* ================================
@@ -748,7 +787,9 @@
 
             .scroll-hint { display: none; }
 
-            .sticker { display: none; }
+            .cursor-chip { display: none; }
+
+            .frame-label { top: -1.5rem; }
         }
 
         @media (max-width: 480px) {
@@ -765,12 +806,23 @@
     ================================ -->
     <section id="hero">
         <div class="container" style="position:relative">
-            <img class="sticker" src="stickers/icons8-copybook-100.png" alt="" aria-hidden="true" style="--r: 12deg; top: 35px; right: 72px;">
             <div class="hero-frame">
-                <span class="hero-badge">UX Researcher</span>
+                <span class="frame-label" aria-hidden="true">billy's board &middot; intro</span>
+                <span class="handle tl" aria-hidden="true"></span>
+                <span class="handle tr" aria-hidden="true"></span>
+                <span class="handle bl" aria-hidden="true"></span>
+                <span class="handle br" aria-hidden="true"></span>
+                <div class="cursor-chip cursor-billy" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.5 3.2l12.8 7.6-5.6 1.4-2.6 5.2z"/></svg>
+                    <span class="chip-name">billy &middot; ux researcher</span>
+                </div>
+                <div class="cursor-chip cursor-walter" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M5.5 3.2l12.8 7.6-5.6 1.4-2.6 5.2z"/></svg>
+                    <span class="chip-name">walter &#128062;</span>
+                </div>
                 <h1 class="hero-name">
-                    <span class="first">Billy</span>
-                    <span class="last">Leet</span>
+                    Billy Leet
+                    <svg class="underline-svg" viewBox="0 0 300 14" fill="none" aria-hidden="true"><path d="M4 9 C 60 4, 120 12, 170 7 S 260 6, 296 9" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
                 </h1>
                 <p class="hero-statement">I study how people communicate &#8211; <br>with products, with each other, and with themselves.</p>
                 <a href="mailto:billyleet@gmail.com" class="hero-cta">Email me &nbsp;&rarr;</a>
@@ -778,7 +830,8 @@
             </div>
         </div>
         <div class="scroll-hint" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            <span class="scroll-note">the good stuff</span>
+            <svg viewBox="0 0 20 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2 C 8 10, 12 16, 10 26"/><path d="M4 21 C 6 25, 8 28, 10 30 C 12 28, 14 25, 16 21"/></svg>
         </div>
     </section>
 
@@ -787,8 +840,7 @@
     ================================ -->
     <section id="about">
         <div class="container" style="position:relative">
-            <img class="sticker" src="stickers/icons8-quote-left-100.png" alt="" aria-hidden="true" style="--r: -8deg; top: -2.3rem; left: 13rem;">
-            <p class="section-label">01 &nbsp; About</p>
+            <p class="section-label">about</p>
             <div class="about-grid">
                 <div class="about-sticky-quote">
                     Good research answers the question. <br><br> Great research changes which question gets asked next.
@@ -808,8 +860,7 @@
     ================================ -->
     <section id="capabilities">
         <div class="container" style="position:relative">
-            <img class="sticker" src="stickers/icons8-binoculars-100.png" alt="" aria-hidden="true" style="--r: 6deg; top: -2.3rem; left: 15rem;">
-            <p class="section-label">02 &nbsp; What I Do</p>
+            <p class="section-label">what I do</p>
             <div class="figjam-canvas">
 
                 <!-- Easter eggs hidden beneath stickies — discovered by dragging -->
@@ -836,37 +887,31 @@
                 </div>
 
                 <div class="sticky sticky-01">
-                    <p class="sticky-number">01</p>
                     <h3 class="sticky-title">Research Strategy</h3>
                     <p>The best research projects start with a precise question, not a vague one. I get involved before the brief is written to help teams figure out exactly what they need to learn.</p>
                 </div>
 
                 <div class="sticky sticky-02">
-                    <p class="sticky-number">02</p>
                     <h3 class="sticky-title">Qualitative Research</h3>
                     <p>Interviews, ethnographic observation, diary studies, usability testing. I'm skilled at creating conditions where people tell you what they actually think, not what they think you want to hear.</p>
                 </div>
 
                 <div class="sticky sticky-03">
-                    <p class="sticky-number">03</p>
                     <h3 class="sticky-title">Mixed Methods</h3>
                     <p>Qualitative findings gain force when triangulated with behavioral data. I'm comfortable partnering with data scientists and designing surveys that complement exploratory work.</p>
                 </div>
 
                 <div class="sticky sticky-04">
-                    <p class="sticky-number">04</p>
                     <h3 class="sticky-title">Synthesis &amp; Storytelling</h3>
                     <p>After fieldwork, I put real time into synthesis: what the patterns mean, how to sequence the story, and what format will reach the people who need to act on it.</p>
                 </div>
 
                 <div class="sticky sticky-05">
-                    <p class="sticky-number">05</p>
                     <h3 class="sticky-title">Communication &amp; Language</h3>
                     <p>I trained as a Speech-Language Pathologist before moving into UX research. That background gives me a specific vocabulary for diagnosing where communication breaks down, which changes the questions I know to ask.</p>
                 </div>
 
                 <div class="sticky sticky-06">
-                    <p class="sticky-number">06</p>
                     <h3 class="sticky-title">Stakeholder Influence</h3>
                     <p>Getting research into decisions is a separate skill from doing the research. I pay close attention to who makes decisions, what they need to hear, and when in the process they're actually open to changing course.</p>
                 </div>
@@ -880,10 +925,11 @@
     ================================ -->
     <section id="career">
         <div class="container" style="position:relative">
-            <img class="sticker" src="stickers/icons8-resume-100.png" alt="" aria-hidden="true" style="--r: -10deg; top: -2.3rem; left: 13rem;">
-            <p class="section-label">03 &nbsp; Career</p>
+            <p class="section-label">career</p>
             <div class="career-timeline">
-                <div class="timeline-track"></div>
+                <div class="timeline-track" aria-hidden="true">
+                    <svg viewBox="0 0 1200 14" preserveAspectRatio="none" fill="none"><path d="M2 8 C 90 4, 190 11, 300 7 S 500 10, 610 7 S 820 4, 930 8 S 1120 10, 1198 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+                </div>
                 <div class="timeline-cards">
 
                     <div class="timeline-card tc-1">
@@ -923,7 +969,7 @@
 
                     <div class="timeline-card tc-5">
                         <span class="tc-tape" aria-hidden="true"></span>
-                        <span class="tc-badge">Current</span>
+                        <span class="tc-badge">current!</span>
                         <p class="tc-dates">2026</p>
                         <div class="tc-company-row"><p class="tc-company">Contractor</p></div>
                         <p class="tc-role">Independent Researcher</p>
@@ -955,39 +1001,6 @@
     </footer>
 
     <script>
-        /* ---- Scroll animations ---- */
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-
-        document.querySelectorAll('.section-label').forEach(el => {
-            el.classList.add('animate-in');
-            observer.observe(el);
-        });
-
-        document.querySelectorAll('.about-sticky-quote, .about-body').forEach((el, i) => {
-            el.classList.add('animate-in');
-            el.style.transitionDelay = `${i * 0.12}s`;
-            observer.observe(el);
-        });
-
-        const figCanvas = document.querySelector('.figjam-canvas');
-        if (figCanvas) {
-            figCanvas.classList.add('animate-in');
-            observer.observe(figCanvas);
-        }
-
-        document.querySelectorAll('.timeline-card').forEach((el, i) => {
-            el.classList.add('animate-in');
-            el.style.transitionDelay = `${i * 0.1}s`;
-            observer.observe(el);
-        });
-
         /* ---- Scroll hint fade ---- */
         const scrollHint = document.querySelector('.scroll-hint');
         if (scrollHint) {
