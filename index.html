@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Billy Leet is a Senior UX Researcher with 7+ years of experience at Instagram, Meta, and Duolingo. Available for senior contract and full-time roles.">
+    <meta name="description" content="Billy Leet is a Senior UX Researcher with 10 years of experience at Google, Meta (Instagram), and Duolingo. Available for senior contract and full-time roles.">
     <title>Billy Leet — UX Researcher</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,8 +74,12 @@
         @media (prefers-reduced-motion: reduce) {
             .animate-in { opacity: 1; transform: none; transition: none; }
 
-            .hero-badge, .hero-name, .hero-statement, .hero-cta { animation: none; }
+            .hero-badge, .hero-name, .hero-statement, .hero-cta, .hero-availability { animation: none; }
 
+        }
+
+        @media print {
+            .animate-in { opacity: 1 !important; transform: none !important; }
         }
 
         /* ================================
@@ -200,6 +204,17 @@
             box-shadow: 4px 7px 16px rgba(0,0,0,0.22), 1px 2px 4px rgba(0,0,0,0.1);
             text-decoration: none;
         }
+
+        .hero-availability {
+            margin-top: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            animation: fadeUp 0.6s ease 0.85s both;
+        }
+
+        .hero-availability a { color: var(--accent); }
 
         @keyframes fadeUp {
             from { opacity: 0; transform: translateY(16px); }
@@ -340,6 +355,7 @@
             transition: filter 0.25s ease, transform 0.25s ease;
             z-index: 1;
             cursor: grab;
+            touch-action: none;
         }
 
         .sticky:active { cursor: grabbing; }
@@ -388,19 +404,8 @@
         }
 
         .reflected-text {
-        /* Required to apply transform to inline elements */
-        display: inline-block; 
-        
-        /* Standard property */
-        transform: scaleX(-1); 
-        
-        /* Vendor prefixes for broader (older) browser support are optional for modern browsers */
-        -moz-transform: scaleX(-1);    /* Firefox */
-        -webkit-transform: scaleX(-1); /* Chrome, Safari, Opera */
-        -o-transform: scaleX(-1);      /* Opera */
-        
-        /* IE 6/7/8 filter (deprecated) */
-        filter: FlipH; 
+            display: inline-block;
+            transform: scaleX(-1);
         }
 
 
@@ -728,6 +733,7 @@
                 left: auto !important;
                 top: auto !important;
                 cursor: default;
+                touch-action: auto;
                 transform: rotate(var(--r-mobile, 0deg)) !important;
             }
 
@@ -767,7 +773,8 @@
                     <span class="last">Leet</span>
                 </h1>
                 <p class="hero-statement">I study how people communicate &#8211; <br>with products, with each other, and with themselves.</p>
-                <a href="https://www.linkedin.com/in/wleet/" class="hero-cta" target="_blank" rel="noopener noreferrer">LinkedIn Profile &nbsp;&rarr;</a>
+                <a href="mailto:billyleet@gmail.com" class="hero-cta">Email me &nbsp;&rarr;</a>
+                <p class="hero-availability">Available for senior contract &amp; full-time UXR roles &middot; <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
             </div>
         </div>
         <div class="scroll-hint" aria-hidden="true">
@@ -989,30 +996,35 @@
             }, { passive: true });
         }
 
-        /* ---- Draggable sticky notes ---- */
-        function makeDraggable(el) {
-            let active = false;
-            let startX, startY, origLeft, origTop;
+        /* ---- Draggable sticky notes (pointer events: mouse, touch, pen) ---- */
+        (function() {
+            let drag = null; /* { el, startX, startY, origLeft, origTop } */
 
-            el.addEventListener('mousedown', e => {
-                if (e.button !== 0) return;
-                if (window.innerWidth <= 640) return;
-                active = true;
-                const canvas   = el.closest('.figjam-canvas');
-                const cRect    = canvas.getBoundingClientRect();
-                const eRect    = el.getBoundingClientRect();
-                startX         = e.clientX;
-                startY         = e.clientY;
-                origLeft       = eRect.left - cRect.left;
-                origTop        = eRect.top  - cRect.top;
-                el.style.zIndex     = '50';
-                el.style.transition = 'none';
-                el.style.cursor     = 'grabbing';
-                e.preventDefault();
+            document.querySelectorAll('.sticky').forEach(el => {
+                el.addEventListener('pointerdown', e => {
+                    if (e.button !== 0 && e.pointerType === 'mouse') return;
+                    if (window.innerWidth <= 640) return;
+                    const canvas = el.closest('.figjam-canvas');
+                    const cRect  = canvas.getBoundingClientRect();
+                    const eRect  = el.getBoundingClientRect();
+                    drag = {
+                        el,
+                        startX:   e.clientX,
+                        startY:   e.clientY,
+                        origLeft: eRect.left - cRect.left,
+                        origTop:  eRect.top  - cRect.top
+                    };
+                    el.setPointerCapture(e.pointerId);
+                    el.style.zIndex     = '50';
+                    el.style.transition = 'none';
+                    el.style.cursor     = 'grabbing';
+                    e.preventDefault();
+                });
             });
 
-            document.addEventListener('mousemove', e => {
-                if (!active) return;
+            document.addEventListener('pointermove', e => {
+                if (!drag) return;
+                const { el, startX, startY, origLeft, origTop } = drag;
                 const canvas  = el.closest('.figjam-canvas');
                 const cRect   = canvas.getBoundingClientRect();
                 const maxL    = cRect.width  - el.offsetWidth;
@@ -1024,16 +1036,18 @@
                 el.style.top      = newTop  + 'px';
             });
 
-            document.addEventListener('mouseup', () => {
-                if (!active) return;
-                active              = false;
+            function endDrag() {
+                if (!drag) return;
+                const el = drag.el;
                 el.style.zIndex     = '';
                 el.style.transition = '';
                 el.style.cursor     = 'grab';
-            });
-        }
+                drag = null;
+            }
 
-        document.querySelectorAll('.sticky').forEach(makeDraggable);
+            document.addEventListener('pointerup', endDrag);
+            document.addEventListener('pointercancel', endDrag);
+        })();
 
         /* ---- Velocity-reactive card swing ---- */
         (function() {
