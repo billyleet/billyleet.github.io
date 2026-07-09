@@ -202,7 +202,8 @@
         .hero-name .underline-svg {
             display: block;
             width: min(58%, 340px);
-            margin: 0.4rem auto 0;
+            /* em-based gap so the underline clears the y-descender at every viewport size */
+            margin: 0.14em auto 0;
             color: var(--accent);
         }
 
@@ -807,7 +808,7 @@
     <section id="hero">
         <div class="container" style="position:relative">
             <div class="hero-frame">
-                <span class="frame-label" aria-hidden="true">billy's board &middot; intro</span>
+                <span class="frame-label" aria-hidden="true">billy's board &middot; setting the stage</span>
                 <span class="handle tl" aria-hidden="true"></span>
                 <span class="handle tr" aria-hidden="true"></span>
                 <span class="handle bl" aria-hidden="true"></span>
