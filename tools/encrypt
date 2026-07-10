@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# One-command rebuild of the encrypted case study pages.
+#
+#   tools/encrypt                  # prompts for the password
+#   WORK_PASSWORD=... tools/encrypt
+#
+# Bootstraps a local .venv (gitignored) with the cryptography package on
+# first run, then re-encrypts every page in work-src/ into work/.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+VENV=.venv
+if [ ! -x "$VENV/bin/python" ]; then
+    echo "one-time setup: creating $VENV and installing cryptography..."
+    python3 -m venv "$VENV"
+    "$VENV/bin/pip" install --quiet cryptography
+fi
+"$VENV/bin/python" -c "import cryptography" 2>/dev/null || "$VENV/bin/pip" install --quiet cryptography
+
+exec "$VENV/bin/python" tools/encrypt_work.py "$@"

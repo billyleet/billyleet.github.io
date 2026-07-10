@@ -1,1 +1,8 @@
 .DS_Store
+work-src/
+.playwright-mcp/
+*.jpeg
+todo.md
+case-study-sources.md
+case-studies-draft.md
+.venv/

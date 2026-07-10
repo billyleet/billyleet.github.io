@@ -1,0 +1,455 @@
+/* ================================================================
+   billy's board — case study pages
+   Shared stylesheet for work/*.html. Tokens mirror index.html.
+   ================================================================ */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg:            #fbfbf9;   /* canvas white */
+    --text:          #1c1d21;   /* ink */
+    --text-secondary:#4a4c53;
+    --accent:        #2f54d1;   /* marker blue */
+    --accent-bg:     rgba(47, 84, 209, 0.08);
+    --hl:            rgba(245, 230, 66, 0.55); /* highlighter swipe */
+    --muted:         #8b8d94;
+    --rule:          #dfe0e2;
+    --shadow:        rgba(30, 34, 60, 0.11);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    background-color: var(--bg);
+    background-image: radial-gradient(circle, rgba(28,29,33,0.09) 1px, transparent 1px);
+    background-size: 22px 22px;
+    background-attachment: local;
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ---- Back link ---- */
+
+.back-link {
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+    font-size: 1.35rem;
+    margin: 2rem 0 0;
+    transform: rotate(-1deg);
+}
+
+/* ---- Case hero: a selected frame, like the homepage ---- */
+
+.case-hero {
+    margin: 3.5rem 0 4.5rem;
+    position: relative;
+}
+
+.case-frame {
+    border: 2px solid var(--accent);
+    border-radius: 2px;
+    position: relative;
+    padding: 3rem 2.5rem 3.25rem;
+    background: rgba(255, 255, 255, 0.55);
+}
+
+.frame-label {
+    position: absolute;
+    top: -1.7rem;
+    left: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+}
+
+.case-frame .handle {
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    border: 2px solid var(--accent);
+}
+
+.handle.tl { top: -6px;    left: -6px;  }
+.handle.tr { top: -6px;    right: -6px; }
+.handle.bl { bottom: -6px; left: -6px;  }
+.handle.br { bottom: -6px; right: -6px; }
+
+.case-title {
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 700;
+    font-size: clamp(2rem, 5.5vw, 3.4rem);
+    line-height: 1.1;
+    transform: rotate(-0.8deg);
+    margin-bottom: 1.1rem;
+}
+
+.case-hook {
+    font-size: clamp(1.05rem, 2vw, 1.25rem);
+    color: var(--text-secondary);
+    max-width: 620px;
+    margin-bottom: 1.75rem;
+}
+
+.case-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+}
+
+.case-meta strong {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* ---- Sections ---- */
+
+.case-section { margin-bottom: 4.5rem; }
+
+.section-label {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 1.75rem;
+    display: inline-block;
+    position: relative;
+    transform: rotate(-0.8deg);
+}
+
+.section-label::before {
+    content: '';
+    position: absolute;
+    left: -0.5rem;
+    right: -0.75rem;
+    top: 52%;
+    height: 0.85em;
+    background: var(--hl);
+    transform: translateY(-42%) rotate(-0.6deg) skewX(-8deg);
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+    z-index: -1;
+}
+
+.case-section p { margin-bottom: 1.2rem; }
+.case-section p:last-child { margin-bottom: 0; }
+
+/* ---- Big stat callout: marker writing ---- */
+
+.stat-callout {
+    text-align: center;
+    margin: 2.5rem 0;
+    transform: rotate(-1deg);
+}
+
+.stat-callout .stat-line {
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 700;
+    font-size: clamp(1.6rem, 4.5vw, 2.6rem);
+    line-height: 1.25;
+    color: var(--text);
+}
+
+.stat-callout .stat-line em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.stat-callout .stat-caption {
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    color: var(--muted);
+    margin-top: 0.4rem;
+}
+
+/* ---- Sticky notes (static clusters for findings) ---- */
+
+.sticky-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0 0.5rem;
+}
+
+.sticky {
+    padding: 1.2rem 1.3rem 1.6rem;
+    background: linear-gradient(315deg, transparent 17px, var(--sticky-bg, #f5e642) 0);
+    filter: drop-shadow(3px 5px 10px rgba(0,0,0,0.16)) drop-shadow(1px 2px 3px rgba(0,0,0,0.08));
+    transform: rotate(var(--r, 0deg));
+    position: relative;
+}
+
+.sticky::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    background: var(--fold, rgba(0,0,0,0.13));
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    pointer-events: none;
+}
+
+.sticky-title {
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.15;
+    color: #1a1a1a;
+    margin-bottom: 0.55rem;
+}
+
+.sticky p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #2d2d2d;
+    margin: 0;
+}
+
+/* per-sticky palettes (match homepage) */
+.sticky.s-yellow { --sticky-bg: #f5e642; --fold: #d4c636; --r: -1.6deg; }
+.sticky.s-orange { --sticky-bg: #f5a623; --fold: #d08d1e; --r:  1.2deg; }
+.sticky.s-green  { --sticky-bg: #b8f0c8; --fold: #9ccbaa; --r: -0.9deg; }
+.sticky.s-blue   { --sticky-bg: #b8d8f5; --fold: #9cb8d0; --r:  1.5deg; }
+.sticky.s-purple { --sticky-bg: #d8b8f5; --fold: #b89cd0; --r: -1.2deg; }
+.sticky.s-lemon  { --sticky-bg: #f5e878; --fold: #d4c866; --r:  0.9deg; }
+
+/* ---- Index card (impact, quotes) ---- */
+
+.index-card {
+    background: #fff;
+    padding: 1.75rem 1.9rem;
+    box-shadow: 2px 3px 10px var(--shadow);
+    position: relative;
+    margin: 2rem 0;
+    transform: rotate(-0.4deg);
+}
+
+.index-card .tape {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%) rotate(1.5deg);
+    width: 64px;
+    height: 14px;
+    background: rgba(245, 240, 228, 0.8);
+    border-top: 1px solid rgba(0,0,0,0.07);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    pointer-events: none;
+}
+
+.index-card blockquote {
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.index-card cite {
+    display: block;
+    margin-top: 0.6rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-style: normal;
+    font-size: 0.65rem;
+    color: var(--muted);
+}
+
+/* ---- "shipped" flag: mini sticky ---- */
+
+.shipped-flag {
+    display: inline-block;
+    background: #b8f0c8;
+    color: #1a1a1a;
+    font-family: 'Caveat', cursive;
+    font-size: 1.05rem;
+    font-weight: 700;
+    padding: 0.2rem 0.65rem 0.3rem;
+    transform: rotate(-2deg);
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.16);
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+/* ---- Hand-drawn table ---- */
+
+.board-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.85rem;
+}
+
+.board-table caption {
+    caption-side: bottom;
+    font-family: 'Caveat', cursive;
+    font-size: 1.1rem;
+    color: var(--muted);
+    padding-top: 0.6rem;
+    text-align: right;
+}
+
+.board-table th {
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 2.5px solid var(--text);
+}
+
+.board-table td {
+    padding: 0.55rem 0.75rem;
+    border-bottom: 1px dashed var(--rule);
+    color: var(--text-secondary);
+    vertical-align: top;
+}
+
+.board-table td:first-child { color: var(--text); font-weight: 500; }
+
+/* ---- Study timeline (method sequences) ---- */
+
+.study-list { list-style: none; margin: 1.5rem 0; }
+
+.study-list li {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed var(--rule);
+}
+
+.study-list .when {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    color: var(--muted);
+    white-space: nowrap;
+    min-width: 5.2rem;
+}
+
+.study-list .what { font-size: 0.9rem; }
+
+/* ---- Artifact figure: a taped-down image from the actual deliverable ---- */
+
+.artifact-figure {
+    margin: 2.25rem auto;
+    position: relative;
+    transform: rotate(-0.5deg);
+    max-width: 100%;
+}
+
+.artifact-figure.narrow { max-width: 480px; }
+
+.artifact-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    padding: 8px;
+    border: 1px solid var(--rule);
+    box-shadow: 3px 5px 14px var(--shadow);
+}
+
+.artifact-figure .tape {
+    position: absolute;
+    top: -9px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-1.5deg);
+    width: 68px;
+    height: 15px;
+    background: rgba(245, 240, 228, 0.85);
+    border-top: 1px solid rgba(0,0,0,0.07);
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    z-index: 2;
+}
+
+.artifact-figure figcaption {
+    font-family: 'Caveat', cursive;
+    font-size: 1.2rem;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 0.6rem;
+    transform: rotate(-0.4deg);
+}
+
+/* ---- Key insight annotation ---- */
+
+.key-insight {
+    font-family: 'Shantell Sans', cursive;
+    font-weight: 500;
+    font-size: 1.15rem;
+    line-height: 1.55;
+    max-width: 580px;
+    margin: 2.5rem auto;
+    text-align: center;
+    transform: rotate(-0.6deg);
+    color: var(--text);
+}
+
+.key-insight mark {
+    background: var(--hl);
+    padding: 0 0.2em;
+    border-radius: 4px 10px 5px 8px;
+}
+
+/* ---- Footer / next nav ---- */
+
+.case-footer {
+    border-top: 1px solid var(--rule);
+    margin-top: 5rem;
+    padding: 2rem 0 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.case-footer .confidentiality {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    max-width: 420px;
+}
+
+.next-case {
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    transform: rotate(-1deg);
+    white-space: nowrap;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 640px) {
+    .container { padding: 0 1.25rem; }
+    .case-frame { padding: 2rem 1.4rem 2.25rem; }
+    .case-hero { margin: 3rem 0 3.5rem; }
+    .case-section { margin-bottom: 3.25rem; }
+    .board-table { font-size: 0.78rem; }
+    .board-table th, .board-table td { padding: 0.45rem 0.5rem; }
+    .case-footer { flex-direction: column; align-items: flex-start; }
+}

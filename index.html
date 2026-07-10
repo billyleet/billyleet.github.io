@@ -371,6 +371,81 @@
         .about-body p:last-child { margin-bottom: 0; }
 
         /* ================================
+           SELECTED WORK — PROJECT FRAMES
+        ================================ */
+
+        .work-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        /* Each case study is a frame on the canvas; hovering "selects" it */
+        .work-card {
+            display: block;
+            position: relative;
+            border: 1.5px solid var(--rule);
+            border-radius: 2px;
+            padding: 1.75rem 1.6rem 1.4rem;
+            background: rgba(255, 255, 255, 0.55);
+            color: var(--text);
+            transition: border-color 0.15s ease;
+        }
+
+        .work-card:hover,
+        .work-card:focus-visible {
+            border-color: var(--accent);
+            text-decoration: none;
+        }
+
+        .work-card .handle {
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            background: #fff;
+            border: 2px solid var(--accent);
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
+
+        .work-card:hover .handle,
+        .work-card:focus-visible .handle { opacity: 1; }
+
+        .wc-meta {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.63rem;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+            margin-bottom: 0.75rem;
+            transition: color 0.15s ease;
+        }
+
+        .work-card:hover .wc-meta { color: var(--accent); }
+
+        .wc-title {
+            font-family: 'Shantell Sans', cursive;
+            font-weight: 700;
+            font-size: 1.35rem;
+            line-height: 1.25;
+            margin-bottom: 0.5rem;
+        }
+
+        .wc-hook {
+            font-size: 0.85rem;
+            line-height: 1.65;
+            color: var(--text-secondary);
+            margin-bottom: 0.9rem;
+        }
+
+        .wc-open {
+            font-family: 'Caveat', cursive;
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        .work-card:hover .wc-open { text-decoration: underline; }
+
+        /* ================================
            WHAT I DO — FIGJAM CANVAS
         ================================ */
 
@@ -731,6 +806,8 @@
                 max-width: 360px;
             }
 
+            .work-grid { grid-template-columns: 1fr; gap: 1.25rem; }
+
             .hero-frame { padding: 2.5rem 1.5rem 3rem; }
 
             .timeline-cards {
@@ -808,7 +885,7 @@
     <section id="hero">
         <div class="container" style="position:relative">
             <div class="hero-frame">
-                <span class="frame-label" aria-hidden="true">billy's board &middot; setting the stage</span>
+                <span class="frame-label" aria-hidden="true">setting the stage</span>
                 <span class="handle tl" aria-hidden="true"></span>
                 <span class="handle tr" aria-hidden="true"></span>
                 <span class="handle bl" aria-hidden="true"></span>
@@ -827,7 +904,7 @@
                 </h1>
                 <p class="hero-statement">I study how people communicate &#8211; <br>with products, with each other, and with themselves.</p>
                 <a href="mailto:billyleet@gmail.com" class="hero-cta">Email me &nbsp;&rarr;</a>
-                <p class="hero-availability">Open to senior UXR work &mdash; contract or full-time &middot; <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                <p class="hero-availability">Open to senior UXR work &ndash; contract or full-time &middot; <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
             </div>
         </div>
         <div class="scroll-hint" aria-hidden="true">
@@ -852,6 +929,62 @@
                     <p><strong>10 years of experience at Google, Meta, and Duolingo</strong> taught me that the research question is almost never the real question. I've led generative studies that shifted roadmap priorities, usability research that caught critical failures before they shipped, and longitudinal work that traced how people's relationships with a product evolve over time.</p>
                     <p>I'm available for <strong>senior contract and full-time UX Research roles.</strong> I'm most interested in teams where the research can change what they think is possible.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================
+         SELECTED WORK
+    ================================ -->
+    <section id="work">
+        <div class="container">
+            <p class="section-label">selected work</p>
+            <div class="work-grid">
+
+                <a class="work-card" href="work/change-org.html">
+                    <span class="handle tl" aria-hidden="true"></span>
+                    <span class="handle tr" aria-hidden="true"></span>
+                    <span class="handle bl" aria-hidden="true"></span>
+                    <span class="handle br" aria-hidden="true"></span>
+                    <p class="wc-meta">change.org &middot; 2026</p>
+                    <h3 class="wc-title">Super Recruiters</h3>
+                    <p class="wc-hook">Fewer than 8% of petition sharers drive 68% of recruited signatures. Nobody knew who they were, so I went and found out.</p>
+                    <span class="wc-open">unlock &rarr;</span>
+                </a>
+
+                <a class="work-card" href="work/duolingo-v2.html">
+                    <span class="handle tl" aria-hidden="true"></span>
+                    <span class="handle tr" aria-hidden="true"></span>
+                    <span class="handle bl" aria-hidden="true"></span>
+                    <span class="handle br" aria-hidden="true"></span>
+                    <p class="wc-meta">duolingo &middot; 2021&ndash;22</p>
+                    <h3 class="wc-title">Flattening the Tree</h3>
+                    <p class="wc-hook">The 10-study research program behind Duolingo's path redesign: eight months of evidence steering a bet-the-product change.</p>
+                    <span class="wc-open">unlock &rarr;</span>
+                </a>
+
+                <a class="work-card" href="work/instagram-creators.html">
+                    <span class="handle tl" aria-hidden="true"></span>
+                    <span class="handle tr" aria-hidden="true"></span>
+                    <span class="handle bl" aria-hidden="true"></span>
+                    <span class="handle br" aria-hidden="true"></span>
+                    <p class="wc-meta">instagram &middot; 2018&ndash;22</p>
+                    <h3 class="wc-title">Understanding Creators</h3>
+                    <p class="wc-hook">Safety, live video, money, analytics: four years of creator research, including the concept testing behind a shipped safety feature.</p>
+                    <span class="wc-open">unlock &rarr;</span>
+                </a>
+
+                <a class="work-card" href="work/meta-analysis.html">
+                    <span class="handle tl" aria-hidden="true"></span>
+                    <span class="handle tr" aria-hidden="true"></span>
+                    <span class="handle bl" aria-hidden="true"></span>
+                    <span class="handle br" aria-hidden="true"></span>
+                    <p class="wc-meta">duolingo &middot; 2023&ndash;24</p>
+                    <h3 class="wc-title">Reading Hundreds of Interviews at Once</h3>
+                    <p class="wc-hook">An AI-assisted meta-analysis of a year of learner interviews, built before every tool had AI stapled to it.</p>
+                    <span class="wc-open">unlock &rarr;</span>
+                </a>
+
             </div>
         </div>
     </section>
@@ -909,7 +1042,7 @@
 
                 <div class="sticky sticky-05">
                     <h3 class="sticky-title">Communication &amp; Language</h3>
-                    <p>I was a Speech-Language Pathologist before UX. I spent years diagnosing exactly where communication breaks down &mdash; turns out that's this job too.</p>
+                    <p>I was a Speech-Language Pathologist before UX. I spent years diagnosing exactly where communication breaks down &ndash; turns out that's this job too.</p>
                 </div>
 
                 <div class="sticky sticky-06">
@@ -955,7 +1088,7 @@
                         <img class="tc-logo" src="stickers/icons8-instagram-100.png" alt="" aria-hidden="true">
                         <p class="tc-dates">2018 &ndash; 2022</p>
                         <div class="tc-company-row"><p class="tc-company">Meta</p></div>
-                        <p class="tc-role">UX Researcher &mdash; Instagram</p>
+                        <p class="tc-role">UX Researcher &ndash; Instagram</p>
                         <p class="tc-desc">Conducted "Creator" research across Instagram's Feed, Messenger, Profile, and Live surfaces. Helped teams understand how creators and influencers interact with their fans and navigate the social dynamics of a platform at global scale.</p>
                     </div>
 
