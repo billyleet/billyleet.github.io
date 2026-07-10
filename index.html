@@ -28,7 +28,7 @@
             --accent:        #2f54d1;   /* marker blue */
             --accent-bg:     rgba(47, 84, 209, 0.08);
             --hl:            rgba(245, 230, 66, 0.55); /* highlighter swipe */
-            --muted:         #8b8d94;
+            --muted:         #6b6d74;   /* darkened from #8b8d94 for AA contrast on small meta text */
             --rule:          #dfe0e2;
             --shadow:        rgba(30, 34, 60, 0.11);
         }
@@ -51,6 +51,31 @@
         a { color: var(--accent); text-decoration: none; }
         a:hover { text-decoration: underline; }
 
+        :focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 3px;
+            border-radius: 2px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -3rem;
+            left: 1rem;
+            z-index: 100;
+            background: var(--text);
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            padding: 0.6rem 1rem;
+            border-radius: 3px;
+            transition: top 0.15s ease;
+        }
+
+        .skip-link:focus {
+            top: 1rem;
+            text-decoration: none;
+        }
+
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -58,8 +83,13 @@
         }
 
         @media (prefers-reduced-motion: reduce) {
-            .hero-name, .hero-statement, .hero-cta, .hero-availability,
-            .cursor-chip { animation: none; }
+            html { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
         }
 
         /* ================================
@@ -879,6 +909,10 @@
 </head>
 <body>
 
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <main id="main-content">
+
     <!-- ================================
          HERO
     ================================ -->
@@ -904,7 +938,7 @@
                 </h1>
                 <p class="hero-statement">I study how people communicate &#8211; <br>with products, with each other, and with themselves.</p>
                 <a href="mailto:billyleet@gmail.com" class="hero-cta">Email me &nbsp;&rarr;</a>
-                <p class="hero-availability">Open to senior UXR work &ndash; contract or full-time &middot; <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                <p class="hero-availability">Open to senior contract or full-time UXR work. Most interested in Senior/Staff IC or player-coach research lead roles. <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></p>
             </div>
         </div>
         <div class="scroll-hint" aria-hidden="true">
@@ -918,7 +952,7 @@
     ================================ -->
     <section id="about">
         <div class="container" style="position:relative">
-            <p class="section-label">about</p>
+            <h2 class="section-label">about</h2>
             <div class="about-grid">
                 <div class="about-sticky-quote">
                     Good research answers the question. <br><br> Great research changes which question gets asked next.
@@ -938,7 +972,7 @@
     ================================ -->
     <section id="work">
         <div class="container">
-            <p class="section-label">selected work</p>
+            <h2 class="section-label">selected work</h2>
             <div class="work-grid">
 
                 <a class="work-card" href="work/change-org.html">
@@ -946,10 +980,10 @@
                     <span class="handle tr" aria-hidden="true"></span>
                     <span class="handle bl" aria-hidden="true"></span>
                     <span class="handle br" aria-hidden="true"></span>
-                    <p class="wc-meta">change.org &middot; 2026</p>
+                    <p class="wc-meta">change.org &middot; 2025&ndash;26</p>
                     <h3 class="wc-title">Super Recruiters</h3>
-                    <p class="wc-hook">Fewer than 8% of petition sharers drive 68% of recruited signatures. Nobody knew who they were, so I went and found out.</p>
-                    <span class="wc-open">unlock &rarr;</span>
+                    <p class="wc-hook">An independent foundational study of unusually effective petition sharers: who they were, why they shared, and how Change.org could better support their impact.</p>
+                    <span class="wc-open">password needed &rarr;</span>
                 </a>
 
                 <a class="work-card" href="work/duolingo-v2.html">
@@ -960,7 +994,7 @@
                     <p class="wc-meta">duolingo &middot; 2021&ndash;22</p>
                     <h3 class="wc-title">Flattening the Tree</h3>
                     <p class="wc-hook">The 10-study research program behind Duolingo's path redesign: eight months of evidence steering a bet-the-product change.</p>
-                    <span class="wc-open">unlock &rarr;</span>
+                    <span class="wc-open">password needed &rarr;</span>
                 </a>
 
                 <a class="work-card" href="work/instagram-creators.html">
@@ -968,21 +1002,10 @@
                     <span class="handle tr" aria-hidden="true"></span>
                     <span class="handle bl" aria-hidden="true"></span>
                     <span class="handle br" aria-hidden="true"></span>
-                    <p class="wc-meta">instagram &middot; 2018&ndash;22</p>
+                    <p class="wc-meta">instagram &middot; 2019&ndash;20</p>
                     <h3 class="wc-title">Understanding Creators</h3>
-                    <p class="wc-hook">Safety, live video, money, analytics: four years of creator research, including the concept testing behind a shipped safety feature.</p>
-                    <span class="wc-open">unlock &rarr;</span>
-                </a>
-
-                <a class="work-card" href="work/meta-analysis.html">
-                    <span class="handle tl" aria-hidden="true"></span>
-                    <span class="handle tr" aria-hidden="true"></span>
-                    <span class="handle bl" aria-hidden="true"></span>
-                    <span class="handle br" aria-hidden="true"></span>
-                    <p class="wc-meta">duolingo &middot; 2023&ndash;24</p>
-                    <h3 class="wc-title">Reading Hundreds of Interviews at Once</h3>
-                    <p class="wc-hook">An AI-assisted meta-analysis of a year of learner interviews, built before every tool had AI stapled to it.</p>
-                    <span class="wc-open">unlock &rarr;</span>
+                    <p class="wc-hook">Safety, live video, money, analytics: creator research from my time at Instagram, including the concept testing behind a shipped safety feature.</p>
+                    <span class="wc-open">password needed &rarr;</span>
                 </a>
 
             </div>
@@ -994,7 +1017,7 @@
     ================================ -->
     <section id="capabilities">
         <div class="container" style="position:relative">
-            <p class="section-label">what I do</p>
+            <h2 class="section-label">what I do</h2>
             <div class="figjam-canvas">
 
                 <!-- Easter eggs hidden beneath stickies — discovered by dragging -->
@@ -1006,7 +1029,7 @@
 
                 <!-- Under sticky-03: Mixed Methods — Walter the chiweenie! -->
                 <div class="easter-egg" style="left: 530px; top: 100px; transform: rotate(1.5deg);" aria-hidden="true">
-                    <img src="stickers/WalterSticker.png" alt="" style="width: 80px; height: auto; display: block; margin-bottom: 0.3rem;">
+                    <img src="stickers/WalterSticker.png" alt="" loading="lazy" style="width: 80px; height: auto; display: block; margin-bottom: 0.3rem;">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="reflected-text">&#10548;</span> my chiweenie, Walter
                 </div>
 
@@ -1059,7 +1082,7 @@
     ================================ -->
     <section id="career">
         <div class="container" style="position:relative">
-            <p class="section-label">career</p>
+            <h2 class="section-label">career</h2>
             <div class="career-timeline">
                 <div class="timeline-track" aria-hidden="true">
                     <svg viewBox="0 0 1200 14" preserveAspectRatio="none" fill="none"><path d="M2 8 C 90 4, 190 11, 300 7 S 500 10, 610 7 S 820 4, 930 8 S 1120 10, 1198 6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
@@ -1077,25 +1100,25 @@
                     <div class="timeline-card tc-2">
                         <span class="tc-tape" aria-hidden="true"></span>
                         <img class="tc-logo" src="stickers/icons8-google-100.png" alt="" aria-hidden="true">
-                        <p class="tc-dates">2016 &ndash; 2018</p>
+                        <p class="tc-dates">Apr 2016 &ndash; May 2018</p>
                         <div class="tc-company-row"><p class="tc-company">Google</p></div>
-                        <p class="tc-role">UX Research Coordinator</p>
-                        <p class="tc-desc">Coordinated UX research operations for Google Cloud, managing study logistics, participant recruitment, and cross-team communication to keep research running smoothly.</p>
+                        <p class="tc-role">Contractor</p>
+                        <p class="tc-desc">Started as a contractor Copyright Associate on YouTube, then moved into research operations as a UX Research Coordinator for Google Cloud, managing study logistics, participant recruitment, and cross-team communication.</p>
                     </div>
 
                     <div class="timeline-card tc-3">
                         <span class="tc-tape" aria-hidden="true"></span>
                         <img class="tc-logo" src="stickers/icons8-instagram-100.png" alt="" aria-hidden="true">
-                        <p class="tc-dates">2018 &ndash; 2022</p>
+                        <p class="tc-dates">Jun 2018 &ndash; Apr 2021</p>
                         <div class="tc-company-row"><p class="tc-company">Meta</p></div>
                         <p class="tc-role">UX Researcher &ndash; Instagram</p>
-                        <p class="tc-desc">Conducted "Creator" research across Instagram's Feed, Messenger, Profile, and Live surfaces. Helped teams understand how creators and influencers interact with their fans and navigate the social dynamics of a platform at global scale.</p>
+                        <p class="tc-desc">Joined via Meta's (now-discontinued) Research Associate Program and was promoted several times over three years. Conducted "Creator" research across Instagram's Feed, Messenger, Profile, and Live surfaces, helping teams understand how creators and influencers interact with their fans at global scale.</p>
                     </div>
 
                     <div class="timeline-card tc-4">
                         <span class="tc-tape" aria-hidden="true"></span>
                         <img class="tc-logo" src="stickers/icons8-duolingo-logo-100.png" alt="" aria-hidden="true">
-                        <p class="tc-dates">2022 &ndash; 2025</p>
+                        <p class="tc-dates">May 2021 &ndash; Feb 2025</p>
                         <div class="tc-company-row"><p class="tc-company">Duolingo</p></div>
                         <p class="tc-role">Sr UX Research Manager</p>
                         <p class="tc-desc">Led research for core learning and engagement features on the world's most popular language learning app. Partnered closely with product, design, and learning science teams to understand how people build and break long-term learning habits.</p>
@@ -1104,7 +1127,7 @@
                     <div class="timeline-card tc-5">
                         <span class="tc-tape" aria-hidden="true"></span>
                         <span class="tc-badge">current!</span>
-                        <p class="tc-dates">2026</p>
+                        <p class="tc-dates">Feb 2025 &ndash; present</p>
                         <div class="tc-company-row"><p class="tc-company">Contractor</p></div>
                         <p class="tc-role">Independent Researcher</p>
                         <p class="tc-desc">Most recently: contracted to lead foundational qualitative research at Change.org, studying a small segment of users who drive outsized platform impact.</p>
@@ -1114,6 +1137,8 @@
             </div>
         </div>
     </section>
+
+    </main>
 
     <!-- ================================
          FOOTER
@@ -1150,7 +1175,7 @@
             document.querySelectorAll('.sticky').forEach(el => {
                 el.addEventListener('pointerdown', e => {
                     if (e.button !== 0 && e.pointerType === 'mouse') return;
-                    if (window.innerWidth <= 640) return;
+                    if (window.innerWidth <= 900) return;
                     const canvas = el.closest('.figjam-canvas');
                     const cRect  = canvas.getBoundingClientRect();
                     const eRect  = el.getBoundingClientRect();

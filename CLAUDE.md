@@ -12,7 +12,7 @@ Personal brand site for Billy Leet, Senior UX Researcher. Deployed via GitHub Pa
 
 ## Repo structure
 
-- `work/` — **encrypted** case study pages (change-org, duolingo-v2, instagram-creators, meta-analysis) plus shared `work/case.css` (tokens mirror the homepage). Each .html is a board-styled lock screen with an AES-256-GCM payload, decrypted client-side via WebCrypto. Linked from the homepage "selected work" section (`#work`).
+- `work/` — **encrypted** case study pages (change-org, duolingo-v2, instagram-creators) plus shared `work/case.css` (tokens mirror the homepage). Each .html is a board-styled lock screen with an AES-256-GCM payload, decrypted client-side via WebCrypto. Linked from the homepage "selected work" section (`#work`).
 - `work-src/` — **gitignored plaintext sources** for the case pages, plus `work-src/artifacts/` images. NEVER commit these (the repo is public; committed plaintext defeats the password wall). Edit pages here, then rebuild with `tools/encrypt` (single command; prompts for the password, or pass `WORK_PASSWORD=<pw>`; bootstraps its own `.venv` on first run and inlines artifact images as data URIs), then commit the regenerated `work/*.html`. Billy hands out the password personally; it is stored nowhere in the repo.
 - `snapshots/` — previous design iterations preserved for reference (not served)
 - `archive/` — legacy portfolio case study pages and their associated assets/CSS (not linked from current design)
@@ -35,7 +35,7 @@ Personal brand site for Billy Leet, Senior UX Researcher. Deployed via GitHub Pa
 --text-secondary: #4a4c53
 --accent: #2f54d1    marker blue (links, frame, underlines, role labels)
 --hl: rgba(245,230,66,0.55)  highlighter swipe behind section headers
---muted: #8b8d94
+--muted: #6b6d74
 --rule: #dfe0e2
 ```
 

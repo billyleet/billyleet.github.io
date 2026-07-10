@@ -16,12 +16,40 @@
     --accent:        #2f54d1;   /* marker blue */
     --accent-bg:     rgba(47, 84, 209, 0.08);
     --hl:            rgba(245, 230, 66, 0.55); /* highlighter swipe */
-    --muted:         #8b8d94;
+    --muted:         #6b6d74;
     --rule:          #dfe0e2;
     --shadow:        rgba(30, 34, 60, 0.11);
 }
 
 html { scroll-behavior: smooth; }
+
+:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -3rem;
+    left: 1rem;
+    z-index: 100;
+    background: var(--text);
+    color: #fff;
+    padding: 0.55rem 0.9rem;
+}
+
+.skip-link:focus { top: 1rem; }
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
 
 body {
     background-color: var(--bg);
@@ -154,6 +182,73 @@ a:hover { text-decoration: underline; }
 
 .case-section p { margin-bottom: 1.2rem; }
 .case-section p:last-child { margin-bottom: 0; }
+
+/* ---- Role / decision evidence ---- */
+
+.role-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    margin: -1.5rem 0 4.5rem;
+    padding: 1.15rem 0.7rem 1rem;
+    position: relative;
+    background: #fffef5;
+    box-shadow: 2px 4px 11px var(--shadow);
+    transform: rotate(0.25deg);
+}
+
+.role-strip::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 46%;
+    width: 70px;
+    height: 15px;
+    background: rgba(245, 240, 228, 0.88);
+    border-top: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    transform: rotate(-2deg);
+}
+
+.role-item {
+    padding: 0.35rem 1.1rem;
+    border-left: 1px dashed var(--rule);
+}
+
+.role-item:first-child { border-left: 0; }
+
+.role-label {
+    display: block;
+    font-family: 'Caveat', cursive;
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 0.15rem;
+    transform: rotate(-0.6deg);
+}
+
+.role-value {
+    display: block;
+    font-size: 0.83rem;
+    line-height: 1.45;
+    color: var(--text-secondary);
+}
+
+.decision-trail {
+    margin: 2rem 0;
+    padding: 1.35rem 1.5rem;
+    border-left: 4px solid var(--accent);
+    background: var(--accent-bg);
+}
+
+.decision-trail h3 {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 1.05rem;
+    margin-bottom: 0.65rem;
+}
+
+.decision-trail p { margin-bottom: 0.65rem; }
+.decision-trail p:last-child { margin-bottom: 0; }
 
 /* ---- Big stat callout: marker writing ---- */
 
@@ -452,4 +547,7 @@ a:hover { text-decoration: underline; }
     .board-table { font-size: 0.78rem; }
     .board-table th, .board-table td { padding: 0.45rem 0.5rem; }
     .case-footer { flex-direction: column; align-items: flex-start; }
+    .role-strip { grid-template-columns: 1fr; }
+    .role-item { border-left: 0; border-top: 1px dashed var(--rule); padding: 0.8rem 0.6rem; }
+    .role-item:first-child { border-top: 0; }
 }
