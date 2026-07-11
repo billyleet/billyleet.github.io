@@ -524,6 +524,24 @@
 
         .work-card:hover .wc-open { text-decoration: underline; }
 
+        /* Featured (flagship) frame: spans the grid, wider not taller */
+        .work-card--featured {
+            grid-column: 1 / -1;
+            padding: 2rem 2rem 1.6rem;
+        }
+
+        .work-card--featured .wc-title { font-size: 1.7rem; }
+
+        .work-card--featured .wc-hook {
+            font-size: 0.95rem;
+            max-width: 62ch;
+        }
+
+        .work-card--featured .wc-sticker { width: 84px; height: 84px; }
+
+        .work-card--featured .wc-meta,
+        .work-card--featured .wc-title { padding-right: 6rem; }
+
         /* ================================
            WHAT I DO — FIGJAM CANVAS
         ================================ */
@@ -896,6 +914,13 @@
 
             .work-grid { grid-template-columns: 1fr; gap: 1.25rem; }
 
+            .work-card--featured { padding: 1.75rem 1.6rem 1.4rem; }
+            .work-card--featured .wc-title { font-size: 1.35rem; }
+            .work-card--featured .wc-hook { font-size: 0.85rem; }
+            .work-card--featured .wc-sticker { width: 70px; height: 70px; }
+            .work-card--featured .wc-meta,
+            .work-card--featured .wc-title { padding-right: 4.4rem; }
+
             .hero-frame { padding: 2.5rem 1.5rem 3rem; }
 
             .timeline-cards {
@@ -1019,6 +1044,18 @@
             <h2 class="section-label">selected work</h2>
             <div class="work-grid">
 
+                <a class="work-card work-card--featured" href="work/duolingo-v2.html">
+                    <span class="handle tl" aria-hidden="true"></span>
+                    <span class="handle tr" aria-hidden="true"></span>
+                    <span class="handle bl" aria-hidden="true"></span>
+                    <span class="handle br" aria-hidden="true"></span>
+                    <img class="wc-sticker wc-sticker-duolingo" src="stickers/icons8-duolingo-logo-100.png" alt="" aria-hidden="true">
+                    <p class="wc-meta">duolingo &middot; 2021&ndash;22</p>
+                    <h3 class="wc-title">Flattening the Tree</h3>
+                    <p class="wc-hook">The 10-study research program behind Duolingo's path redesign, informing key decisions in a bet-the-product change.</p>
+                    <span class="wc-open">password needed &rarr;</span>
+                </a>
+
                 <a class="work-card" href="work/change-org.html">
                     <span class="handle tl" aria-hidden="true"></span>
                     <span class="handle tr" aria-hidden="true"></span>
@@ -1028,18 +1065,6 @@
                     <p class="wc-meta">change.org &middot; 2025&ndash;26</p>
                     <h3 class="wc-title">Super Recruiters</h3>
                     <p class="wc-hook">An independent foundational study of unusually effective petition sharers: who they were, why they shared, and how Change.org could better support their impact.</p>
-                    <span class="wc-open">password needed &rarr;</span>
-                </a>
-
-                <a class="work-card" href="work/duolingo-v2.html">
-                    <span class="handle tl" aria-hidden="true"></span>
-                    <span class="handle tr" aria-hidden="true"></span>
-                    <span class="handle bl" aria-hidden="true"></span>
-                    <span class="handle br" aria-hidden="true"></span>
-                    <img class="wc-sticker wc-sticker-duolingo" src="stickers/icons8-duolingo-logo-100.png" alt="" aria-hidden="true">
-                    <p class="wc-meta">duolingo &middot; 2021&ndash;22</p>
-                    <h3 class="wc-title">Flattening the Tree</h3>
-                    <p class="wc-hook">The 10-study research program behind Duolingo's path redesign, informing key decisions in a bet-the-product change.</p>
                     <span class="wc-open">password needed &rarr;</span>
                 </a>
 
