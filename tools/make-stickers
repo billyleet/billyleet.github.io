@@ -3,8 +3,9 @@
 #
 #   tools/make-stickers
 #
-# Bootstraps the local .venv (gitignored) with Pillow on first run.
-# Requires ImageMagick (magick) for the one SVG rasterization.
+# Bootstraps the local .venv (gitignored) with Pillow + cairosvg on first
+# run. cairosvg needs the cairo C library (brew install cairo); the
+# DYLD fallback below lets it find the Homebrew copy on macOS.
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -13,11 +14,7 @@ if [ ! -x "$VENV/bin/python" ]; then
     echo "one-time setup: creating $VENV..."
     python3 -m venv "$VENV"
 fi
-"$VENV/bin/python" -c "import PIL" 2>/dev/null || "$VENV/bin/pip" install --quiet Pillow
+"$VENV/bin/python" -c "import PIL, cairosvg" 2>/dev/null || "$VENV/bin/pip" install --quiet Pillow cairosvg
 
-command -v magick >/dev/null 2>&1 || {
-    echo "error: ImageMagick (magick) is required to rasterize the Change.org SVG" >&2
-    exit 1
-}
-
+export DYLD_FALLBACK_LIBRARY_PATH="/opt/homebrew/lib:${DYLD_FALLBACK_LIBRARY_PATH:-}"
 exec "$VENV/bin/python" tools/make_stickers.py "$@"

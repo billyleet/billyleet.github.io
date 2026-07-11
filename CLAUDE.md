@@ -16,7 +16,7 @@ Personal brand site for Billy Leet, Senior UX Researcher. Deployed via GitHub Pa
 - `work-src/` — **gitignored plaintext sources** for the case pages, plus `work-src/artifacts/` images. NEVER commit these (the repo is public; committed plaintext defeats the password wall). Edit pages here, then rebuild with `tools/encrypt` (single command; prompts for the password, or pass `WORK_PASSWORD=<pw>`; bootstraps its own `.venv` on first run and inlines artifact images as data URIs), then commit the regenerated `work/*.html`. Billy hands out the password personally; it is stored nowhere in the repo.
 - `snapshots/` — previous design iterations preserved for reference (not served)
 - `archive/` — legacy portfolio case study pages and their associated assets/CSS (not linked from current design)
-- `stickers/` — PNG images: normalized die-cut company-logo stickers (`sticker-*.png`, used on work cards and career cards) generated from the source logos, plus WalterSticker.png (personal). Regenerate with `tools/make-stickers` (bootstraps `.venv` with Pillow; needs ImageMagick for the Change.org SVG). Decorative Icons8 clip-art was removed in the board redesign.
+- `stickers/` — normalized die-cut company-logo stickers (`sticker-*.png`, used on work cards and career cards), generated from committed official/public sources (`src-*.{svg,png}`, `change-org-flat.svg`) by `tools/make-stickers` (bootstraps `.venv` with Pillow + cairosvg; needs Homebrew cairo). The three square tiles share one corner-radius fraction taken from the official Instagram icon. Plus WalterSticker.png (personal) and legacy `icons8-*.png` decorative art (unused).
 
 ## Design system (in `index.html`)
 

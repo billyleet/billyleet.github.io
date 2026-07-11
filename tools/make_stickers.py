@@ -1,16 +1,29 @@
 #!/usr/bin/env python3
 """Regenerate the normalized die-cut sticker assets in stickers/.
 
-Each source logo is trimmed to its alpha bounds, scaled by a per-asset
-visual-mass factor (full-bleed square marks read bigger than organic
-silhouettes at the same pixel size), centered on a shared transparent
-canvas, and given a uniform off-white die-cut border baked into the
-alpha silhouette. Drop shadows stay in CSS.
+The three square "app tile" marks (Change.org, Duolingo, Instagram) share
+one corner-radius fraction, taken from Instagram's official 2016 icon
+(~0.198 of the tile side), so the set reads as one sticker sheet instead
+of three slightly different squares. Sources are official/public assets
+committed in stickers/ (no Icons8):
+
+  change-org-flat.svg   hand-derived flat Change.org mark, rx matched
+  src-instagram.svg     official gradient icon (Wikimedia Commons, PD)
+  src-duolingo-512.png  official PWA icon (duolingo.com manifest); the
+                        circular icon is center-cropped full-bleed and
+                        masked to the shared radius
+  src-google-g.svg      official Google "G" (Wikimedia Commons) — not a
+                        tile; kept as a free-standing glyph
+
+Each mark is scaled by a per-asset visual-mass factor, centered on a
+shared transparent canvas, and given a uniform off-white die-cut border
+baked into the alpha silhouette. Drop shadows stay in CSS.
 """
-import subprocess
+import io
 from pathlib import Path
 
-from PIL import Image, ImageFilter
+import cairosvg
+from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 STICKERS = ROOT / "stickers"
@@ -19,32 +32,49 @@ CANVAS = 320                 # square output canvas, px (~4.5x the 70px display 
 CONTENT = 236                # content box at visual-mass factor 1.0
 BORDER = 16                  # die-cut thickness at canvas scale (~3.5px at 70px)
 BORDER_COLOR = (253, 253, 251, 255)   # off-white, a touch brighter than --bg
+TILE_RADIUS_FRAC = 0.198     # corner radius / tile side, from the official IG icon
+DUO_CROP = 360               # center-crop side on the 512px circular Duolingo icon
 
-# (output, source, visual-mass factor) — factors tuned by eye:
-# full-bleed rounded squares (change, instagram) sit smaller than the
-# duolingo owl's organic silhouette; the google G is in between.
+# (output, source, kind, visual-mass factor). Tiles share one factor by
+# construction (same shape); the free-standing Google G reads slightly
+# smaller so it gets a touch more.
 SOURCES = [
-    ("sticker-change.png",    "svg:change-org-flat.svg",         0.92),
-    ("sticker-duolingo.png",  "icons8-duolingo-logo-100.png",    1.00),
-    ("sticker-instagram.png", "icons8-instagram-100.png",        0.92),
-    ("sticker-google.png",    "icons8-google-100.png",           0.97),
+    ("sticker-change.png",    "change-org-flat.svg",   "svg",      0.92),
+    ("sticker-duolingo.png",  "src-duolingo-512.png",  "duo-tile", 0.92),
+    ("sticker-instagram.png", "src-instagram.svg",     "svg",      0.92),
+    ("sticker-google.png",    "src-google-g.svg",      "svg",      0.97),
 ]
 
 
-def load(source: str) -> Image.Image:
-    if source.startswith("svg:"):
-        svg = STICKERS / source[4:]
-        tmp = STICKERS / ".svg-render.png"
-        # -density renders the SVG at high resolution natively
-        # (a post-load -resize would rasterize at 100px, then upscale blurry)
-        subprocess.run(
-            ["magick", "-background", "none", "-density", "384",
-             str(svg), str(tmp)],
-            check=True,
-        )
-        img = Image.open(tmp).convert("RGBA")
-        img.load()
-        tmp.unlink()
+def render_svg(name: str, px: int = 400) -> Image.Image:
+    # cairosvg handles the gradient defs magick's MSVG renderer drops
+    png = cairosvg.svg2png(
+        url=str(STICKERS / name), output_width=px, output_height=px
+    )
+    return Image.open(io.BytesIO(png)).convert("RGBA")
+
+
+def rounded_mask(side: int, radius_frac: float) -> Image.Image:
+    """Anti-aliased rounded-rect mask, drawn 4x supersampled."""
+    ss = 4
+    big = Image.new("L", (side * ss, side * ss), 0)
+    ImageDraw.Draw(big).rounded_rectangle(
+        (0, 0, side * ss - 1, side * ss - 1),
+        radius=int(side * ss * radius_frac), fill=255,
+    )
+    return big.resize((side, side), Image.LANCZOS)
+
+
+def load(source: str, kind: str) -> Image.Image:
+    if kind == "svg":
+        return render_svg(source)
+    if kind == "duo-tile":
+        # official circular icon -> full-bleed center crop -> shared tile radius
+        img = Image.open(STICKERS / source).convert("RGBA")
+        c = img.width // 2
+        half = DUO_CROP // 2
+        img = img.crop((c - half, c - half, c + half, c + half))
+        img.putalpha(rounded_mask(img.width, TILE_RADIUS_FRAC))
         return img
     return Image.open(STICKERS / source).convert("RGBA")
 
@@ -59,8 +89,8 @@ def die_cut(img: Image.Image) -> Image.Image:
     return Image.alpha_composite(base, img)
 
 
-def normalize(source: str, factor: float) -> Image.Image:
-    img = load(source)
+def normalize(source: str, kind: str, factor: float) -> Image.Image:
+    img = load(source, kind)
     img = img.crop(img.getchannel("A").getbbox())
     target = int(CONTENT * factor)
     scale = target / max(img.size)
@@ -68,13 +98,13 @@ def normalize(source: str, factor: float) -> Image.Image:
         (round(img.width * scale), round(img.height * scale)), Image.LANCZOS
     )
     canvas = Image.new("RGBA", (CANVAS, CANVAS), (0, 0, 0, 0))
-    canvas.paste(img, ((CANVAS - img.width) // 2, (CANVAS - img.height) // 2), img)
+    canvas.alpha_composite(img, ((CANVAS - img.width) // 2, (CANVAS - img.height) // 2))
     return die_cut(canvas)
 
 
 def main() -> None:
-    for out, src, factor in SOURCES:
-        normalize(src, factor).save(STICKERS / out)
+    for out, src, kind, factor in SOURCES:
+        normalize(src, kind, factor).save(STICKERS / out)
         print(f"wrote stickers/{out}")
 
 
