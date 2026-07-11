@@ -767,6 +767,37 @@
             margin-bottom: 0.4rem;
         }
 
+        /* Keep the date line clear of the logo or current-status sticker. */
+        .tc-logo ~ .tc-dates { padding-right: 4.1rem; }
+        .tc-badge ~ .tc-dates { padding-right: 4.8rem; }
+
+        /* Compact desktop: let the date use the full card width and move
+           the decoration beside the company name instead. */
+        @media (min-width: 901px) and (max-width: 1240px) {
+            .tc-logo,
+            .tc-badge { top: 3rem; }
+
+            .tc-logo ~ .tc-dates,
+            .tc-badge ~ .tc-dates { padding-right: 0; }
+
+            .tc-logo ~ .tc-dates + .tc-company-row,
+            .tc-badge ~ .tc-dates + .tc-company-row {
+                min-height: 52px;
+                padding-right: 3.6rem;
+            }
+        }
+
+        @media (min-width: 1000px) and (max-width: 1240px) {
+            .tc-logo ~ .tc-dates,
+            .tc-badge ~ .tc-dates { white-space: nowrap; }
+        }
+
+        /* At wide desktop sizes the logo clears the one-line date naturally. */
+        @media (min-width: 1241px) {
+            .tc-logo ~ .tc-dates,
+            .tc-badge ~ .tc-dates { padding-right: 0; }
+        }
+
         .tc-company {
             font-family: 'Shantell Sans', cursive;
             font-weight: 700;
@@ -1021,14 +1052,14 @@
                     <svg class="underline-svg" viewBox="0 0 300 14" fill="none" aria-hidden="true"><path d="M4 9 C 60 4, 120 12, 170 7 S 260 6, 296 9" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
                 </h1>
                 <p class="hero-role">Staff UX Researcher</p>
-                <p class="hero-statement">I help teams ask better questions, <br>turning research into clearer product decisions.</p>
+                <p class="hero-statement">I help teams ask better questions, <br>so we turn research into clearer product decisions.</p>
                 <a href="mailto:billyleet@gmail.com" class="hero-cta">Email me &nbsp;&rarr;</a>
                 <nav class="hero-actions-secondary" aria-label="Professional links">
                     <a href="Billy-Leet-Resume.pdf">View r&eacute;sum&eacute; &rarr;</a>
-                    <span class="sep" aria-hidden="true">&middot;</span>
+                    <span class="sep" aria-hidden="true"></span>
                     <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a>
                 </nav>
-                <p class="hero-availability">Based in Pittsburgh. Open to staff or senior individual-contributor roles, contract or full-time.</p>
+                <p class="hero-availability">Based in Pittsburgh. Open to staff or senior UXR roles, contract or full-time.</p>
             </div>
         </div>
         <div class="scroll-hint" aria-hidden="true">
