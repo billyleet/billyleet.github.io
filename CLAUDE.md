@@ -47,7 +47,7 @@ Personal brand site for Billy Leet, Senior UX Researcher. Deployed via GitHub Pa
 
 ## Key interactive behaviors
 
-- **Draggable stickies:** Pointer Events (mouse/touch/pen) in the inline `<script>`; `.sticky` has `touch-action: none` above 640px. Position is set via inline `style.left`/`style.top`, which overrides the class-based position without affecting the rotation transform.
+- **Draggable stickies:** Pointer Events (mouse/touch/pen) in the inline `<script>`; `.sticky` has `touch-action: none` only above 900px, where dragging is enabled. Position is set via inline `style.left`/`style.top`, which overrides the class-based position without affecting the rotation transform.
 - **Easter eggs:** `.easter-egg` divs are positioned at `z-index: 0` underneath their corresponding `.sticky` (which is `z-index: 1`). Discovered by dragging a sticky aside.
 - **Scroll hint:** Handwritten "the good stuff ↓" note below hero fades out after 50px of scroll.
 - **Card swing:** timeline cards swing on hover with amplitude proportional to cursor velocity (Web Animations API; respects `prefers-reduced-motion`).
