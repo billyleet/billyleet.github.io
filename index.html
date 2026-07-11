@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Billy Leet is a Senior UX Researcher with 10 years of experience at Google, Meta (Instagram), and Duolingo. Available for senior contract and full-time roles.">
+    <meta name="description" content="Billy Leet is a Senior UX Researcher with 8+ years of experience at Google, Meta (Instagram), and Duolingo. Available for senior contract and full-time roles.">
     <title>Billy Leet — UX Researcher</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -237,6 +237,15 @@
             color: var(--accent);
         }
 
+        .hero-role {
+            margin: -0.65rem auto 1.15rem;
+            font-family: 'Inter', sans-serif;
+            font-size: clamp(1rem, 1.8vw, 1.2rem);
+            font-weight: 600;
+            color: var(--text);
+            animation: fadeUp 0.6s ease 0.42s both;
+        }
+
         .hero-statement {
             max-width: 640px;
             margin: 0 auto 3rem;
@@ -452,6 +461,29 @@
 
         .work-card:hover .wc-meta { color: var(--accent); }
 
+        .wc-sticker {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            object-fit: contain;
+            pointer-events: none;
+            filter: drop-shadow(2px 4px 5px rgba(30, 34, 60, 0.16));
+            transition: transform 0.15s ease;
+        }
+
+        .wc-sticker-change { top: -19px; right: 17px; transform: rotate(5deg); }
+        .wc-sticker-duolingo { top: -15px; right: 11px; transform: rotate(-4deg); }
+        .wc-sticker-instagram { top: -20px; right: 22px; transform: rotate(3deg); }
+
+        .work-card:hover .wc-sticker-change,
+        .work-card:focus-visible .wc-sticker-change { transform: rotate(2deg) translateY(-2px); }
+        .work-card:hover .wc-sticker-duolingo,
+        .work-card:focus-visible .wc-sticker-duolingo { transform: rotate(-1deg) translateY(-2px); }
+        .work-card:hover .wc-sticker-instagram,
+        .work-card:focus-visible .wc-sticker-instagram { transform: rotate(0deg) translateY(-2px); }
+
+        .wc-meta, .wc-title { padding-right: 4.4rem; }
+
         .wc-title {
             font-family: 'Shantell Sans', cursive;
             font-weight: 700;
@@ -548,7 +580,7 @@
 
         .sticky p {
             font-family: 'Inter', sans-serif;
-            font-size: 0.78rem;
+            font-size: 0.86rem;
             line-height: 1.6;
             color: #2d2d2d;
         }
@@ -687,9 +719,9 @@
 
         .tc-dates {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.62rem;
+            font-size: 0.72rem;
             color: var(--muted);
-            letter-spacing: 0.05em;
+            letter-spacing: 0.025em;
             margin-bottom: 0.4rem;
         }
 
@@ -938,13 +970,14 @@
                     Billy Leet
                     <svg class="underline-svg" viewBox="0 0 300 14" fill="none" aria-hidden="true"><path d="M4 9 C 60 4, 120 12, 170 7 S 260 6, 296 9" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
                 </h1>
+                <p class="hero-role">Senior UX Researcher</p>
                 <p class="hero-statement">I study how people communicate &#8211; <br>with products, with each other, and with themselves.</p>
                 <a href="mailto:billyleet@gmail.com" class="hero-cta">Email me &nbsp;&rarr;</a>
-                <p class="hero-availability">Open to senior contract or full-time UXR work. Most interested in Senior/Staff IC or player-coach research lead roles. <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></p>
+                <p class="hero-availability">Based in Pittsburgh. Open to senior individual-contributor roles, contract or full-time. <a href="Billy-Leet-Resume.pdf">Resume &rarr;</a> <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a></p>
             </div>
         </div>
         <div class="scroll-hint" aria-hidden="true">
-            <span class="scroll-note">the good stuff</span>
+            <span class="scroll-note">good stuff dahn here</span>
             <svg viewBox="0 0 20 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2 C 8 10, 12 16, 10 26"/><path d="M4 21 C 6 25, 8 28, 10 30 C 12 28, 14 25, 16 21"/></svg>
         </div>
     </section>
@@ -962,7 +995,7 @@
                 <div class="about-body">
                     <p>The best research I've done didn't answer the question on the brief. It changed the question entirely. Teams came in asking whether users understood a feature and left reconsidering whether the feature was solving the right problem. To me, that's the actual job: <strong>not confirming what a team already believes, but changing what they think is possible.</strong></p>
                     <p>Before UX, I was a <strong>Speech-Language Pathologist</strong>, which meant sitting with people who knew exactly what they wanted to say but couldn't find the words to match. That habit has carried over in my research practice: noticing the gap between what people intend and what actually comes out.</p>
-                    <p><strong>10 years of experience at Google, Meta, and Duolingo</strong> taught me that the research question is almost never the real question. I've led generative studies that shifted roadmap priorities, usability research that caught critical failures before they shipped, and longitudinal work that traced how people's relationships with a product evolve over time.</p>
+                    <p><strong>8+ years of hands-on research and research leadership at Instagram and Duolingo</strong> taught me that the research question is almost never the real question. I've led generative studies that shifted roadmap priorities, usability research that caught critical failures before they shipped, and longitudinal work that traced how people's relationships with a product evolve over time.</p>
                     <p>I'm available for <strong>senior contract and full-time UX Research roles.</strong> I'm most interested in teams where the research can change what they think is possible.</p>
                 </div>
             </div>
@@ -982,6 +1015,7 @@
                     <span class="handle tr" aria-hidden="true"></span>
                     <span class="handle bl" aria-hidden="true"></span>
                     <span class="handle br" aria-hidden="true"></span>
+                    <img class="wc-sticker wc-sticker-change" src="stickers/change-org-sticker.png" alt="" aria-hidden="true">
                     <p class="wc-meta">change.org &middot; 2025&ndash;26</p>
                     <h3 class="wc-title">Super Recruiters</h3>
                     <p class="wc-hook">An independent foundational study of unusually effective petition sharers: who they were, why they shared, and how Change.org could better support their impact.</p>
@@ -993,9 +1027,10 @@
                     <span class="handle tr" aria-hidden="true"></span>
                     <span class="handle bl" aria-hidden="true"></span>
                     <span class="handle br" aria-hidden="true"></span>
+                    <img class="wc-sticker wc-sticker-duolingo" src="stickers/icons8-duolingo-logo-100.png" alt="" aria-hidden="true">
                     <p class="wc-meta">duolingo &middot; 2021&ndash;22</p>
                     <h3 class="wc-title">Flattening the Tree</h3>
-                    <p class="wc-hook">The 10-study research program behind Duolingo's path redesign: eight months of evidence steering a bet-the-product change.</p>
+                    <p class="wc-hook">The 10-study research program behind Duolingo's path redesign, informing key decisions in a bet-the-product change.</p>
                     <span class="wc-open">password needed &rarr;</span>
                 </a>
 
@@ -1004,9 +1039,10 @@
                     <span class="handle tr" aria-hidden="true"></span>
                     <span class="handle bl" aria-hidden="true"></span>
                     <span class="handle br" aria-hidden="true"></span>
+                    <img class="wc-sticker wc-sticker-instagram" src="stickers/icons8-instagram-100.png" alt="" aria-hidden="true">
                     <p class="wc-meta">instagram &middot; 2019&ndash;20</p>
                     <h3 class="wc-title">Understanding Creators</h3>
-                    <p class="wc-hook">Safety, live video, money, analytics: creator research from my time at Instagram, including the concept testing behind a shipped safety feature.</p>
+                    <p class="wc-hook">Safety, live video, money, analytics: creator research that shaped quarterly planning and surfaced concerns addressed in a shipped safety feature.</p>
                     <span class="wc-open">password needed &rarr;</span>
                 </a>
 
@@ -1151,12 +1187,13 @@
                 <span class="footer-name">Billy Leet</span>
                 <nav class="footer-links">
                     <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="Billy-Leet-Resume.pdf">Resume</a>
                     <a href="mailto:billyleet@gmail.com">Email</a>
                 </nav>
             </div>
             <div class="footer-meta">
                 <span>&copy; 2026 Billy Leet</span>
-                <span>Stickers by <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">Icons8</a> &middot; Built with Claude Code</span>
+                <span>Instagram and Duolingo stickers by <a href="https://icons8.com" target="_blank" rel="noopener noreferrer">Icons8</a>; Change.org mark adapted from <a href="https://commons.wikimedia.org/wiki/File:Change.org_icon.svg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> &middot; Built with Claude Code</span>
             </div>
         </div>
     </footer>
