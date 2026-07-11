@@ -42,17 +42,17 @@ PUBLIC_PREVIEWS = {
     "change-org.html": {
         "label": "Change.org, independent research (2025–26)",
         "summary": "An independent foundational study of unusually effective petition sharers: who they were, why they shared, and how Change.org could better support their impact.",
-        "details": "I paired qualitative interviews with behavioral sampling from a data-science partner, then helped the team turn what we learned into early product experiments.",
+        "details": "I paired qualitative interviews with behavioral sampling from a data-science partner. The findings informed MVP experiments the team committed to building.",
     },
     "duolingo-v2.html": {
         "label": "Duolingo, core product research (2021–22)",
-        "summary": "The eight-month research program behind Duolingo's shift from its skill tree to a linear learning path.",
-        "details": "Across more than ten studies, I followed the redesign from its earliest concepts through usability research, diary studies, and a global launch.",
+        "summary": "The sustained research program behind Duolingo's shift from its skill tree to a linear learning path.",
+        "details": "Across more than ten studies, I helped shape the redesign and its rollout from the earliest concepts through usability research, diary studies, and a global launch.",
     },
     "instagram-creators.html": {
         "label": "Instagram, creator research (work shown from 2019–20)",
         "summary": "As Instagram's primary creator researcher, I led a quantitative study of several hundred creators and translated the findings into a cross-functional planning workshop for Instagram Live.",
-        "details": "I owned the survey from design through analysis, then partnered with product and design to carry the findings into H1 planning.",
+        "details": "I owned the survey from design through analysis, then partnered with product and design to carry the findings into quarterly planning.",
     },
 }
 
@@ -137,7 +137,7 @@ LOCK_TEMPLATE = """<!DOCTYPE html>
                 <button type="submit">open &rarr;</button>
             </form>
             <p class="lock-error" id="err" role="alert" aria-live="polite"></p>
-            <p class="lock-note">The full case includes protected project details and artifacts. <a href="mailto:billyleet@gmail.com?subject=Portfolio%20access">Email me for access</a>, or enter the password below.</p>
+            <p class="lock-note">The full case includes protected project details and artifacts. <a href="mailto:billyleet@gmail.com?subject=Portfolio%20access">Email me for access</a>, or use the password above.</p>
             <p class="lock-hint"><a href="../index.html#work">&larr; back to the board</a></p>
         </div>
     </div>
