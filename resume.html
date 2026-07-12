@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Billy Leet – senior UX research resume">
+  <meta name="description" content="Billy Leet – UX research resume">
   <title>Billy Leet – UX Research Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,43 +12,44 @@
     :root { --paper:#fbfbf9; --ink:#1c1d21; --muted:#575961; --blue:#2f54d1; --yellow:rgba(245,230,66,.58); --rule:#dfe0e2; }
     * { box-sizing:border-box; }
     html { background:#d9d9d6; }
-    body { margin:0; color:var(--ink); font-family:Inter,Arial,sans-serif; font-size:8.55pt; line-height:1.34; }
-    .page { width:8.5in; min-height:11in; margin:20px auto; padding:.42in .48in .36in; background-color:var(--paper); background-image:radial-gradient(circle,rgba(28,29,33,.09) .65px,transparent .75px); background-size:16px 16px; box-shadow:0 10px 40px rgba(0,0,0,.16); position:relative; overflow:hidden; }
+    body { margin:0; color:var(--ink); font-family:Inter,Arial,sans-serif; font-size:9pt; line-height:1.33; }
+    .page { width:8.5in; min-height:11in; margin:20px auto; padding:.48in .48in .32in; background-color:var(--paper); background-image:radial-gradient(circle,rgba(28,29,33,.09) .65px,transparent .75px); background-size:16px 16px; box-shadow:0 10px 40px rgba(0,0,0,.16); position:relative; overflow:hidden; }
     .frame { border:1.8px solid var(--blue); padding:.20in .24in .18in; position:relative; background:rgba(255,255,255,.72); }
     .handle { position:absolute; width:6px; height:6px; background:white; border:1.5px solid var(--blue); }
     .tl{top:-4px;left:-4px}.tr{top:-4px;right:-4px}.bl{bottom:-4px;left:-4px}.br{bottom:-4px;right:-4px}
     .frame-label { position:absolute; top:-15px; left:0; color:var(--blue); font-size:6.5pt; letter-spacing:.08em; font-weight:600; }
     h1 { margin:0; font-family:"Shantell Sans",Arial,sans-serif; font-size:30pt; line-height:1; letter-spacing:-.035em; transform:rotate(-.5deg); }
     .tagline { margin:6px 0 0; color:var(--blue); font-size:10.1pt; font-weight:700; }
-    .contact { position:absolute; right:.24in; top:.20in; text-align:right; font-size:7.7pt; line-height:1.55; }
+    .contact { position:absolute; right:.24in; top:.20in; text-align:right; font-size:8pt; line-height:1.5; }
     a { color:inherit; text-decoration:none; }
     .intro { margin:12px 0 10px; display:grid; grid-template-columns:1.83fr 1fr; gap:18px; align-items:start; }
-    .summary { font-size:9.15pt; line-height:1.42; }
+    .summary { font-size:9.35pt; line-height:1.4; }
     .summary strong { color:var(--blue); }
-    .sticky { background:#fff5a8; padding:9px 11px 8px; transform:rotate(1deg); filter:drop-shadow(2px 3px 2px rgba(30,34,60,.13)); font-size:8.1pt; line-height:1.35; position:relative; }
+    .sticky { background:#fff5a8; padding:9px 11px 8px; transform:rotate(1deg); filter:drop-shadow(2px 3px 2px rgba(30,34,60,.13)); font-size:8.45pt; line-height:1.34; position:relative; }
     .sticky::after { content:""; position:absolute; right:0; bottom:0; border-style:solid; border-width:10px 10px 0 0; border-color:#ddcf67 transparent transparent transparent; }
     .sticky b { display:block; font-family:Caveat,"Comic Sans MS",cursive; color:var(--blue); font-size:12.5pt; line-height:1; margin-bottom:3px; }
     .section-title { margin:10px 0 5px; display:inline-block; position:relative; font-family:"Shantell Sans",Arial,sans-serif; font-size:12.4pt; line-height:1; }
     .section-title::before { content:""; position:absolute; z-index:-1; left:-4px; right:-7px; top:47%; height:.82em; background:var(--yellow); transform:rotate(-1deg) skewX(-8deg); border-radius:80% 10% 70% 12%; }
-    .job { display:grid; grid-template-columns:1.27in 1fr; gap:11px; padding:6px 0 5px; border-top:1px solid var(--rule); break-inside:avoid; }
+    .job { display:grid; grid-template-columns:1.27in 1fr; gap:11px; padding:7px 0 6px; border-top:1px solid var(--rule); break-inside:avoid; }
     .job:first-of-type { border-top:0; }
-    .company { font-family:Inter,Arial,sans-serif; font-size:10.7pt; line-height:1.05; font-weight:700; letter-spacing:-.015em; }
-    .tenure { color:var(--blue); font-size:7.15pt; line-height:1.2; font-weight:600; margin-top:4px; }
-    .role-history { color:var(--muted); font-size:7.15pt; line-height:1.45; margin-bottom:4px; }
+    .job > div:first-child { position:relative; }
+    .company-sticker { position:absolute; top:-3px; right:1px; width:.25in; height:.25in; object-fit:contain; transform:rotate(var(--sticker-r, -3deg)); filter:drop-shadow(0.5px 1px 1px rgba(30,34,60,.22)); }
+    .company { padding-right:.30in; font-family:Inter,Arial,sans-serif; font-size:10.7pt; line-height:1.05; font-weight:700; letter-spacing:-.015em; }
+    .tenure { color:var(--blue); font-size:7.6pt; line-height:1.2; font-weight:600; margin-top:4px; }
+    .role-history { color:var(--muted); font-size:7.55pt; line-height:1.35; margin-bottom:4px; }
     .role-history b { color:var(--ink); font-weight:700; }
-    .role-history .latest { font-size:8.8pt; }
+    .role-history .latest { font-size:9pt; }
     .role-history .when { color:var(--muted); font-weight:400; white-space:nowrap; }
     ul { margin:2px 0 0; padding-left:14px; }
     li { margin:1.6px 0; padding-left:1px; }
     li::marker { color:var(--blue); }
     .bottom { display:grid; grid-template-columns:1.42fr 1fr; gap:19px; margin-top:1px; }
-    .mini { border-top:1px solid var(--rule); padding-top:6px; }
-    .mini + .mini { margin-top:6px; }
+    .mini { border-top:1px solid var(--rule); padding-top:7px; }
+    .mini + .mini { margin-top:7px; }
     .mini-title { font-weight:700; font-size:8.6pt; }
-    .mini-meta { color:var(--muted); font-size:7.2pt; }
-    .skills { font-size:7.9pt; line-height:1.5; }
+    .mini-meta { color:var(--muted); font-size:7.6pt; }
+    .skills { font-size:8.25pt; line-height:1.45; }
     .skills strong { color:var(--blue); }
-    .footer-note { position:absolute; right:.48in; bottom:.15in; font-family:Caveat,"Comic Sans MS",cursive; color:var(--blue); font-size:9pt; transform:rotate(-1deg); }
     @page { size:letter; margin:0; }
     @media print {
       html,body { background:white; }
@@ -61,7 +62,7 @@
 <main class="page">
   <header class="frame">
     <i class="handle tl"></i><i class="handle tr"></i><i class="handle bl"></i><i class="handle br"></i>
-    <div class="frame-label">BILLY LEET / STAFF UXR</div>
+    <div class="frame-label">BILLY LEET / UX RESEARCH &amp; STRATEGY</div>
     <h1>Billy Leet</h1>
     <p class="tagline">Product researcher who changes the question.</p>
     <div class="contact">
@@ -71,48 +72,48 @@
   </header>
 
   <section class="intro">
-    <p class="summary">Staff UX researcher with <strong>8+ years across Google, Instagram, and Duolingo</strong>. I lead ambiguous, high-stakes research from foundational framing through product direction, combining deep qualitative work, surveys, diary studies, and behavioral data. Former speech-language pathologist; trained to notice the gap between what people intend and what they can express.</p>
+    <p class="summary">UX researcher with <strong>8+ years of hands-on research and leadership</strong> at Instagram and Duolingo. I lead ambiguous, high-stakes work from foundational framing through product direction, combining deep qualitative research, surveys, diary studies, and behavioral evidence. Former speech-language pathologist; trained to notice the gap between what people intend and what they can express.</p>
     <aside class="sticky"><b>my throughline ←</b>Generative research, mixed methods, and influence that helps teams rethink what they are building.</aside>
   </section>
 
   <h2 class="section-title">selected experience</h2>
 
   <article class="job">
-    <div><div class="company">Independent</div><div class="tenure">Feb 2025–present</div></div>
+    <div><img class="company-sticker" src="stickers/sticker-change.png" alt=""><div class="company">Independent</div><div class="tenure">Feb 2025–present</div></div>
     <div>
-      <div class="role-history"><b class="latest">UX Research Consultant</b></div>
-      <ul><li>Led foundational qualitative research for Change.org on a small user segment driving outsized platform impact; designed the approach, conducted fieldwork, and delivered strategic direction to product leadership.</li></ul>
+      <div class="role-history"><b class="latest">UX Research Consultant</b> <span class="when">· Change.org</span></div>
+      <ul><li>Owned foundational research on unusually effective petition sharers, partnering with data science on behavioral sampling; reframed the strategy around removing friction for already-motivated supporters, resulting in commitments to two progress-feedback MVPs.</li></ul>
     </div>
   </article>
 
   <article class="job">
-    <div><div class="company">Duolingo</div><div class="tenure">May 2021–Feb 2025</div></div>
+    <div><img class="company-sticker" src="stickers/sticker-duolingo.png" alt="" style="--sticker-r:3deg"><div class="company">Duolingo</div><div class="tenure">May 2021–Feb 2025</div></div>
     <div>
-      <div class="role-history"><b class="latest">Sr UX Research Manager</b> · <span class="when">Oct 2022</span> &nbsp;←&nbsp; <b>Staff UX Researcher</b> · <span class="when">Jul 2022</span> &nbsp;←&nbsp; <b>Senior UX Researcher</b></div>
+      <div class="role-history"><b class="latest">Sr UX Research Manager</b> <span class="when">· Oct 2022–Feb 2025</span><br><b>Staff UX Researcher</b> <span class="when">· Jul–Oct 2022</span> &nbsp;·&nbsp; <b>Senior UX Researcher</b> <span class="when">· May 2021–Jul 2022</span></div>
       <ul>
-        <li>Led 10+ studies over eight months for Duolingo’s learning-path redesign: foundational interviews, usability and concept testing, and diary research that steered the company’s highest-priority product change.</li>
-        <li>Created Rolling Research, a continuous-feedback program later scaled across product areas; pioneered AI-assisted meta-analysis to turn hundreds of learner interviews into durable strategic guidance.</li>
-        <li>Managed and developed five researchers across Learning, Growth, and Monetization while remaining hands-on as a player-coach on critical initiatives.</li>
+        <li>Owned research strategy as the sole UXR through the learning-path redesign’s formative phases, sequencing 10+ studies and bringing learner evidence into weekly reviews with the CEO, CPO, VP Engineering, Head of Design, and product leads; research prompted explicit progress reassurance in re-onboarding.</li>
+        <li>Created Rolling Research, a largely self-sustaining weekly usability program adopted across Growth, Learning, and Monetization; scaled it to two dedicated contract researchers and enabled repeated iteration on copy, design, and product choices.</li>
+        <li>Promoted from Senior to Staff, then managed and developed five researchers while remaining hands-on as a player-coach on critical initiatives.</li>
       </ul>
     </div>
   </article>
 
   <article class="job">
-    <div><div class="company">Instagram</div><div class="tenure">Jun 2018–May 2021</div></div>
+    <div><img class="company-sticker" src="stickers/sticker-instagram.png" alt="" style="--sticker-r:-2deg"><div class="company">Instagram</div><div class="tenure">Jun 2018–May 2021</div></div>
     <div>
-      <div class="role-history"><b class="latest">Senior UX Researcher</b> · <span class="when">Feb 2021</span> &nbsp;←&nbsp; <b>UXR II</b> · <span class="when">Sep 2020</span> &nbsp;←&nbsp; <b>UXR I</b> · <span class="when">Sep 2019</span> &nbsp;←&nbsp; <b>Associate UX Researcher</b></div>
+      <div class="role-history"><b class="latest">Senior UX Researcher</b> <span class="when">· Feb–May 2021</span><br><b>UXR II</b> <span class="when">· Sep 2020–Feb 2021</span> &nbsp;·&nbsp; <b>UXR I</b> <span class="when">· Sep 2019–Sep 2020</span> &nbsp;·&nbsp; <b>Associate UXR</b> <span class="when">· Jun 2018–Sep 2019</span></div>
       <ul>
-        <li>Owned foundational research on creators and public figures across Feed, Messenger, Profile, and Live, shaping product strategy during Instagram’s shift toward a creator-first model.</li>
-        <li>Led interviews, diary studies, concept tests, and large-scale surveys; a Live study with over 400 responses became a cross-functional workshop that generated 129 ideas for product planning.</li>
-        <li>Built strategic understanding of creator safety, audience relationships, analytics, and monetization; concept testing informed a shipped safety feature.</li>
+        <li>Served as Instagram’s primary creator researcher across Feed, Messenger, Profile, and Live, shaping strategy on safety, audience relationships, analytics, and monetization.</li>
+        <li>Owned survey design, programming, analysis, and presentation for a Live study with 400+ creators; translated findings into a cross-functional workshop that fed quarterly planning.</li>
+        <li>Concept testing surfaced false-positive and anxiety concerns that shaped a shipped safety feature; a What/Why/How framework continued guiding creator-insights work after I left.</li>
       </ul>
     </div>
   </article>
 
   <article class="job">
-    <div><div class="company">Google</div><div class="tenure">Apr 2016–May 2018</div></div>
+    <div><img class="company-sticker" src="stickers/sticker-google.png" alt="" style="--sticker-r:2deg"><div class="company">Google</div><div class="tenure">Apr 2016–May 2018</div></div>
     <div>
-      <div class="role-history"><b class="latest">UX Research Coordinator, Google Cloud</b> · <span class="when">Apr 2017</span> &nbsp;←&nbsp; <b>Copyright Associate, YouTube</b></div>
+      <div class="role-history"><b class="latest">UX Research Coordinator, Google Cloud</b> <span class="when">· Apr 2017–May 2018</span><br><b>Copyright Associate, YouTube</b> <span class="when">· Apr 2016–Apr 2017</span></div>
       <ul><li>Supported study planning, recruiting, fieldwork, analysis, and research communication; advised teams on survey design and developer-focused research.</li></ul>
     </div>
   </article>
@@ -130,7 +131,6 @@
       <div class="skills"><strong>Strategy:</strong> foundational & generative research, product strategy, roadmap influence, research programs<br><strong>Methods:</strong> in-depth interviews, usability & concept testing, diary & longitudinal studies, surveys, mixed methods<br><strong>Leadership:</strong> executive communication, facilitation, mentoring, team development, player-coach leadership<br><strong>Languages:</strong> English (native), French (full professional), ASL (professional working)</div>
     </div>
   </section>
-  <div class="footer-note">good research answers the question. great research changes it.</div>
 </main>
 </body>
 </html>

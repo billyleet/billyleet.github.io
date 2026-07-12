@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Billy Leet is a Staff UX Researcher with 8+ years of experience at Google, Meta (Instagram), and Duolingo. Available for staff or senior UX Research roles, contract or full-time.">
+    <meta name="description" content="Billy Leet is a UX Researcher with 8+ years of hands-on research and research leadership at Instagram and Duolingo. Available for senior or staff IC roles, contract or full-time.">
     <title>Billy Leet — UX Researcher</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -689,6 +689,7 @@
             width: 52px;
             height: 52px;
             opacity: 1;
+            filter: drop-shadow(1px 2px 2px rgba(30, 34, 60, 0.2));
         }
 
         /* "current" flag: a mini sticky slapped on the card corner */
@@ -709,17 +710,14 @@
 
         .timeline-card {
             --tc-r: 0deg;
-            --tc-lift: 0px;
-            --tc-swing: 0deg;
             background: white;
             padding: 1.25rem 1.1rem;
             box-shadow: 2px 3px 10px var(--shadow);
             position: relative;
             margin-top: 2rem;
             transform-origin: top center;
-            transform: translate3d(0, var(--tc-lift), 0) rotate(calc(var(--tc-r) + var(--tc-swing)));
+            transform: rotate(var(--tc-r));
             transition: box-shadow 0.25s ease;
-            will-change: transform;
         }
 
         .timeline-card:hover {
@@ -730,12 +728,11 @@
         .timeline-card::before {
             content: '';
             position: absolute;
-            /* Keep the string attached to the fixed pin while the card lifts. */
-            top: calc(-2rem - var(--tc-lift));
+            top: -2rem;
             left: 50%;
             transform: translateX(-50%) rotate(1.5deg);
             width: 0;
-            height: calc(2rem + var(--tc-lift));
+            height: 2rem;
             border-left: 2px dashed var(--muted);
         }
 
@@ -743,8 +740,7 @@
         .timeline-card::after {
             content: '';
             position: absolute;
-            /* Counter the card lift so the pin stays seated on the track. */
-            top: calc(-2rem - 8px - var(--tc-lift));
+            top: calc(-2rem - 8px);
             left: 50%;
             transform: translateX(-50%) rotate(-4deg);
             width: 13px;
@@ -1020,6 +1016,54 @@
             .hero-statement br { display: none; }
         }
 
+        /* ================================
+           DARK MODE — "after-hours board"
+           The canvas dims to a night-desk slate; ink, rules, and the
+           marker line invert to light; the marker-blue accent brightens
+           for contrast. Sticky notes, washi tape, and badges are physical
+           colored paper — they stay bright and do the popping.
+        ================================ */
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg:             #16171b;   /* night-desk slate */
+                --text:           #e9e9ec;   /* chalk ink */
+                --text-secondary: #a6a8b0;
+                --accent:         #86a0ff;   /* brightened marker blue */
+                --accent-bg:      rgba(134, 160, 255, 0.13);
+                --hl:             rgba(245, 230, 66, 0.30); /* highlighter glow */
+                --muted:          #93959e;
+                --rule:           #31333a;
+                --shadow:         rgba(0, 0, 0, 0.55);
+            }
+
+            /* Ink dots become faint chalk on the night board */
+            body {
+                background-image: radial-gradient(circle, rgba(255,255,255,0.055) 1px, transparent 1px);
+            }
+
+            /* Selected "paper" frames read as faint glass panels */
+            .hero-frame,
+            .work-card { background: rgba(255, 255, 255, 0.028); }
+
+            /* Career cards become elevated dark surfaces */
+            .timeline-card { background: #212227; }
+
+            /* Keep the skip link legible now that --text is light */
+            .skip-link { background: var(--accent); color: #14151a; }
+
+            /* Sticky notes lift harder against the dark canvas */
+            .sticky {
+                filter: drop-shadow(3px 6px 14px rgba(0,0,0,0.55)) drop-shadow(1px 2px 4px rgba(0,0,0,0.4));
+            }
+            .about-sticky-quote {
+                filter: drop-shadow(4px 8px 20px rgba(0,0,0,0.5)) drop-shadow(1px 2px 5px rgba(0,0,0,0.35));
+            }
+            /* The pull-quote sticky stays yellow paper, so its emphasis keeps
+               the dark marker-blue that actually reads on yellow. */
+            .about-sticky-quote em { color: #2f54d1; }
+        }
+
     </style>
 </head>
 <body>
@@ -1051,15 +1095,15 @@
                     Billy Leet
                     <svg class="underline-svg" viewBox="0 0 300 14" fill="none" aria-hidden="true"><path d="M4 9 C 60 4, 120 12, 170 7 S 260 6, 296 9" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
                 </h1>
-                <p class="hero-role">Staff UX Researcher</p>
-                <p class="hero-statement">I help teams ask better questions, <br>so we turn research into clearer product decisions.</p>
+                <p class="hero-role">UX Researcher</p>
+                <p class="hero-statement">I turn messy human behavior <br>into clearer product decisions.</p>
                 <a href="mailto:billyleet@gmail.com" class="hero-cta">Email me &nbsp;&rarr;</a>
                 <nav class="hero-actions-secondary" aria-label="Professional links">
                     <a href="Billy-Leet-Resume.pdf">View r&eacute;sum&eacute; &rarr;</a>
                     <span class="sep" aria-hidden="true"></span>
                     <a href="https://www.linkedin.com/in/wleet/" target="_blank" rel="noopener noreferrer">LinkedIn &rarr;</a>
                 </nav>
-                <p class="hero-availability">Based in Pittsburgh. Open to staff or senior UXR roles, contract or full-time.</p>
+                <p class="hero-availability">Based in Pittsburgh. Open to senior and staff IC roles, contract or full-time.</p>
             </div>
         </div>
         <div class="scroll-hint" aria-hidden="true">
@@ -1084,7 +1128,7 @@
                     <img class="wc-sticker wc-sticker-duolingo" src="stickers/sticker-duolingo.png" alt="" aria-hidden="true">
                     <p class="wc-meta">duolingo &middot; 2021&ndash;22</p>
                     <h3 class="wc-title">Flattening the Tree</h3>
-                    <p class="wc-hook">The 10-study research program behind Duolingo's path redesign, informing key decisions in a bet-the-product change.</p>
+                    <p class="wc-hook">As the sole UXR through the redesign's formative phases, I built the 10-study research program that informed product and rollout decisions.</p>
                     <span class="wc-open">view study &rarr;</span>
                 </a>
 
@@ -1094,9 +1138,9 @@
                     <span class="handle bl" aria-hidden="true"></span>
                     <span class="handle br" aria-hidden="true"></span>
                     <img class="wc-sticker wc-sticker-change" src="stickers/sticker-change.png" alt="" aria-hidden="true">
-                    <p class="wc-meta">change.org &middot; 2025&ndash;26</p>
+                    <p class="wc-meta">change.org &middot; 2025</p>
                     <h3 class="wc-title">Super Recruiters</h3>
-                    <p class="wc-hook">An independent foundational study of unusually effective petition sharers: who they were, why they shared, and how Change.org could better support their impact.</p>
+                    <p class="wc-hook">Independent foundational research that reframed how Change.org could support unusually effective petition sharers and led to two committed MVPs.</p>
                     <span class="wc-open">view study &rarr;</span>
                 </a>
 
@@ -1108,7 +1152,7 @@
                     <img class="wc-sticker wc-sticker-instagram" src="stickers/sticker-instagram.png" alt="" aria-hidden="true">
                     <p class="wc-meta">instagram &middot; 2019&ndash;20</p>
                     <h3 class="wc-title">Understanding Creators</h3>
-                    <p class="wc-hook">Safety, live video, money, analytics: creator research that shaped quarterly planning and surfaced concerns addressed in a shipped safety feature.</p>
+                    <p class="wc-hook">As Instagram's primary creator researcher, I owned a 400+ response Live study that fed quarterly planning and research that shaped a shipped safety feature.</p>
                     <span class="wc-open">view study &rarr;</span>
                 </a>
 
@@ -1124,13 +1168,13 @@
             <h2 class="section-label">about</h2>
             <div class="about-grid">
                 <div class="about-sticky-quote">
-                    Good research answers the question. <br><br> Great research changes which question gets asked next.
+                    The useful finding is the one that changes what the team does next.
                 </div>
                 <div class="about-body">
                     <p>The best research I've done didn't answer the question on the brief. It changed the question entirely. Teams came in asking whether users understood a feature and left reconsidering whether the feature was solving the right problem. To me, that's the actual job: <strong>not confirming what a team already believes, but changing what they think is possible.</strong></p>
                     <p>Before UX, I was a <strong>Speech-Language Pathologist</strong>, which meant sitting with people who knew exactly what they wanted to say but couldn't find the words to match. That habit has carried over in my research practice: noticing the gap between what people intend and what actually comes out.</p>
                     <p><strong>8+ years of hands-on research and research leadership at Instagram and Duolingo</strong> taught me that the research question is almost never the real question. I've led generative studies that shifted roadmap priorities, usability research that caught critical failures before they shipped, and longitudinal work that traced how people's relationships with a product evolve over time.</p>
-                    <p>I'm available for <strong>staff or senior UX Research roles, contract or full-time.</strong> I'm most interested in teams where the research can change what they think is possible.</p>
+                    <p>I'm available for <strong>senior and staff IC roles, contract or full-time</strong>, and open to the right research-leadership opportunity. I'm most interested in teams where the research can change what they think is possible.</p>
                 </div>
             </div>
         </div>
@@ -1233,10 +1277,10 @@
                     <div class="timeline-card tc-3">
                         <span class="tc-tape" aria-hidden="true"></span>
                         <img class="tc-logo" src="stickers/sticker-instagram.png" alt="" aria-hidden="true">
-                        <p class="tc-dates">Jun 2018 &ndash; Apr 2021</p>
+                        <p class="tc-dates">Jun 2018 &ndash; May 2021</p>
                         <div class="tc-company-row"><p class="tc-company">Meta</p></div>
                         <p class="tc-role">UX Researcher &ndash; Instagram</p>
-                        <p class="tc-desc">Joined via Meta's (now-discontinued) Research Associate Program and was promoted several times over three years. Conducted "Creator" research across Instagram's Feed, Messenger, Profile, and Live surfaces, helping teams understand how creators and influencers interact with their fans at global scale.</p>
+                        <p class="tc-desc">Became Instagram's primary creator researcher across Feed, Messenger, Profile, and Live. Owned a 400+ response Live study that fed quarterly planning, while separate research surfaced concerns that shaped a shipped safety feature.</p>
                     </div>
 
                     <div class="timeline-card tc-4">
@@ -1244,17 +1288,17 @@
                         <img class="tc-logo" src="stickers/sticker-duolingo.png" alt="" aria-hidden="true">
                         <p class="tc-dates">May 2021 &ndash; Feb 2025</p>
                         <div class="tc-company-row"><p class="tc-company">Duolingo</p></div>
-                        <p class="tc-role">Sr UX Research Manager</p>
-                        <p class="tc-desc">Led research for core learning and engagement features on the world's most popular language learning app. Partnered closely with product, design, and learning science teams to understand how people build and break long-term learning habits.</p>
+                        <p class="tc-role">Senior UXR &rarr; Staff UXR &rarr; Manager</p>
+                        <p class="tc-desc">Owned research strategy as the sole UXR through the learning-path redesign's formative phases. Created Rolling Research, adopted across Growth, Learning, and Monetization, then managed and developed a five-person research team.</p>
                     </div>
 
                     <div class="timeline-card tc-5">
                         <span class="tc-tape" aria-hidden="true"></span>
                         <span class="tc-badge">current!</span>
                         <p class="tc-dates">Feb 2025 &ndash; present</p>
-                        <div class="tc-company-row"><p class="tc-company">Contractor</p></div>
-                        <p class="tc-role">Independent Researcher</p>
-                        <p class="tc-desc">Most recently: contracted to lead foundational qualitative research at Change.org, studying a small segment of users who drive outsized platform impact.</p>
+                        <div class="tc-company-row"><p class="tc-company">Independent</p></div>
+                        <p class="tc-role">UX Research Consultant</p>
+                        <p class="tc-desc">Led foundational research for Change.org that reframed its strategy for supporting unusually effective petition sharers and produced commitments to two progress-feedback MVPs.</p>
                     </div>
 
                 </div>
@@ -1346,72 +1390,6 @@
             document.addEventListener('pointercancel', endDrag);
         })();
 
-        /* ---- Pointer-reactive, springy timeline cards ---- */
-        (function() {
-            const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-            if (reducedMotion.matches) return;
-
-            document.querySelectorAll('.timeline-card').forEach(function(card) {
-                let angle = 0;
-                let velocity = 0;
-                let target = 0;
-                let lift = 0;
-                let targetLift = 0;
-                let frame = null;
-                let lastX = 0;
-                let lastTime = 0;
-
-                function animate() {
-                    /* A damped spring keeps movement continuous as the target changes. */
-                    velocity += (target - angle) * 0.12;
-                    velocity *= 0.78;
-                    angle += velocity;
-                    lift += (targetLift - lift) * 0.18;
-
-                    card.style.setProperty('--tc-swing', angle.toFixed(3) + 'deg');
-                    card.style.setProperty('--tc-lift', lift.toFixed(2) + 'px');
-
-                    if (Math.abs(target - angle) > 0.01 || Math.abs(velocity) > 0.01 || Math.abs(targetLift - lift) > 0.02) {
-                        frame = requestAnimationFrame(animate);
-                    } else {
-                        frame = null;
-                    }
-                }
-
-                function wake() {
-                    if (!frame) frame = requestAnimationFrame(animate);
-                }
-
-                card.addEventListener('pointerenter', function(e) {
-                    if (e.pointerType === 'touch' || window.innerWidth <= 640) return;
-                    const rect = card.getBoundingClientRect();
-                    target = ((e.clientX - rect.left) / rect.width - 0.5) * 3;
-                    targetLift = -7;
-                    lastX = e.clientX;
-                    lastTime = performance.now();
-                    wake();
-                });
-
-                card.addEventListener('pointermove', function(e) {
-                    if (e.pointerType === 'touch' || window.innerWidth <= 640) return;
-                    const now = performance.now();
-                    const rect = card.getBoundingClientRect();
-                    target = ((e.clientX - rect.left) / rect.width - 0.5) * 4;
-                    const dt = Math.max(8, now - lastTime);
-                    velocity += Math.max(-1.2, Math.min(1.2, (e.clientX - lastX) / dt * 0.55));
-                    lastX = e.clientX;
-                    lastTime = now;
-                    wake();
-                }, { passive: true });
-
-                card.addEventListener('pointerleave', function(e) {
-                    target = 0;
-                    targetLift = 0;
-                    velocity += Math.max(-1.8, Math.min(1.8, (e.clientX - lastX) * 0.08));
-                    wake();
-                });
-            });
-        })();
     </script>
 
 </body>

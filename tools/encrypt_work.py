@@ -40,19 +40,19 @@ PBKDF2_ITERATIONS = 600_000
 
 PUBLIC_PREVIEWS = {
     "change-org.html": {
-        "label": "Change.org, independent research (2025–26)",
-        "summary": "An independent foundational study of unusually effective petition sharers: who they were, why they shared, and how Change.org could better support their impact.",
-        "details": "I paired qualitative interviews with behavioral sampling from a data-science partner. The findings informed MVP experiments the team committed to building.",
+        "label": "Change.org, independent research (2025)",
+        "summary": "Independent foundational research on unusually effective petition sharers that reframed where Change.org could have the most leverage.",
+        "details": "I owned the study and partnered with data science on behavioral sampling. The findings shifted the strategy toward removing friction for already-motivated supporters, resulting in commitments to two progress-feedback MVPs.",
     },
     "duolingo-v2.html": {
         "label": "Duolingo, core product research (2021–22)",
         "summary": "The sustained research program behind Duolingo's shift from its skill tree to a linear learning path.",
-        "details": "Across more than ten studies, I helped shape the redesign and its rollout from the earliest concepts through usability research, diary studies, and a global launch.",
+        "details": "As the sole UXR through the redesign's formative phases, I owned research strategy across more than ten studies and brought learner evidence into weekly executive product reviews, shaping the product and its rollout.",
     },
     "instagram-creators.html": {
         "label": "Instagram, creator research (work shown from 2019–20)",
-        "summary": "As Instagram's primary creator researcher, I led a quantitative study of several hundred creators and translated the findings into a cross-functional planning workshop for Instagram Live.",
-        "details": "I owned the survey from design through analysis, then partnered with product and design to carry the findings into quarterly planning.",
+        "summary": "As Instagram's primary creator researcher, I led a quantitative study of more than 400 creators and translated the findings into a cross-functional planning workshop for Instagram Live.",
+        "details": "I owned the survey from design and programming through analysis and presentation, then partnered with product and design to carry the findings into quarterly planning. Separate concept testing surfaced concerns that shaped a shipped safety feature.",
     },
 }
 

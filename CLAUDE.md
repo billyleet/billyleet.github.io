@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo is
 
-Personal brand site for Billy Leet, Senior UX Researcher. Deployed via GitHub Pages to **billyleet.com** (CNAME configured). No build step, no framework, no package manager — just files served directly.
+Personal brand site for Billy Leet, UX Researcher. Deployed via GitHub Pages to **billyleet.com** (CNAME configured). No build step, no framework, no package manager — just files served directly.
 
 ## The live file
 
@@ -16,7 +16,7 @@ Personal brand site for Billy Leet, Senior UX Researcher. Deployed via GitHub Pa
 - `work-src/` — **gitignored plaintext sources** for the case pages, plus `work-src/artifacts/` images. NEVER commit these (the repo is public; committed plaintext defeats the password wall). Edit pages here, then rebuild with `tools/encrypt` (single command; prompts for the password, or pass `WORK_PASSWORD=<pw>`; bootstraps its own `.venv` on first run and inlines artifact images as data URIs), then commit the regenerated `work/*.html`. Billy hands out the password personally; it is stored nowhere in the repo.
 - `snapshots/` — previous design iterations preserved for reference (not served)
 - `archive/` — legacy portfolio case study pages and their associated assets/CSS (not linked from current design)
-- `stickers/` — normalized die-cut company-logo stickers (`sticker-*.png`, used on work cards and career cards), generated from committed official/public sources (`src-*.{svg,png}`, `change-org-flat.svg`) by `tools/make-stickers` (bootstraps `.venv` with Pillow + cairosvg; needs Homebrew cairo). The three square tiles share one corner-radius fraction taken from the official Instagram icon. Plus WalterSticker.png (personal) and legacy `icons8-*.png` decorative art (unused).
+- `stickers/` — die-cut company-logo stickers (`sticker-*.png`, used on work cards and career cards), hand-authored in Figma (exported as transparent PNGs with the white die-cut border baked in; drop shadows stay in CSS). The three square tiles (change, duolingo, instagram) share one corner radius so the set reads as one sheet. Plus WalterSticker.png (personal) and legacy `icons8-*.png` decorative art (unused).
 
 ## Design system (in `index.html`)
 
@@ -50,7 +50,6 @@ Personal brand site for Billy Leet, Senior UX Researcher. Deployed via GitHub Pa
 - **Draggable stickies:** Pointer Events (mouse/touch/pen) in the inline `<script>`; `.sticky` has `touch-action: none` only above 900px, where dragging is enabled. Position is set via inline `style.left`/`style.top`, which overrides the class-based position without affecting the rotation transform.
 - **Easter eggs:** `.easter-egg` divs are positioned at `z-index: 0` underneath their corresponding `.sticky` (which is `z-index: 1`). Discovered by dragging a sticky aside.
 - **Scroll hint:** Handwritten "the good stuff ↓" note below hero fades out after 50px of scroll.
-- **Card swing:** timeline cards swing on hover with amplitude proportional to cursor velocity (Web Animations API; respects `prefers-reduced-motion`).
 
 ## Deployment
 
