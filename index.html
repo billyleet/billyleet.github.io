@@ -376,6 +376,7 @@
             font-family: 'Shantell Sans', cursive;
             font-weight: 500;
             font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+            text-align: center;
             line-height: 1.4;
             color: #1a1a1a;
         }
@@ -919,9 +920,31 @@
 
             .easter-egg { display: none; }
 
+            /* The track only ever describes a single row of cards. Once they
+               wrap, it stops being a timeline — so drop the track, connectors,
+               dots and tape, and read the cards as a reverse-chronological grid
+               (most recent first), the way a resume lists them. */
+            .timeline-track { display: none; }
+
             .timeline-cards {
                 grid-template-columns: repeat(3, 1fr);
             }
+
+            .timeline-card {
+                margin-top: 0;
+                transform: none;
+            }
+
+            .timeline-card::before,
+            .timeline-card::after { display: none; }
+
+            .tc-tape { display: none; }
+
+            .timeline-card.tc-5 { order: 1; }
+            .timeline-card.tc-4 { order: 2; }
+            .timeline-card.tc-3 { order: 3; }
+            .timeline-card.tc-2 { order: 4; }
+            .timeline-card.tc-1 { order: 5; }
         }
 
         @media (max-width: 800px) {
@@ -959,22 +982,10 @@
         }
 
         @media (max-width: 640px) {
-            .timeline-track { display: none; }
-
             .timeline-cards {
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
-
-            .timeline-card {
-                margin-top: 0;
-                transform: none !important;
-            }
-
-            .timeline-card::before,
-            .timeline-card::after { display: none; }
-
-            .tc-tape { display: none; }
 
             /* Single-column stickies, no drag */
             .figjam-canvas {
@@ -1168,7 +1179,7 @@
             <h2 class="section-label">about</h2>
             <div class="about-grid">
                 <div class="about-sticky-quote">
-                    A useful finding is one that changes what the team does next.
+                    <br><br>The most useful findings actually change what the team does next.<br><br><br>
                 </div>
                 <div class="about-body">
                     <p>The best research I've done didn't answer the question on the brief; it changed the question entirely. Teams came in asking whether users understood a feature and left reconsidering whether the feature was solving the right problem. To me, that's the actual job: <strong>not confirming what a team already believes, but changing what they think is possible.</strong></p>
